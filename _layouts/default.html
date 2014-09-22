@@ -1,52 +1,74 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-gb">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>{{ page.title }}</title>
-	<meta name="author" content="Roger Chapman" />
-	<link href="http://feeds.feedburner.com/rogchap" rel="alternate" title="Roger Chapman" type="application/atom+xml" />
-	<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/tablet.css" type="text/css" media="screen and (min-width:651px) and (max-width: 1024px), screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
-	<link rel="stylesheet" href="/css/mobile.css" type="text/css" media="handheld, screen and (max-width: 650px), screen and (max-device-width: 480px)" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>Joachim Daiber</title>
+	
 </head>
+
 <body>
-	<div class="site">
-		<div class="title"><a href="/">Roger Chapman<br/>rogchap</a></div>
-		{{ content }}
-		<div class="footer">
-			<div class="contact">
-				<p>
-					Roger Chapman<br/>
-					Application Development Evangelist<br/>
-					&#114;&#111;&#103;&#99;&#104;&#97;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-				</p>
-			</div>
-			<div class="contact">
-				<p>
-					<a href="http://github.com/rogchap/">github.com/rogchap</a><br />
-					<a href="http://twitter.com/rogchap/">twitter.com/rogchap</a><br />
-					<a href="http://linkedin.com/in/rogchap/">linkedin.com/in/rogchap</a>
-				</p>
-			</div>
-		 	<div class="rss">
-				<a href="http://feeds.feedburner.com/rogchap">RSS Feed</a>
-			</div>
-		</div>
-	</div>
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-        _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-        _gaq.push(['_setAccount', 'UA-4155555-8']);
-        _gaq.push(['_trackPageview']);
+<div id="layout">
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+    <div class="sidebar"><div id="prague"></div></div>
+
+<div class="content">
+<div class="inner">
+
+<h1>Joachim Daiber</h1>
+
+
+<h2>About me</h2>
+
+<p>I am a PhD student at the University of Amsterdam.</p>
+
+<p>Previously, I was a Master's student in the <a href="http://lct-master.org">EM LCT</a> programme in Computational Linguistics at Charles University in Prague and the University of Groningen. In my Master thesis, I worked on robust dependency parsing of noisy content with <a href="http://www.let.rug.nl/vannoord/">Gertjan van Noord</a> and <a href="http://ufal.mff.cuni.cz/daniel-zeman">Dan Zeman</a>.</p>
+
+<p>During my undergraduate studies at Freie Universität Berlin, I worked in the <a href="http://www.meta-net.eu">META-NET</a> project at the German Research Center for Artifical Intelligence.</p>
+
+<h2>Connect</h2>
+
+<ul>
+<li><a href="http://github.com/jodaiber">GitHub</a>, <a href="https://www.linkedin.com/pub/joachim-daiber/84/279/93a">LinkedIn</a>, <a href="https://facebook.com/jodaiber">Facebook</a></li>
+<li>Email: daiber.joachim [at] gmail.com.</li>
+</ul>
+
+<h2>Code</h2>
+
+<ul>
+<li>I created an efficient and more accurate version of the multilingual entity linking system <a href="https://github.com/dbpedia-spotlight/dbpedia-spotlight">DBpedia Spotlight</a> [Scala]</li>
+<li>I wrote large parts of a <a href="https://github.com/runn1ng/FilmTit">translation memory for movie subtitles</a> [Scala]</li>
+</ul>
+
+<h2>Selected publications</h2>
+
+<ul>
+<li><p><strong>Daiber, J.</strong> and Jakob, M. and Hokamp, C. and Mendes, P.N. <a href="http://jodaiber.de/doc/entity.pdf">Improving Efficiency and Accuracy in Multilingual Entity Extraction.</a> Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.</p></li>
+<li><p>Mendes, P.N., <strong>Daiber, J.</strong>, Rajapakse, R., Sasaki, F., Bizer, C. <a href="papers/LREC2012.pdf">Evaluating the Impact of Phrase Recognition on Concept Tagging.</a> Proceedings of the International Conference on Language Resources and Evaluation, LREC 2012. 21-27 May 2012. Istanbul, Turkey.</p></li>
+</ul>
+
+<!-- ## Talks
+* [DBpedia Spotlight &ndash; Shedding Light on the Web of Documents](talks/xinnovations2011.pdf) <br />
+  Short talk I gave at the Xinnovations 2011 conference about DBpedia Spotlight and my Bachelor's thesis (German).
+-->
+
+{{ content }}
+
+<h2>Personal</h2>
+
+	<!-- add instagram -->
+</div>
+</div>
+
 </body>
-<html>
+</html>
