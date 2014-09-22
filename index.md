@@ -45,7 +45,7 @@ Personal
 
 <div id="instafeed"></div>
 
-<script src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+<script src="/js/instafeed.min.js"></script>
 <script type="text/javascript">
     var feed = new Instafeed({
 		get: 'user',
