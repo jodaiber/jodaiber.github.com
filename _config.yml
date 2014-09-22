@@ -1,5 +1,5 @@
 url: http://jodaiber.de
-#markdown: rdiscount
+markdown: redcarpet
 permalink: pretty
 pygments: true
 exclude: ['Rakefile.rb', 'CNAME', 'README.markdown']
