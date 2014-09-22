@@ -62,6 +62,34 @@ margin: 0 auto;
 			max-width: none;
 			display: inline-block;
 			background: transparent url(http://jodaiber.de/prague2.jpg) -270px bottom no-repeat;
+			
+			text-decoration: none;
+			text-align: right;
+		}
+
+		.sidebar #prague span {
+			display: none;
+			text-align: right;
+
+			background: none;
+			width: auto;
+			
+			color: #3d3935;
+			text-decoration: none;
+
+			text-transform: uppercase;
+
+			padding: 14px;
+			font-family: "Minion Web", "Georgia", serif;
+			
+			font-size: 150%;
+
+		}
+		.sidebar #prague:hover span {
+			
+			display: block;
+			background: rgba(255, 255, 255, 0.7);
+
 		}
 
 
