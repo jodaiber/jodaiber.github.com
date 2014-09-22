@@ -43,18 +43,17 @@ Blog Posts
 Personal
 --------
 
-	<div id="instafeed"></div>
+<div id="instafeed"></div>
 
-	<script src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
-	<script type="text/javascript">
-	    var feed = new Instafeed({
-			get: 'user',
-			userId: 601088313,
-		    accessToken: '601088313.ab103e5.1b3ebae1bcc44eec9c0d207dceedfeb1',
-			link: 'true',
-			clientId: '',
-			limit: '10'
-	    });
-	    feed.run();
-		
-	</script>
+<script src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+		get: 'user',
+		userId: 601088313,
+	    accessToken: '601088313.ab103e5.1b3ebae1bcc44eec9c0d207dceedfeb1',
+		link: 'true',
+		clientId: '',
+		limit: '10'
+    });
+    feed.run();
+</script>
