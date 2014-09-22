@@ -4,7 +4,7 @@ title: Multilingual entity linking
 ---
 
 
-## Multilingual entity linking
+## Code
 
 I created an efficient and more accurate version of the multilingual entity linking system [DBpedia Spotlight](https://github.com/dbpedia-spotlight/dbpedia-spotlight).
 
