@@ -227,6 +227,9 @@ margin: 0 auto;
 			text-shadow: 1px 1px 0px #000;
 			margin: 0.5em 0 2em 0;
 		}
+	#instafeed {
+		line-height: 0px;
+	}
 
 		#instafeed img {
 			display: block;
@@ -237,6 +240,7 @@ margin: 0 auto;
 			display: inline-block;
 			border: 0px solid #999;
 			opacity:0.3;
+			margin: 0 4px 4px 0;
 
 		}
 
