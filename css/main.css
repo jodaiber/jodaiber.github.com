@@ -81,7 +81,7 @@ margin: 0 auto;
 
 			padding: 14px;
 			font-family: "Minion Web", "Georgia", serif;
-			
+
 			font-size: 150%;
 
 		}
@@ -228,17 +228,19 @@ margin: 0 auto;
 			margin: 0.5em 0 2em 0;
 		}
 
-		.insta img {
+		#instafeed img {
 			display: block;
+			width: 75px;
+			height: 75px;
 		}
-		.insta {
+		#instafeed a {
 			display: inline-block;
 			border: 0px solid #999;
 			opacity:0.3;
 
 		}
 
-		.insta:hover {
+		#instafeed a:hover {
 			opacity:1.0;
 		}
 
