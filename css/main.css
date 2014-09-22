@@ -61,7 +61,7 @@ margin: 0 auto;
 			overflow: hidden;
 			max-width: none;
 			display: inline-block;
-			background: transparent url(/images/prague2.jpg) -270px bottom no-repeat;
+			background: transparent url(http://jodaiber.de/prague2.jpg) -270px bottom no-repeat;
 		}
 
 
@@ -280,7 +280,7 @@ margin: 0 auto;
 		-moz-border-radius-topleft: 0;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
-    	background: black url(/images/prague2.jpg) bottom center no-repeat;
+    	background: black url(http://jodaiber.de/prague2.jpg) bottom center no-repeat;
     }
 
     .content {
