@@ -18,8 +18,8 @@ Connect
 -   [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a), [Facebook](https://facebook.com/jodaiber)
 -   Email: daiber.joachim [at] gmail.com.
 
-Code
-----
+Code & Data
+-----------
 
 -   I created an efficient and more accurate version of the multilingual entity linking system [DBpedia Spotlight](https://github.com/dbpedia-spotlight/dbpedia-spotlight) [Scala]
 -   I wrote large parts of a [translation memory for movie subtitles](https://github.com/runn1ng/FilmTit) [Scala]
