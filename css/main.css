@@ -165,6 +165,9 @@ margin: 0 auto;
 		*/	padding-right: 20px;
 		}		
 		li { list-style-type: square; padding-bottom: 5px; }		
+		pre {
+			overflow-x: auto;
+		}
 		code {
 			font-family: Consolas,"Courier New",monospace;
 			white-space: nowrap;
@@ -172,7 +175,10 @@ margin: 0 auto;
 			font-weight: bold;
 			border: 0 solid #ba9e88;
 			background: #decdc0;
-			
+			word-wrap: initial;
+			overflow-x: hidden;
+			width: 200px;
+			white-space: pre;
 		}
 		h3 {
 			margin: 2em 0 0.3em 0;
