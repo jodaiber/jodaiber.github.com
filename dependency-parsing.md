@@ -287,7 +287,7 @@ changes to the following: Given some noisy evidence $$I$$ and using the
 Bayes’ rule to find the posterior for $$\mathrm{P}_G(T|\textbf{w})$$ and
 $$\mathrm{P}_G(T|I)$$:
 
-$$  \mathrm{P}_G(T|I) &= \frac{ p(T,I) }{ p(I) } \\
+$$  \mathrm{P}_G(T|I) = \frac{ p(T,I) }{ p(I) } \\
   \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T) $$
 
 While not directly applying this model to parsing, Levy (2008) performs
@@ -298,8 +298,7 @@ noisy representation $$I$$ of this sentence is not known. Based on the
 formula in ([levyI]), for the probability of the comprehender’s
 understood sentence $$\textbf{w}$$, we have:
 
-$$
-  \mathrm{P}_G(\textbf{w}|I) &\propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T)$$
+$$ \mathrm{P}_G(\textbf{w}|I) \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T)$$
 
 In the controlled experiment of Levy (2008), the relevant probability
 distribution is $$ p(\textbf{w}|\textbf{w}^*)$$, which is given as
