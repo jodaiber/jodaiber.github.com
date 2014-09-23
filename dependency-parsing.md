@@ -6,8 +6,8 @@ language text, based on the theory of dependency grammar. Rather than
 being a single unified theory, dependency grammar is a tradition
 encompassing several theories, which recently has gained additional
 popularity due to its value in various natural language processing
-tasks, such as relation extraction (e.g. Culotta and Sorensen (2004))
-and machine translation (e.g. Shen et al. (2008)). Additionally, it is
+tasks, such as relation extraction (e.g. Culotta and Sorensen (2004))
+and machine translation (e.g. Shen et al. (2008)). Additionally, it is
 well-suited for the description of languages with free word order
 (Kübler et al., 2009).
 
@@ -49,7 +49,7 @@ Kübler et al. (2009).
 
 A sentence $$S$$ is a sequence of tokens $$S = w_0w_1...w_n$$. The token
 $$w_0$$ is treated as the artificial root token, which we labeled in
-Figure [fig:simpledep]. While the term token is commonly used as a
+Figure [fig:simpledep]. While the term token is commonly used as a
 synonym for a word in a sentence, depending on the language and
 conventions used, it does not have to be a full word but can represent
 single morphemes or punctuation.
@@ -59,7 +59,7 @@ sentence. $$R = \{r_1, ..., r_m\}$$ is the finite set of dependency
 relation types that can hold between any two words. There are no further
 assumptions about the set $$R$$, and the final set of relations depends on
 the convention of the dependency format and the underlying linguistic
-theory. In the example in Figure [fig:simpledep], the dependency types
+theory. In the example in Figure [fig:simpledep], the dependency types
 are displayed as the labels of the arcs between the words: , and .
 
 In order to define dependency trees, which are a special type of
@@ -87,7 +87,7 @@ now.
 A *dependency tree* is defined as a *well-formed* dependency graph. A
 dependency graph $$G$$ for a sentence $$S$$, and a dependency relation set
 $$R$$ is called *well-formed* if it is a directed tree originating in the
-root node and if it has a spanning node set (i.e. a set of nodes
+root node and if it has a spanning node set (i.e. a set of nodes
 containing all words of the sentence). A tree is an undirected graph in
 which any two nodes are connected by one and only one path. This means
 that a connected graph can only be a tree if it contains no cycles. In a
@@ -128,17 +128,17 @@ $$(w_i, r, w_j) \in A$$ are projective. A dependency tree that is not
 projective is *non-projective*.
 
 As examples of projective and non-projective dependency trees, consider
-the two dependency trees in Figure [fig:projectivedeptree] and
-Figure [fig:nonprojectivedeptree], which are dependency trees for
+the two dependency trees in Figure [fig:projectivedeptree] and
+Figure [fig:nonprojectivedeptree], which are dependency trees for
 commonly used English example sentence from the Penn treebank (both
 dependency trees are taken from Kübler et al. (2009)).
 
 --PARSE TREE--
 
 In this representation of dependency trees, with all words at the same
-level, the dependency tree in Figure [fig:projectivedeptree] can be
+level, the dependency tree in Figure [fig:projectivedeptree] can be
 drawn without crossing edges as all edges in this tree are projective.
-For the dependency tree in Figure [fig:nonprojectivedeptree], however,
+For the dependency tree in Figure [fig:nonprojectivedeptree], however,
 it is not possible to draw the tree without crossing edges. For the
 dependency relation between *hearing* and *on*, there is no path from
 the head of the relation *hearing* to the words in between the two
@@ -194,23 +194,23 @@ The *learning* task in this parser is approached as a supervised
 learning problem for structured output. The score of a dependency tree
 is factored as the sum of the scores of all edges in the tree. The score
 for each edge is calculated as the dot product of a feature vector for
-the edge, and the weight vector $$\vect{w}$$.
+the edge, and the weight vector $$\textbf{w}$$.
 
-$$s(i, j) = \vect{w} \cdot \mathbf{f}(i, j)$$
+$$s(i, j) = \textbf{w} \cdot \mathbf{f}(i, j)$$
 
 Given a sentence $$\boldsymbol{x}$$, the score for a dependency tree
 $$\boldsymbol{y}$$ is:
 
 $$s(\boldsymbol{x}, \boldsymbol{y}) = \sum_{(i,j) \in \boldsymbol{y}}{s(i, j)}$$
 
-To determine the weight vector $$\vect{w}$$, a learning algorithm based on
+To determine the weight vector $$\textbf{w}$$, a learning algorithm based on
 the Margin Infused Relaxed Algorithm (MIRA, Crammer and Singer (2003))
 is used. MIRA is an online learning algorithm similar to the online
 version of the basic Perceptron learning algorithm (Rosenblatt, 1958).
 Unlike a batch learning method, the online algorithm works by updating
-the weight vector $$\vect{w}$$ after each training instance it considers.
+the weight vector $$\textbf{w}$$ after each training instance it considers.
 
-Pseudo-code for the MIRA algorithm is given in Algorithm [alg:MIRA].
+Pseudo-code for the MIRA algorithm is given in Algorithm [alg:MIRA].
 $$dt(\boldsymbol{x})$$ is the set of possible dependency trees for the
 sentence $$\boldsymbol{x}$$. The algorithm runs for $$N$$ iterations, and
 during each of the iterations, it traverses all training instances, and
@@ -218,11 +218,11 @@ determines the optimal weight with regard to the loss function $$L$$. In
 the case of dependency parsing, $$L$$ is the number of words in the
 dependency tree with incorrect parent words compared to the correct
 tree. After $$N$$ iterations, the intermediate weights stored in
-$$\vect{v}$$ are averaged, which has been shown to decrease the risk of
+$$\textbf{v}$$ are averaged, which has been shown to decrease the risk of
 the model overfitting to the training data (Collins, 2002).
 
 **Training data:** $$\tau = \{ (x_t, y_t) \}^T_{t=1}$$ min
-$$|| \vect{w}^{(i+1)} - \vect{w}^{(i)} ||$$ s.t.
+$$|| \textbf{w}^{(i+1)} - \textbf{w}^{(i)} ||$$ s.t.
 $$s(x_t, y_t) - s(x_t, y') \geq L(y_t, y'), \forall y' \in dt(x_t) $$
 
 #### Decoding: Projective and non-projective trees
@@ -276,58 +276,57 @@ research in this area assumes perfectly-formed input; Levy (2008)
 proposes a noisy-channel based model of human sentence comprehension
 that can account for some of the outstanding problems in sentence
 processing. The model uses a generative probabilistic grammar. In the
-standard case that the input string $$\vect{w}$$ is fully known, the
-grammar $$G$$ can be used to find the best parse $$T$$ for $$\vect{w}$$ using
+standard case that the input string $$\textbf{w}$$ is fully known, the
+grammar $$G$$ can be used to find the best parse $$T$$ for $$\textbf{w}$$ using
 
 $$\begin{aligned}
-  \text{argmax}_T \mathrm{P}_G(T|\vect{w})\end{aligned}$$
+  \text{argmax}_T \mathrm{P}_G(T|\textbf{w})\end{aligned}$$
 
 However, in the case that the input string is not known, the formulation
 changes to the following: Given some noisy evidence $$I$$ and using the
-Bayes’ rule to find the posterior for $$\mathrm{P}_G(T|\vect{w})$$ and
+Bayes’ rule to find the posterior for $$\mathrm{P}_G(T|\textbf{w})$$ and
 $$\mathrm{P}_G(T|I)$$:
 
-$$\begin{aligned}
-  \mathrm{P}_G(T|I) &= \frac{ p(T,I) }{ p(I) } \\
-  &\propto \sum_{ \vect{w} } p(I|T,\vect{w}) p(\vect{w}|T) p(T) \label{levyI}\end{aligned}$$
+$$  \mathrm{P}_G(T|I) &= \frac{ p(T,I) }{ p(I) } \\
+  \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T) $$
 
 While not directly applying this model to parsing, Levy (2008) performs
 a psycholinguistics experiment in which he assumes a noisy environment
 distorting an original utterance. A comprehender is presented a sentence
-$$\vect{w}^*$$, which is known by the researchers. However, the specific
+$$\textbf{w}^*$$, which is known by the researchers. However, the specific
 noisy representation $$I$$ of this sentence is not known. Based on the
 formula in ([levyI]), for the probability of the comprehender’s
-understood sentence $$\vect{w}$$, we have:
+understood sentence $$\textbf{w}$$, we have:
 
-$$\begin{aligned}
-  \mathrm{P}_G(\vect{w}|I) &\propto \sum_{ \vect{w} } p(I|T,\vect{w}) p(\vect{w}|T) p(T)\end{aligned}$$
+$$
+  \mathrm{P}_G(\textbf{w}|I) &\propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T)$$
 
 In the controlled experiment of Levy (2008), the relevant probability
-distribution is $$ p(\vect{w}|\vect{w}^*)$$, which is given as
+distribution is $$ p(\textbf{w}|\textbf{w}^*)$$, which is given as
 
 $$\begin{aligned}
-  p(\vect{w}|\vect{w}^*) &= \int_{ I } \mathrm{P}_C(\vect{w}|I,\vect{w}^*) \mathrm{P}_T(I|\vect{w}^*)  \dif I\label{levyII}\end{aligned}$$
+  p(\textbf{w}|\textbf{w}^*) &= \int_{ I } \mathrm{P}_C(\textbf{w}|I,\textbf{w}^*) \mathrm{P}_T(I|\textbf{w}^*)  df I\end{aligned}$$
 
-Then, since the comprehender does not know $$\vect{w}^*$$, it is assumed
-that $$\vect{w}^*$$ and $$\vect{w}$$ are conditionally independent. Applying
-Bayes’ rule to [levyII], the following formulation is proposed
+Then, since the comprehender does not know $$\textbf{w}^*$$, it is assumed
+that $$\textbf{w}^*$$ and $$\textbf{w}$$ are conditionally independent. Applying
+Bayes’ rule to (2), the following formulation is proposed
 ($$\mathrm{P}_C$$ is the probability distribution of the comprehender):
 
 $$\begin{aligned}
-  p(\vect{w}|\vect{w}^*) &= \int_{ I } \frac{ \mathrm{P}_C(I|\vect{w}) \mathrm{P}_C(\vect{w}) }{ \mathrm{P}_C(I) }  \mathrm{P}_T(I|\vect{w}^*) \dif I \\
-   &= \mathrm{P}_C(\vect{w}) \int_{ I } \frac{ \mathrm{P}_C(I|\vect{w}) \mathrm{P}_T(I|\vect{w}^*) }{ \mathrm{P}_C(I) } \dif I\label{levyIII} \\
-   &\propto \mathrm{P}_C(\vect{w}) Q(\vect{w}, \vect{w}^*)\label{levyIV}\end{aligned}$$
+  p(\textbf{w}|\textbf{w}^*) &= \int_{ I } \frac{ \mathrm{P}_C(I|\textbf{w}) \mathrm{P}_C(\textbf{w}) }{ \mathrm{P}_C(I) }  \mathrm{P}_T(I|\textbf{w}^*) df I \\
+   &= \mathrm{P}_C(\textbf{w}) \int_{ I } \frac{ \mathrm{P}_C(I|\textbf{w}) \mathrm{P}_T(I|\textbf{w}^*) }{ \mathrm{P}_C(I) } df I \\
+   &\propto \mathrm{P}_C(\textbf{w}) Q(\textbf{w}, \textbf{w}^*)\end{aligned}$$
 
-$$Q(\vect{w}, \vect{w}^*)$$ in ([levyIV]) is proportional to the integral
-in ([levyIII]) and given some of the experiment’s assumptions; it is a
-symmetric, non-negative function of $$\vect{w}$$ and $$\vect{w}^*$$. In the
-rest of the paper, $$Q(\vect{w}, \vect{w}^*)$$ is implemented as a simple
+$$Q(\textbf{w}, \textbf{w}^*)$$ in ([levyIV]) is proportional to the integral
+in (3) and given some of the experiment’s assumptions; it is a
+symmetric, non-negative function of $$\textbf{w}$$ and $$\textbf{w}^*$$. In the
+rest of the paper, $$Q(\textbf{w}, \textbf{w}^*)$$ is implemented as a simple
 Levensthein distance measure calculated via a token-based finite-state
 automaton.
 
 One of the arguments that is presented as supporting this model comes
 from a simple prediction the model makes: the prior knowledge
-$$\mathrm{P}_C(\vect{w})$$ of the comprehender can overwrite the actual
+$$\mathrm{P}_C(\textbf{w})$$ of the comprehender can overwrite the actual
 linguistic input. Hence, a sentence can be interpreted as meaning
 something else than it was originally expressed to mean. This is a
 necessary requirement of such a model: A human copy editor, for example,
@@ -343,7 +342,7 @@ a. While the man hunted the deer ran into the woods.
 b. While the man hunted it the deer ran into the woods.
 
 In this case, both sentences are grammatical sentences. For the sentence
-in [ex:gardenpath], there is a grammatical reading; however, it is
+in *a.*, there is a grammatical reading; however, it is
 ambiguous whether *the deer* is the object of the verb *hunted*, or the
 subject of the verb *ran*. In the case that it is read as the object of
 *hunted*, the *ran* will miss a subject, and the comprehender would
@@ -352,9 +351,9 @@ which participants are given this sentence have shown that a large
 number of participants initially perceive *the deer* as the object of
 *hunted*. Non-noisy models of sentence processing would not predict
 this; however, it can be explained by the noisy model that can assume an
-underlying sentence such as the sentence in [ex:nogardenpath].
+underlying sentence such as the sentence in *b.*.
 
-Note the similarity of the final model in ([levyIV]) to well-established
+Note the similarity of the final model in () to well-established
 noisy-channel methods for spelling correction, such as Kernighan et al.
 (1990), where a correction $$c$$ for a text $$t$$ is found by maximizing
 $$p(c) p(t|c)$$.
