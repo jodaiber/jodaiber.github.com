@@ -12,6 +12,13 @@ Previously, I was a Master's student in the [EM LCT](http://lct-master.org) prog
 
 During my undergraduate studies at Freie Universität Berlin, I worked in the [META-NET](http://www.meta-net.eu) project at the German Research Center for Artifical Intelligence.
 
+Research interests
+-------------------------
+
+- [Statistical machine translation](smt)
+- [Multilingual entity linking](entity-linking)
+- [Dependency parsing](dependency-parsing)
+
 Connect
 -------
 
