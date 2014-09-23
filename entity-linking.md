@@ -34,7 +34,8 @@ If you use this data in your research, please cite the following paper:
 ## Data format
 
 - URIs are encoded in DBpedia format **but** redirects are not yet resolved. To do this, you can use the class [WikipediaToDBpediaClosure](https://github.com/dbpedia-spotlight/dbpedia-spotlight/blob/master/index/src/main/scala/org/dbpedia/spotlight/db/WikipediaToDBpediaClosure.scala), as used in `CreateSpotlightModel.scala`:
-```scala
+
+```
   val wikipediaToDBpediaClosure = new WikipediaToDBpediaClosure(
     namespace,
     new FileInputStream(new File(rawDataFolder, "redirects.nt")),
