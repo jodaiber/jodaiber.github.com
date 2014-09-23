@@ -172,14 +172,16 @@ margin: 0 auto;
 			font-family: Consolas,"Courier New",monospace;
 			white-space: nowrap;
 			padding: 3px 0 1px 0;
-			font-weight: bold;
+			/* font-weight: bold; */
 			border: 0 solid #ba9e88;
-			background: #decdc0;
+			/* background: #decdc0; */
 			word-wrap: initial;
 			overflow-x: hidden;
 			width: 200px;
 			white-space: pre;
-		}
+		
+			color: #333;
+}
 		h3 {
 			margin: 2em 0 0.3em 0;
 			font-size: 100%;
