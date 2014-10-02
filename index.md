@@ -15,9 +15,10 @@ During my undergraduate studies at Freie Universität Berlin, I worked in the [M
 Research interests
 -------------------------
 
-- [Statistical machine translation](smt)
-- [Multilingual entity linking](entity-linking)
-- [Dependency parsing](dependency-parsing)
+- **Statistical machine translation** <span style="width: 0.2em; display: inline-block;" ></span> My current work focuses on linguistically-informed statistical models for Machine Translation. I also wrote large parts of a [translation memory application for movie subtitles](https://github.com/runn1ng/FilmTit) (Scala).
+- **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am interested in robust models of parsing, with a focus on dependency parsing.
+- **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I am interested in fast and accurate multilingual models for entity linking. See code and software [here](entity-linking).
+
 
 Connect
 -------
@@ -25,11 +26,14 @@ Connect
 -   [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a), [Facebook](https://facebook.com/jodaiber)
 -   Email: daiber.joachim [at] gmail.com.
 
+<!--
 Code & Data
 -----------
 
 -   I created an efficient and more accurate version of the multilingual entity linking system [DBpedia Spotlight](https://github.com/dbpedia-spotlight/dbpedia-spotlight) [Scala]
 -   I wrote large parts of a [translation memory for movie subtitles](https://github.com/runn1ng/FilmTit) [Scala]
+
+-->
 
 Selected publications
 ---------------------
@@ -38,14 +42,28 @@ Selected publications
 
 -   Mendes, P.N., **Daiber, J.**, Rajapakse, R., Sasaki, F., Bizer, C. [Evaluating the Impact of Phrase Recognition on Concept Tagging.](papers/LREC2012.pdf) Proceedings of the International Conference on Language Resources and Evaluation, LREC 2012. 21-27 May 2012. Istanbul, Turkey.
 
+
+	{% for post in site.posts %}
+
+{% if forloop.first %}
+
 Blog Posts
 ----------
 
 <ul class="posts">
-	{% for post in site.posts %}
+
+{% endif %}
+
 	<li><span>{{ post.date | date_to_string }}</span> <span class="seperator">~</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
+ 
+{% if forloop.last %}
+
 </ul>
+
+{% endif %}
+
+{% endfor %}
+
 
 Personal
 --------

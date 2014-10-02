@@ -14,7 +14,7 @@ I created an efficient and more accurate version of the multilingual entity link
 
 ## Raw data
 
-* **[Download the raw data here](http://spotlight.sztaki.hu/downloads/raw/)**
+**[Download the raw data here](http://spotlight.sztaki.hu/downloads/raw/)**
 
 We provide the raw data that is used to create entity extraction models in various languages. This data is the result of running pignlproc on the latest Wikipedia dumps.
 
