@@ -1,3 +1,9 @@
+---
+layout: default
+title: Dependency parsing
+---
+
+
 Dependency parsing
 ==================
 
