@@ -12,6 +12,8 @@ Previously, I was a Master's student in the [EM LCT](http://lct-master.org) prog
 
 During my undergraduate studies at Freie Universität Berlin, I worked in the [META-NET](http://www.meta-net.eu) project at the German Research Center for Artifical Intelligence.
 
+My office hours are Tuesdays 2pm-3pm in room F 1.22 at the ILLC.
+
 Research interests
 -------------------------
 
