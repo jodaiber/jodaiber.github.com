@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Still I Rise by Maya Angelou
-category: Misc
+category: Poem
 ---
 
 You may write me down in history
