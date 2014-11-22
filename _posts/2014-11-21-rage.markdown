@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Do not go gentle into that good night by Dylan Thomas
-category: Misc
+category: Poem
 ---
 
 Do not go gentle into that good night,
