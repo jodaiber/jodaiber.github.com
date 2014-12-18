@@ -21,6 +21,13 @@ Research interests
 - **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am interested in robust models of parsing, with a focus on dependency parsing.
 - **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I am interested in fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
 
+Teaching
+--------
+
+- TA for [Natural language processing 1 (Prof Ivan Titov)](http://ivan-titov.org/teaching/nlp1-14/index.html)
+- TA for [Statistical Structure in NLP (Prof Khalil Sima'an)](https://staff.fnwi.uva.nl/k.simaan/D-Courses2013/D-SSNLP2013/StatisticalStructureinNLP.html)
+
+
 
 Connect
 -------
