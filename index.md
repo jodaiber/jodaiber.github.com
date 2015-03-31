@@ -24,8 +24,9 @@ Research interests
 Teaching
 --------
 
+- Spring 2015: Natural Language Processing 2 (Prof Khalil Sima'an)
 - Fall 2014: [Natural Language Processing 1 (Prof Ivan Titov)](http://ivan-titov.org/teaching/nlp1-14/index.html)
-- Spring 2014: [Statistical Structure in NLP (Prof Khalil Sima'an)](https://staff.fnwi.uva.nl/k.simaan/D-Courses2013/D-SSNLP2013/StatisticalStructureinNLP.html)
+- Spring 2014: [Natural Language Processing 2 (Prof Khalil Sima'an)](https://staff.fnwi.uva.nl/k.simaan/D-Courses2013/D-SSNLP2013/StatisticalStructureinNLP.html)
 
 
 
