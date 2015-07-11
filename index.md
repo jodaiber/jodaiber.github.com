@@ -49,6 +49,8 @@ Code & Data
 Selected publications ([Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ&hl=nl))
 ---------------------
 
+- **Daiber, J.**. [On Using Syntactic Preordering Models to Delimit Morphosyntactic Search Space.](http://expert-itn.eu/sites/default/files/outputs/proc_of_the_expert_scientific_and_technological_workshop.pdf#page=109) Proceedings of the EXPERT Scientific and Technological Workshop. June 2015. Malaga, Spain.
+
 -   **Daiber, J.** and Jakob, M. and Hokamp, C. and Mendes, P.N. [Improving Efficiency and Accuracy in Multilingual Entity Extraction.](http://jodaiber.de/doc/entity.pdf) Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.
 
 -   Mendes, P.N., **Daiber, J.**, Rajapakse, R., Sasaki, F., Bizer, C. [Evaluating the Impact of Phrase Recognition on Concept Tagging.](papers/LREC2012.pdf) Proceedings of the International Conference on Language Resources and Evaluation, LREC 2012. 21-27 May 2012. Istanbul, Turkey.
