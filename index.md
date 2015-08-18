@@ -49,6 +49,8 @@ Code & Data
 Selected publications
 ---------------------
 -  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](#) Proceedings of MT Summit XV. 2015. Miami, USA. *(to appear)*
+-   **Daiber, J.**, Quiroz, L., Wechsler, R. and Frank, S. [Splitting Compounds by Semantic Analogy.](#) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic.
+-   **Daiber, J.** and Sima'an, K. [Delimiting Morphosyntactic Search Space with Source-Side Reordering Models.](#) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic.
 -   **Daiber, J.** and Jakob, M. and Hokamp, C. and Mendes, P.N. [Improving Efficiency and Accuracy in Multilingual Entity Extraction.](http://jodaiber.de/doc/entity.pdf) Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.
 -   Mendes, P.N., **Daiber, J.**, Rajapakse, R., Sasaki, F., Bizer, C. [Evaluating the Impact of Phrase Recognition on Concept Tagging.](papers/LREC2012.pdf) Proceedings of the International Conference on Language Resources and Evaluation, LREC 2012. 21-27 May 2012. Istanbul, Turkey.
 - [More on Google Scholar...](http://scholar.google.nl/citations?user=sApPUZUAAAAJ&hl=nl)
