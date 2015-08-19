@@ -18,8 +18,8 @@ Research interests
 -------------------------
 
 - **Statistical machine translation** <span style="width: 0.2em; display: inline-block;" ></span> My current work focuses on linguistically-informed statistical models for MT. I also wrote large parts of a [translation memory application for movie subtitles](https://github.com/runn1ng/FilmTit) (Scala).
-- **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am interested in robust models of parsing, with a focus on dependency parsing.
-- **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I am interested in fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
+- **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am also interested in robust models of parsing, with a focus on dependency parsing.
+- **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I have worked on fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
 
 Teaching
 --------
