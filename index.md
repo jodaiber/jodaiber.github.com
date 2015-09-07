@@ -25,6 +25,7 @@ Teaching
 --------
 
 - Fall 2015: Natural Language Processing 1 (Prof Ivan Titov)
+- Summer 2015: Profile Project AI-NLP (with Dr. Stella Frank)
 - Spring 2015: Natural Language Processing 2 (Prof Khalil Sima'an)
 - Fall 2014: [Natural Language Processing 1 (Prof Ivan Titov)](http://ivan-titov.org/teaching/nlp1-14/index.html)
 - Spring 2014: [Natural Language Processing 2 (Prof Khalil Sima'an)](https://staff.fnwi.uva.nl/k.simaan/D-Courses2013/D-SSNLP2013/StatisticalStructureinNLP.html)
