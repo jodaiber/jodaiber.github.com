@@ -6,7 +6,7 @@ title: Joachim Daiber
 About me
 --------
 
-I am a PhD student at [ILLC, University of Amsterdam](https://www.illc.uva.nl/), where I work with [Prof. Khalil Sima'an](https://staff.fnwi.uva.nl/k.simaan/).
+I am a PhD student in the [Statistical Language Processing and Learning Lab](https://staff.fnwi.uva.nl/k.simaan/research_all.html) at the [ILLC, University of Amsterdam](https://www.illc.uva.nl/), where I work with [Prof. Khalil Sima'an](https://staff.fnwi.uva.nl/k.simaan/).
 
 Previously, I was a Master's student in the [EM LCT](http://lct-master.org) programme in Computational Linguistics at Charles University in Prague and the University of Groningen. In my Master thesis, I worked on robust dependency parsing of noisy content with [Gertjan van Noord](http://www.let.rug.nl/vannoord/) and [Dan Zeman](http://ufal.mff.cuni.cz/daniel-zeman).
 
