@@ -3,12 +3,7 @@ layout: default
 title: The Denoised Web Treebank
 ---
 
-We introduce the \thistreebank: a treebank including a normalization layer and a corresponding evaluation metric for dependency parsing of noisy text, such as Tweets.
-This benchmark enables the
-evaluation of text normalization methods, including normalization as machine
-translation and unsupervised lexical normalization, directly on syntactic
-trees.
-
+We introduce the Denoised Web Treebank: a treebank including a normalization layer and a corresponding evaluation metric for dependency parsing of noisy text, such as Tweets. This benchmark enables the evaluation of text normalization methods, including normalization as machine translation and unsupervised lexical normalization, directly on syntactic trees.
 
 # Documentation
 
