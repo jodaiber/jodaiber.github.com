@@ -5,19 +5,19 @@ title: The Denoised Web Treebank
 
 We introduce the Denoised Web Treebank: a treebank including a normalization layer and a corresponding evaluation metric for dependency parsing of noisy text, such as Tweets. This benchmark enables the evaluation of text normalization methods, including normalization as machine translation and unsupervised lexical normalization, directly on syntactic trees.
 
-# Documentation
+## Documentation
 
 For more information and documentation, please see [my 2013 MSc thesis](http://jodaiber.github.io/doc/msc_thesis.pdf).
 
 
-# Data
+## Data
 
-## Download and License
+### Download and License
 
 Download the treebank [here](http://jodaiber.github.io/data/denoised_web_treebank.tar.gz).
 The treebank is licensed under Creative Commons (BY-NC-SA).
 
-## Contents
+### Contents
 
 The treebank cosists of the following files:
 
