@@ -14,11 +14,11 @@ For more information and documentation, please see [my 2013 Master thesis](http:
 
 Download the treebank [here](http://jodaiber.github.io/data/denoised_web_treebank.tar.gz).
 
-### License
+## License
 
 The treebank is licensed under Creative Commons (BY-NC-SA).
 
-### Contents
+## File contents
 
 The treebank cosists of the following files:
 
