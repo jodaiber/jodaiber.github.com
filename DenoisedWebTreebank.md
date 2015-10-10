@@ -12,9 +12,10 @@ For more information and documentation, please see [my 2013 Master thesis](http:
 
 ## Data
 
-### Download and License
-
 Download the treebank [here](http://jodaiber.github.io/data/denoised_web_treebank.tar.gz).
+
+### License
+
 The treebank is licensed under Creative Commons (BY-NC-SA).
 
 ### Contents
