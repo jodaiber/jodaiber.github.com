@@ -24,7 +24,7 @@ Research interests
 Resources
 ---------
 
-- [Semantic analogy-based compound splitter](https://github.com/jodaiber/semantic_compound_splitting): A unsupervised compound splitter based on the regularities in the vector space of word embeddings.
+- [Semantic analogy-based compound splitter](https://github.com/jodaiber/semantic_compound_splitting): An unsupervised compound splitter based on the regularities in the vector space of word embeddings.
 - [The Denoised Web Treebank](DenoisedWebTreebank): Dependency treebank for evaluation of parser robustness
 - [FilmTit](https://github.com/runn1ng/FilmTit): Translation memory application for movie subtitles
 - [DBpedia Spotlight](http://spotlight.dbpedia.org/): Entity linking system.
