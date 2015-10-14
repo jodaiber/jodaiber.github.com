@@ -21,14 +21,31 @@ Research interests
 - **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am also interested in robust models of parsing, with a focus on dependency parsing.
 - **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I have worked on fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
 
+Connect
+-------
+
+-   [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a), [Facebook](https://facebook.com/jodaiber)
+-   Email: daiber.joachim [at] gmail.com.
+
+
+Selected publications
+---------------------
+-  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](doc/mtsummit2015.pdf) Proceedings of MT Summit XV. 2015. Miami, USA.
+-   **Daiber, J.**, Quiroz, L., Wechsler, R. and Frank, S. [Splitting Compounds by Semantic Analogy.](doc/compound_analogy.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/compound_analogy_slides.pdf)]
+-   **Daiber, J.** and Sima'an, K. [Delimiting Morphosyntactic Search Space with Source-Side Reordering Models.](doc/preordering_spaces.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/preordering_spaces_slides.pdf)]
+-   **Daiber, J.** and Jakob, M. and Hokamp, C. and Mendes, P.N. [Improving Efficiency and Accuracy in Multilingual Entity Extraction.](doc/entity.pdf) Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.
+-   Mendes, P.N., **Daiber, J.**, Rajapakse, R., Sasaki, F., Bizer, C. [Evaluating the Impact of Phrase Recognition on Concept Tagging.](doc/LREC2012.pdf) Proceedings of the International Conference on Language Resources and Evaluation, LREC 2012. 21-27 May 2012. Istanbul, Turkey.
+- [More on Google Scholar...](http://scholar.google.nl/citations?user=sApPUZUAAAAJ&hl=nl)
+
 Resources
 ---------
 
 - [Semantic analogy-based compound splitter](https://github.com/jodaiber/semantic_compound_splitting): An unsupervised compound splitter based on the regularities in the vector space of word embeddings.
-- [The Denoised Web Treebank](DenoisedWebTreebank): Dependency treebank for evaluation of parser robustness
-- [FilmTit](https://github.com/runn1ng/FilmTit): Translation memory application for movie subtitles
-- [DBpedia Spotlight](http://spotlight.dbpedia.org/): Entity linking system.
+- [The Denoised Web Treebank](DenoisedWebTreebank): Dependency treebank for evaluation of parser robustness.
+- [FilmTit](https://github.com/runn1ng/FilmTit): Translation memory application for movie subtitles.
+- [DBpedia Spotlight](http://spotlight.dbpedia.org/): I created an efficient and more accurate version of the multilingual entity linking system DBpedia Spotlight.
 - [Raw Spotlight data](entity-linking): Raw counts for entity linking in many languages.
+
 
 
 Teaching
@@ -41,34 +58,9 @@ Teaching
 - Spring 2014: [Natural Language Processing 2 (Prof Khalil Sima'an)](https://staff.fnwi.uva.nl/k.simaan/D-Courses2013/D-SSNLP2013/StatisticalStructureinNLP.html)
 
 
-Connect
--------
-
--   [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a), [Facebook](https://facebook.com/jodaiber)
--   Email: daiber.joachim [at] gmail.com.
-
-<!--
-Code & Data
------------
-
--   I created an efficient and more accurate version of the multilingual entity linking system [DBpedia Spotlight](https://github.com/dbpedia-spotlight/dbpedia-spotlight) [Scala]
--   I wrote large parts of a [translation memory for movie subtitles](https://github.com/runn1ng/FilmTit) [Scala]
-
--->
-
-Selected publications
----------------------
--  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](doc/mtsummit2015.pdf) Proceedings of MT Summit XV. 2015. Miami, USA.
--   **Daiber, J.**, Quiroz, L., Wechsler, R. and Frank, S. [Splitting Compounds by Semantic Analogy.](doc/compound_analogy.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/compound_analogy_slides.pdf)]
--   **Daiber, J.** and Sima'an, K. [Delimiting Morphosyntactic Search Space with Source-Side Reordering Models.](doc/preordering_spaces.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/preordering_spaces_slides.pdf)]
--   **Daiber, J.** and Jakob, M. and Hokamp, C. and Mendes, P.N. [Improving Efficiency and Accuracy in Multilingual Entity Extraction.](doc/entity.pdf) Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.
--   Mendes, P.N., **Daiber, J.**, Rajapakse, R., Sasaki, F., Bizer, C. [Evaluating the Impact of Phrase Recognition on Concept Tagging.](doc/LREC2012.pdf) Proceedings of the International Conference on Language Resources and Evaluation, LREC 2012. 21-27 May 2012. Istanbul, Turkey.
-- [More on Google Scholar...](http://scholar.google.nl/citations?user=sApPUZUAAAAJ&hl=nl)
-
-	{% for post in site.posts %}
+{% for post in site.posts %}
 
 {% if forloop.first %}
-
 Blog Posts
 ----------
 
