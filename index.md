@@ -12,7 +12,7 @@ Previously, I was a Master's student in the [EM LCT](http://lct-master.org) prog
 
 During my undergraduate studies at Freie Universität Berlin, I worked in the [META-NET](http://www.meta-net.eu) project at the German Research Center for Artifical Intelligence.
 
-My office hours are Tuesdays 2pm-3pm in room F 1.22 at the ILLC.
+Connect at [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a),  [Facebook](https://facebook.com/jodaiber) or write an email to daiber.joachim [at] gmail.com.
 
 Research interests
 -------------------------
@@ -20,12 +20,6 @@ Research interests
 - **Statistical machine translation** <span style="width: 0.2em; display: inline-block;" ></span> My current work focuses on linguistically-informed statistical models for MT. I also wrote large parts of a [translation memory application for movie subtitles](https://github.com/runn1ng/FilmTit) (Scala).
 - **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am also interested in robust models of parsing, with a focus on dependency parsing.
 - **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I have worked on fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
-
-Connect
--------
-
--   [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a), [Facebook](https://facebook.com/jodaiber)
--   Email: daiber.joachim [at] gmail.com.
 
 
 Selected publications
