@@ -21,6 +21,15 @@ Research interests
 - **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am also interested in robust models of parsing, with a focus on dependency parsing.
 - **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I have worked on fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
 
+Resources
+---------
+
+- [Semantic analogy-based compound splitter](https://github.com/jodaiber/semantic_compound_splitting): A unsupervised compound splitter based on the regularities in the vector space of word embeddings.
+- [The Denoised Web Treebank](DenoisedWebTreebank): Dependency treebank for evaluation of parser robustness
+- [FilmTit](https://github.com/runn1ng/FilmTit): Translation memory application for movie subtitles
+- [DBpedia Spotlight](http://spotlight.dbpedia.org/): Entity linking system.
+
+
 Teaching
 --------
 
@@ -29,7 +38,6 @@ Teaching
 - Spring 2015: Natural Language Processing 2 (Prof Khalil Sima'an)
 - Fall 2014: [Natural Language Processing 1 (Prof Ivan Titov)](http://ivan-titov.org/teaching/nlp1-14/index.html)
 - Spring 2014: [Natural Language Processing 2 (Prof Khalil Sima'an)](https://staff.fnwi.uva.nl/k.simaan/D-Courses2013/D-SSNLP2013/StatisticalStructureinNLP.html)
-
 
 
 Connect
