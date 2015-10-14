@@ -28,6 +28,7 @@ Resources
 - [The Denoised Web Treebank](DenoisedWebTreebank): Dependency treebank for evaluation of parser robustness
 - [FilmTit](https://github.com/runn1ng/FilmTit): Translation memory application for movie subtitles
 - [DBpedia Spotlight](http://spotlight.dbpedia.org/): Entity linking system.
+- [Raw Spotlight data](entity-linking): Raw counts for entity linking in many languages.
 
 
 Teaching
