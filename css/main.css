@@ -79,19 +79,19 @@ html,body {
 
 		}
 		.sidebar, #spacer {
-			width: 35%;
-			min-width: 340px;
+			width: 30%;
+			min-width: 300px;
 			max-width: 480px;
 		}
 		#spacer {
 			display: inline-block;
-			height: 0px;
+			height: 0;
 		}
 
 		.content {
 			display: inline-block;
-			max-width: 620px;
-			min-width: 10px;
+			max-width: 680px;
+			min-width: 60px;
 			margin-left: 25px;
 			margin-right: 20px;
 			padding-bottom: 40px;
