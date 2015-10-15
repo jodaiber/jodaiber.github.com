@@ -61,8 +61,10 @@ html,body {
 
 			background: none;
 			width: auto;
+			height: 100%;
+			line-height: 100%;
 			
-			color: #3d3935;
+			color: #fff;
 			text-decoration: none;
 
 			text-transform: uppercase;
@@ -71,12 +73,15 @@ html,body {
 			font-family: "Minion Web", "Georgia", serif;
 
 			font-size: 150%;
+			vertical-align: bottom;
 		}
 		.sidebar #prague:hover span {
-			
-			display: block;
-			background: rgba(230, 230, 230, 0.6);
-
+			display: block; 
+			vertical-align: bottom;
+			background: rgba(0, 0, 0, 0.2);
+		}
+		.sidebar #prague:hover {
+			border-right: 4px solid rgba(0, 0, 0, 0.4);
 		}
 		.sidebar, #spacer {
 			width: 30%;
