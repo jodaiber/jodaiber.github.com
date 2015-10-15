@@ -80,6 +80,7 @@ html,body {
 		}
 		.sidebar, #spacer {
 			width: 35%;
+			min-width: 340px;
 			max-width: 480px;
 		}
 		#spacer {
@@ -89,10 +90,10 @@ html,body {
 
 		.content {
 			display: inline-block;
-			max-width: 540px;
+			max-width: 620px;
 			min-width: 10px;
 			margin-left: 25px;
-			margin-right: 25px;
+			margin-right: 20px;
 			padding-bottom: 40px;
 		}
 
@@ -105,27 +106,14 @@ html,body {
 			text-transform: uppercase;
 			margin: 2em 0 0 0;
 			color: #444;
-			font-size: 11pt;
+			font-size: 120%;
 			font-weight: normal;
 			border-bottom: 1px solid #ddd;	
 			
-			line-height: 21px;
+			line-height: 130%;
 			vertical-align: baseline;
-			-webkit-border-top-left-radius: 12px;
-			-moz-border-radius-topleft: 12px;
-			border-top-left-radius: 12px;
-			margin-bottom: 10px;
-
-			/*
-						padding: 2px 0 0px 21px;
-
-						width: 596px;
-			position: relative;
-			left: -13px;
-
-			background: #eee;
-
-			*/
+			
+			margin-bottom: 1em;
 		}
 
 			
@@ -159,20 +147,10 @@ html,body {
 		pre {
 			overflow-x: auto;
 		}
-		code {
-			font-family: Consolas,"Courier New",monospace;
-			white-space: nowrap;
-			padding: 3px 0 1px 0;
-			/* font-weight: bold; */
-			border: 0 solid #ba9e88;
-			/* background: #decdc0; */
-			word-wrap: initial;
-			overflow-x: hidden;
-			width: 200px;
-			white-space: pre;
-		
-			color: #333;
-}
+		pre code {
+			display: inline-block;
+			padding: 0.4em;
+		}
 		h3 {
 			margin: 2em 0 0.4em 0;
 			font-size: 100%;
@@ -221,16 +199,10 @@ html,body {
 		
 		a {
 		}
-		#footer {
-			text-align: center;
-			font-size: 10pt;
-			color: #fff;
-			text-shadow: 1px 1px 0px #000;
-			margin: 0.5em 0 2em 0;
-		}
+
 	#instafeed {
 		line-height: 0px;
-		width: 440px;
+		max-width: 440px;
 	}
 
 		#instafeed img {
@@ -263,7 +235,7 @@ html,body {
 
 	}
 
-	@media (max-width: 910px) {
+	@media (max-width: 1000px) {
 		@media (max-height: 700px) {
 		.sidebar #prague {
 	    	min-height: 0;
@@ -284,7 +256,7 @@ html,body {
 
 			}
 			.content {
-				max-width: 700px;
+				max-width: 1000px;
 			}
 
 			#layout {
@@ -304,7 +276,7 @@ html,body {
 
     }
     .sidebar #prague {
-    	height: 146px;
+    	height: 150px;
     	width: 100%;
     	max-width: 100%;
     	
