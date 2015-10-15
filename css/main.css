@@ -99,8 +99,7 @@ html,body {
 
 		
 		h1, h2 {
-			margin: 0;
-			padding: 0;
+
 		}
 		h2 {
 			text-transform: uppercase;
@@ -124,8 +123,6 @@ html,body {
 		h1 {
 			clear: none;
 			display: inline-block;
-			margin: 0;
-			padding: 0;
 			
 			/*color: white;
 			
@@ -155,9 +152,9 @@ html,body {
 			margin: 2em 0 0.4em 0;
 			font-size: 100%;
 			color: #666;
-		
+			font-weight: bold;
 			/* text-transform: capitalize; */
-}
+		}
 		
 		#dict-def {
 			margin-top: 10px;
