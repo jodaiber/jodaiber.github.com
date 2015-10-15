@@ -3,7 +3,7 @@
 		}
 		body {
 			
-			margin: 0;
+			margin: 0 0 0 0;
 			padding: 0;
 			
 		}
@@ -13,30 +13,15 @@ html,body {
 		}
 
 		#layout{
-			position: absolute;
-			left: 35%;
-/*			clear: left;
-			padding: 15px 0 1em 0;
-			width: 850px;
-			background: white;
-margin: 0 auto;
-*/
+			position: relative;
 			height: 100%;
-			width: 50%;
-
-
 		}
 		.sidebar {
 			display: block;
-			border-right: 1px solid #999;
-
 
 			background: #f9f9f9;
 
-			width: 35%;
-			
 			text-align: right;
-
 
 			min-height: 100%;
 			overflow: hidden;
@@ -44,27 +29,30 @@ margin: 0 auto;
 		    position: fixed;
 		    top: 0;
 		    bottom: 0;
-		    width: 35%;
-		    margin-left: -35%;
-			padding-right: 0px;
-
-
+		    float: left;
 		}
 		.sidebar #prague {
+
 			margin-right: 1px;
 			padding-right: 0px;
-			margin-top: 40px;
-			width: 350px;
-			height: 691px;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
-			overflow: hidden;
-			max-width: none;
+			margin-top: 0;
+
+			width: 100%;
+			height: 100%;
+
 			display: inline-block;
-			background: transparent url(http://jodaiber.de/prague2.jpg) -270px bottom no-repeat;
-			
+			background: transparent url(../images/prague3.jpg) center bottom no-repeat;
+			background-size: auto 100%;
+
 			text-decoration: none;
 			text-align: right;
+
+			padding: 0;
+
+			margin-left: -4px;
+			border-right: 4px solid rgba(230, 230, 230, 0.6);
+
+		    float: left;
 		}
 
 		.sidebar #prague span {
@@ -83,25 +71,27 @@ margin: 0 auto;
 			font-family: "Minion Web", "Georgia", serif;
 
 			font-size: 150%;
-
 		}
 		.sidebar #prague:hover span {
 			
 			display: block;
-			background: rgba(255, 255, 255, 0.7);
+			background: rgba(230, 230, 230, 0.6);
 
 		}
-
+		.sidebar, #spacer {
+			width: 35%;
+			max-width: 480px;
+		}
+		#spacer {
+			display: inline-block;
+		}
 
 		.content {
-			
 			display: inline-block;
-			max-width: 480px;
+			max-width: 540px;
 			min-width: 10px;
-
-			clear: none;
 			margin-left: 25px;
-
+			margin-right: 25px;
 			padding-bottom: 40px;
 		}
 
@@ -268,63 +258,65 @@ margin: 0 auto;
 	    	margin: 0;
 			margin-right: 1px;
 	    	padding: 0;
+	    	min-height: 500px;
 
-	    	-webkit-border-top-left-radius: 0;
-			-moz-border-radius-topleft: 0;
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-			border-left: 1px solid #999;
 			max-height: 100%;
+
+			background-size: auto 100%;
+
 		}
 		.sidebar {
 			
 		}
+		.content {
+			max-width: 700px;
+		}
 	}
 
-		@media (max-width: 950px) {
-		.sidebar #prague {
-		    	border: 0;
-	    	margin: 0;
-			margin-right: 1px;
-	    	padding: 0;
+	@media (max-width: 850px) {
+			.sidebar #prague {
+			    border: 0;
+		    	margin: 0;
+				margin-right: 1px;
+		    	padding: 0;
 
-	    	-webkit-border-top-left-radius: 0;
-			-moz-border-radius-topleft: 0;
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-			border-left: 1px solid #999;
-			max-height: 100%;
+		    	width: 100%;
+		    	
+				max-height: 100%;
 
-		}
-		}
+			}
+			.content {
+				max-width: 700px;
+			}
 
-		@media (max-width: 700px) {
 			#layout {
 				width: 100%;
 			}
     .sidebar {
     	height: 150px;
     	min-height: 150px;
-
+    	max-width: 100%;
         width: 100%;
+
         position: relative;
-        margin: 0;
-        padding: 0;
+        padding: 0 0 0 0;
         overflow: hidden;
        	border: 0;
-        border-bottom: 1px solid #999;
+    	background: black url(../images/prague3.jpg) bottom center no-repeat;
+
     }
     .sidebar #prague {
-    	height: 150px;
+    	height: 146px;
     	width: 100%;
-    	border: 0;
+    	max-width: 100%;
+    	
     	margin: 0;
     	padding: 0;
-    	-webkit-border-top-left-radius: 0;
-		-moz-border-radius-topleft: 0;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-    	background: black url(http://jodaiber.de/prague2.jpg) bottom center no-repeat;
+    	
+		background-size: 100% auto;
+
+		margin-top: 0;
+    	border-bottom: 4px solid rgba(230, 230, 230, 0.6);
     }
 
     .content {
@@ -359,6 +351,3 @@ margin: 0 auto;
     }
 }
 
-@media (max-width: 480px) {
-
-}
