@@ -4,3 +4,11 @@ _site
 *.swp
 .idea
 *.iml
+
+Gemfile
+
+*.lock
+
+images/prague_huge.jpg
+
+*.psd
