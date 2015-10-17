@@ -275,6 +275,7 @@ html,body {
         overflow: hidden;
        	border: 0;
     	background: black url(../images/prague3.jpg) bottom center no-repeat;
+    	background-size: 150% auto;
 
     }
     .sidebar #prague {
