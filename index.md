@@ -24,7 +24,7 @@ Research interests
 
 Selected publications
 ---------------------
--  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](doc/mtsummit2015.pdf) Proceedings of MT Summit XV. 2015. Miami, USA. [[Poster](doc/mtsummit2015_poster.pdf)]
+-  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](doc/mtsummit2015.pdf) Proceedings of MT Summit XV. 2015. Miami, USA. [[Poster](doc/mtsummit2015_poster.pdf), [Slides](doc/clin2015_slides.pdf)]
 -   **Daiber, J.**, Quiroz, L., Wechsler, R. and Frank, S. [Splitting Compounds by Semantic Analogy.](doc/compound_analogy.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/compound_analogy_slides.pdf)]
 -   **Daiber, J.** and Sima'an, K. [Delimiting Morphosyntactic Search Space with Source-Side Reordering Models.](doc/preordering_spaces.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/preordering_spaces_slides.pdf)]
 -   **Daiber, J.** and Jakob, M. and Hokamp, C. and Mendes, P.N. [Improving Efficiency and Accuracy in Multilingual Entity Extraction.](doc/entity.pdf) Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.
