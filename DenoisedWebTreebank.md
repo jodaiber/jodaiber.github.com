@@ -14,6 +14,10 @@ For more information and documentation, please see [my 2013 Master thesis](http:
 
 Download the treebank [here](http://jodaiber.github.io/data/denoised_web_treebank.tar.gz).
 
+## Source code
+
+All source code used in this paper is available under Apache 2.0 license on [Github: jodaiber/ithaka](https://github.com/jodaiber/ithaka).
+
 ## License
 
 The treebank is licensed under Creative Commons (BY-NC-SA).
