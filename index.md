@@ -52,6 +52,7 @@ Teaching and service to profession
 - Spring 2014: Natural Language Processing 2 (Prof Khalil Sima'an)
 
 Reviewed for:
+
 - International Journal of Cooperative Information Systems (IJCIS)
 
 {% for post in site.posts %}
