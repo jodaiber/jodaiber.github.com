@@ -42,9 +42,8 @@ Resources
 - [Raw Spotlight data](entity-linking): Raw counts for entity linking in many languages.
 
 
-
-Teaching
---------
+Teaching and service to profession
+----------------------------------
 
 - Fall 2015: Natural Language Processing 1 (Prof Ivan Titov)
 - Summer 2015: Profile Project AI-NLP (with Dr. Stella Frank)
@@ -52,6 +51,8 @@ Teaching
 - Fall 2014: Natural Language Processing 1 (Prof Ivan Titov)
 - Spring 2014: Natural Language Processing 2 (Prof Khalil Sima'an)
 
+Reviewed for:
+- International Journal of Cooperative Information Systems (IJCIS)
 
 {% for post in site.posts %}
 
