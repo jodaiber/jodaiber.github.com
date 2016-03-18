@@ -44,6 +44,7 @@ Resources
 Teaching and service to profession
 ----------------------------------
 
+- Spring 2016: Natural Language Processing 2 (Prof Khalil Sima'an)
 - Fall 2015: Natural Language Processing 1 (Prof Ivan Titov)
 - Summer 2015: Profile Project AI-NLP (with Dr. Stella Frank)
 - Spring 2015: Natural Language Processing 2 (Prof Khalil Sima'an)
