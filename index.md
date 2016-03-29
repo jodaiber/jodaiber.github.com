@@ -54,6 +54,7 @@ Teaching and service to profession
 Reviewed for:
 
 - International Journal of Cooperative Information Systems (IJCIS)
+- NAACL 2016 Workshop on Discontinuous Structures in Natural Language Processing
 
 {% for post in site.posts %}
 
