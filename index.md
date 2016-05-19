@@ -24,7 +24,7 @@ Research interests
 
 Selected publications
 ---------------------
--  **Daiber, J.** and van der Goot, R. [The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions.](doc/denoised_web_treebank.pdf) Proceedings of LREC 2016. Portorož, Slovenia. [[Data+code](DenoisedWebTreebank)]
+-  **Daiber, J.** and van der Goot, R. [The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions.](doc/denoised_web_treebank.pdf) Proceedings of LREC 2016. Portorož, Slovenia. [[Poster](doc/lrec2016_poster.pdf), [Data+code](DenoisedWebTreebank)]
 -  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](doc/mtsummit2015.pdf) Proceedings of MT Summit XV. 2015. Miami, USA. [[Poster](doc/mtsummit2015_poster.pdf), [Slides](doc/clin2015_slides.pdf)]
 -   **Daiber, J.**, Quiroz, L., Wechsler, R. and Frank, S. [Splitting Compounds by Semantic Analogy.](doc/compound_analogy.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/compound_analogy_slides.pdf)]
 -   **Daiber, J.** and Sima'an, K. [Delimiting Morphosyntactic Search Space with Source-Side Reordering Models.](doc/preordering_spaces.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/preordering_spaces_slides.pdf)]
