@@ -83,7 +83,6 @@ Personal
     var feed = new Instafeed({
 		get: 'user',
 		userId: 601088313,
-    clientId: '871dc07542884adf9aa3b1d62e27a0bd',
     accessToken: '601088313.871dc07.bb1a384477cf419b96948c783fdb5239',
 		link: 'true',
 		limit: '10'
