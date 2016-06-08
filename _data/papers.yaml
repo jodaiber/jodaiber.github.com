@@ -1,0 +1,151 @@
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: smt
+  year: 2016
+  title: Examining the Relationship between Preordering and Word Order Freedom in Machine Translation
+  authors: Daiber, J., Stanojević, M., Aziz, W. and Sima'an, K.
+  booktitle: ACL 2016 First Conference on Machine Translation (WMT16)
+  doc: #
+  venue: conference
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: parsing
+  year: 2016
+  title: "The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions"
+  authors: Daiber, J. and van der Goot, R.
+  booktitle: Proceedings of LREC 2016.
+  venue: conference
+  poster: /doc/lrec2016_poster.pdf
+  abstract: >
+    We introduce the Denoised Web Treebank: a treebank including a normalization layer and a corresponding evaluation metric for
+    dependency parsing of noisy text, such as Tweets. This benchmark enables the evaluation of parser robustness as well as text
+    normalization methods, including normalization as machine translation and unsupervised lexical normalization, directly on syntactic
+    trees. Experiments show that text normalization together with a combination of domain-specific and generic part-of-speech taggers can
+    lead to a significant improvement in parsing accuracy on this test set.
+  bibtex: >
+    @InProceedings{DAIBER16.86,
+      author = {Joachim Daiber and Rob van der Goot},
+      title = {The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions},
+      booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+      year = {2016},
+      month = {may},
+      date = {23-28},
+      location = {Portorož, Slovenia},
+      editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+      publisher = {European Language Resources Association (ELRA)},
+      address = {Paris, France},
+      isbn = {978-2-9517408-9-1},
+      language = {english}
+    }
+  doc: /doc/mtsummit2015.pdf
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: smt
+  year: 2015
+  title: "Machine Translation with Source-Predicted Target Morphology"
+  authors: Daiber, J. and Sima'an, K.
+  booktitle: Proceedings of MT Summit XV
+  venue: conference
+  poster: /doc/mtsummit2015_poster.pdf
+  talk: /doc/clin2015_slides.pdf
+  abstract: >
+    We propose a novel pipeline for translation into morphologically rich languages which consists
+    of two steps: initially, the source string is enriched with target morphological features and then
+    fed into a translation model which takes care of reordering and lexical choice that matches the
+    provided morphological features. As a proof of concept we first show improved translation
+    performance for a phrase-based model translating source strings enriched with morphological
+    features projected through the word alignments from target words to source words. Given this
+    potential, we present a model for predicting target morphological features on the source string
+    and its predicate-argument structure, and tackle two major technical challenges: (1) How to
+    fit the morphological feature set to training data? and (2) How to integrate the morphology
+    into the back-end phrase-based model such that it can also be trained on projected (rather than
+    predicted) features for a more efficient pipeline? For the first challenge we present a latent
+    variable model, and show that it learns a feature set with quality comparable to a manually
+    selected set for German. And for the second challenge we present results showing that it is
+    possible to bridge the gap between a model trained on a predicted and another model trained
+    on a projected morphologically enriched parallel corpus. Finally we exhibit final translation
+    results showing promising improvement over the baseline phrase-based system.
+  bibtex: >
+    
+  doc: /doc/compound_analogy.pdf
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: smt
+  year: 2015
+  title: "Splitting Compounds by Semantic Analogy"
+  authors: Daiber, J., Quiroz, L., Wechsler, R. and Frank, S.
+  booktitle: Proceedings of the first Deep Machine Translation Workshop
+  venue: conference
+  talk: /doc/compound_analogy_slides.pdf
+  abstract: >
+    Compounding is a highly productive word-formation process in some languages that is often
+    problematic for natural language processing applications. In this paper, we investigate whether
+    distributional semantics in the form of word embeddings can enable a deeper, i.e., more
+    knowledge-rich, processing of compounds than the standard string-based methods. We present
+    an unsupervised approach that exploits regularities in the semantic vector space (based on analogies
+    such as “bookshop is to shop as bookshelf is to shelf”) to produce compound analyses
+    of high quality. A subsequent compound splitting algorithm based on these analyses is highly
+    effective, particularly for ambiguous compounds. German to English machine translation experiments
+    show that this semantic analogy-based compound splitter leads to better translations than
+    a commonly used frequency-based method.
+  bibtex: >
+    
+  doc: /doc/compound_analogy.pdf
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: smt
+  year: 2015
+  title: "Delimiting Morphosyntactic Search Space with Source-Side Reordering Models"
+  authors: Daiber, J. and Sima'an, K.
+  booktitle: Proceedings of the first Deep Machine Translation Workshop
+  venue: conference
+  talk: /doc/preordering_spaces_slides.pdf
+  abstract: >
+    Compounding is a highly productive word-formation process in some languages that is often
+    problematic for natural language processing applications. In this paper, we investigate whether
+    distributional semantics in the form of word embeddings can enable a deeper, i.e., more
+    knowledge-rich, processing of compounds than the standard string-based methods. We present
+    an unsupervised approach that exploits regularities in the semantic vector space (based on analogies
+    such as “bookshop is to shop as bookshelf is to shelf”) to produce compound analyses
+    of high quality. A subsequent compound splitting algorithm based on these analyses is highly
+    effective, particularly for ambiguous compounds. German to English machine translation experiments
+    show that this semantic analogy-based compound splitter leads to better translations than
+    a commonly used frequency-based method.
+  bibtex: >
+    
+  doc: /doc/preordering_spaces.pdf
+
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: entity
+  year: 2013
+  title: "Improving Efficiency and Accuracy in Multilingual Entity Extraction"
+  authors: Daiber, J. and Jakob, M. and Hokamp, C. and Mendes, P.N.
+  booktitle: Proceedings of the 9th International Conference on Semantic Systems
+  venue: conference
+  abstract: >
+    There has recently been an increased interest in named entity
+    recognition and disambiguation systems at major conferences
+    such as WWW, SIGIR, ACL, KDD, etc. However,
+    most work has focused on algorithms and evaluations, leaving
+    little space for implementation details. In this paper,
+    we discuss some implementation and data processing challenges
+    we encountered while developing a new multilingual
+    version of DBpedia Spotlight that is faster, more accurate
+    and easier to configure. We compare our solution to the
+    previous system, considering time performance, space requirements
+    and accuracy in the context of the Dutch and
+    English languages. Additionally, we report results for 7 additional
+    languages among the largest Wikipedias. Finally,
+    we present challenges and experiences to foment the discussion
+    with other developers interested in recognition and
+    disambiguation of entities in natural language text.
+  bibtex: >
+    
+  doc: /doc/entity.pdf

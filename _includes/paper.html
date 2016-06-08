@@ -1,0 +1,84 @@
+<li>
+    <a href="{{include.paper.doc}}"><strong>{{ include.paper.title }}</strong></a><br/>
+    {% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}
+    {% case include.paper.paper-type %}
+      {% when "inproceedings" %}
+        In
+        {% if include.paper.booktitle-url %}
+          <a href="{{ include.paper.booktitle-url}}">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        {% endif %}
+          <i>{{ include.paper.booktitle }}</i>,
+        {% if include.paper.pages %}pages {{ include.paper.pages }},{% endif %}
+      {% when "article" %}
+        In
+        {% if include.paper.journal-url %}
+          <a href="{{ include.paper.journal-url }}">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        {% endif %}
+          <i>{{ include.paper.journal }}</i>,
+            {% if include.paper.volume %}{{ include.paper.volume }}{% endif %}{% if include.paper.number %}({{ include.paper.number }}){% endif %}
+            {% if include.paper.article%}: Article {{ include.paper.article}},{% endif %}
+            {% if include.paper.pages %}: pages {{ include.paper.pages }},{% endif %}
+      {% when "dissertation" %}
+        Dissertation, {{ include.paper.institution }}.
+    {% endcase %}
+    {{ include.paper.year }}.
+    {% if include.paper.note %}<i>{{ include.paper.note }}</i>{% endif %}
+    
+    <div class="pub_actions">
+    <!-- abstract -->
+    {% if include.paper.abstract %}
+      <div id="abstract-{{ include.i }}" class="reveal" data-reveal>
+        <p><strong>{{ include.paper.title }}</strong></p>
+        <p>{{ include.paper.abstract }}</p>
+        <button class="close-button" data-close aria-label="Close" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <a data-open="abstract-{{ include.i }}" class="secondary label">Abstract</a>
+    {% endif %}
+
+    <!-- bibtex -->
+    {% if include.paper.bibtex %}
+      <div id="bibtex-{{ include.i }}" class="reveal" data-reveal>
+        <p><strong>{{ include.paper.title }}</strong></p>
+        <pre>{{ include.paper.bibtex }}</pre>
+        <button class="close-button" data-close aria-label="Close" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <a data-open="bibtex-{{ include.i }}" class="secondary label">BibTeX</a>
+    {% endif %}
+
+    <!-- resources -->
+    <!-- draft/slides/poster/talk -->
+
+    {% if include.paper.draft %}
+    <a href="{{ include.paper.draft }}" class="secondary label">Draft</a>
+    {% endif %}
+
+    {% if include.paper.slides %}
+      <a href="{{ include.paper.slides }}" class="secondary label">Slides</a>
+    {% endif %}
+
+    {% if include.paper.poster %}
+    <a href="{{ include.paper.poster }}" class="secondary label">Poster</a>
+    {% endif %}
+
+    {% if include.paper.talk %}
+    <a href="{{ include.paper.talk }}" class="secondary label">Talk</a>
+    {% endif %}
+
+    <!-- code and data -->
+    {% if include.paper.code %}
+      <a href="{{ include.paper.code }}" class="secondary label">Code</a>
+    {% endif %}
+
+    {% if include.paper.data %}
+    <a href="{{ include.paper.data }}" class="secondary label">Data</a>
+    {% endif %}
+  </div>
+</li>

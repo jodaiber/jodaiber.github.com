@@ -1,5 +1,6 @@
 	html {
 			height: 100%;
+
 		}
 		body {
 			
@@ -109,7 +110,7 @@ html,body {
 		h2 {
 			text-transform: uppercase;
 			margin: 2em 0 0 0;
-			color: #444;
+			color: #333;
 			font-size: 120%;
 			font-weight: normal;
 			border-bottom: 1px solid #ddd;	
@@ -154,9 +155,9 @@ html,body {
 			padding: 0.4em;
 		}
 		h3 {
-			margin: 2em 0 0.4em 0;
-			font-size: 100%;
+			margin: 1.2em 0 0.4em 0;
 			color: #666;
+			font-size: 100%;
 			font-weight: bold;
 			/* text-transform: capitalize; */
 		}
@@ -323,3 +324,10 @@ html,body {
     }
 }
 
+
+ul.publications li {
+	padding-bottom: 1em;
+}
+.pub_actions {
+	padding-top: 0.2em;
+}

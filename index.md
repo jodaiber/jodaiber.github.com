@@ -14,26 +14,17 @@ During my undergraduate studies at Freie Universität Berlin, I worked in the [M
 
 Connect at [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a),  [Facebook](https://facebook.com/jodaiber) or write an email to daiber.joachim [at] gmail.com.
 
-Research interests
--------------------------
-
-- **Statistical machine translation** <span style="width: 0.2em; display: inline-block;" ></span> My current work focuses on linguistically-informed statistical models for MT. I also wrote large parts of a [translation memory application for movie subtitles](https://github.com/runn1ng/FilmTit) (Scala).
-- **Dependency parsing** <span style="width: 0.2em; display: inline-block;" ></span> I am also interested in robust models of parsing, with a focus on dependency parsing.
-- **Multilingual entity linking** <span style="width: 0.2em; display: inline-block;" ></span> I have worked on fast and accurate multilingual models for entity linking. See code, data and software [here](entity-linking).
 
 
-Selected publications
----------------------
-- **Daiber, J.**, Stanojević, M., Aziz, W. and Sima'an, K. [Examining the Relationship between Preordering and Word Order Freedom in Machine Translation.](#) ACL 2016 First Conference on Machine Translation (WMT16). Berlin, Germany. *(to appear)*
--  **Daiber, J.** and van der Goot, R. [The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions.](doc/denoised_web_treebank.pdf) Proceedings of LREC 2016. Portorož, Slovenia. [[Poster](doc/lrec2016_poster.pdf), [Data+code](DenoisedWebTreebank)]
--  **Daiber, J.** and Sima'an, K. [Machine Translation with Source-Predicted Target Morphology.](doc/mtsummit2015.pdf) Proceedings of MT Summit XV. 2015. Miami, USA. [[Poster](doc/mtsummit2015_poster.pdf), [Slides](doc/clin2015_slides.pdf)]
--   **Daiber, J.**, Quiroz, L., Wechsler, R. and Frank, S. [Splitting Compounds by Semantic Analogy.](doc/compound_analogy.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/compound_analogy_slides.pdf)]
--   **Daiber, J.** and Sima'an, K. [Delimiting Morphosyntactic Search Space with Source-Side Reordering Models.](doc/preordering_spaces.pdf) Proceedings of the first Deep Machine Translation Workshop. 2015. Prague, Czech Republic. [[Slides](doc/preordering_spaces_slides.pdf)]
--   **Daiber, J.** and Jakob, M. and Hokamp, C. and Mendes, P.N. [Improving Efficiency and Accuracy in Multilingual Entity Extraction.](doc/entity.pdf) Proceedings of the 9th International Conference on Semantic Systems. 2013. Graz, Austria.
-- [More on Google Scholar...](http://scholar.google.nl/citations?user=sApPUZUAAAAJ&hl=nl)
+## Research Interests
 
-Resources
----------
+Within the area of Natural Language Processing, my research interests are 
+in Machine Translation, Entity Linking and Dependency Parsing.
+
+- [My publications](publications)
+- [All publication on Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ)
+
+## Software and data
 
 - [Semantic analogy-based compound splitter](https://github.com/jodaiber/semantic_compound_splitting): An unsupervised compound splitter based on the regularities in the vector space of word embeddings.
 - [The Denoised Web Treebank](DenoisedWebTreebank): Dependency treebank for evaluation of parser robustness.
@@ -42,20 +33,19 @@ Resources
 - [Raw Spotlight data](entity-linking): Raw counts for entity linking in many languages.
 
 
-Teaching and service to profession
-----------------------------------
+## Professional activities
 
-- Spring 2016: Natural Language Processing 2 (Prof Khalil Sima'an)
-- Fall 2015: Natural Language Processing 1 (Prof Ivan Titov)
-- Summer 2015: Profile Project AI-NLP (with Dr. Stella Frank)
-- Spring 2015: Natural Language Processing 2 (Prof Khalil Sima'an)
-- Fall 2014: Natural Language Processing 1 (Prof Ivan Titov)
-- Spring 2014: Natural Language Processing 2 (Prof Khalil Sima'an)
+### Teaching:
+- Natural Language Processing 1  
+  Prof Ivan Titov. Fall 2015, Fall 2014.
+- Natural Language Processing 2  
+  Prof Khalil Sima'an. Spring 2016, Spring 2015, Spring 2014.
+- Summer 2015: Profile Project AI-NLP  
+  with Dr. Stella Frank
 
-Reviewed for:
-
+### Reviewing:
 - International Journal of Cooperative Information Systems (IJCIS)
-- NAACL 2016 Workshop on Discontinuous Structures in Natural Language Processing
+- NAACL 2016 Workshop on Discontinuous Structures in NLP
 
 {% for post in site.posts %}
 
