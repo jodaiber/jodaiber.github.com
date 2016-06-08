@@ -22,7 +22,7 @@ Within the area of Natural Language Processing, my research interests are
 in Machine Translation, Entity Linking and Dependency Parsing.
 
 - [My publications](publications)
-- [All publication on Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ)
+- [All publications on Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ)
 
 ## Software and data
 

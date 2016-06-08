@@ -24,7 +24,6 @@ My current work focuses on linguistically-informed statistical models for MT.
 I have worked on fast and accurate multilingual models for entity linking.
 
 <ul class="publications">
-{% assign counter=0 %}
 {% assign papers = (site.data.papers | where: "topic", "entity") %}
 {% for paper in papers %}
  {% include paper.html paper=paper i=counter %}
@@ -37,7 +36,6 @@ I have worked on fast and accurate multilingual models for entity linking.
 I am also interested in robust models of parsing, with a focus on dependency parsing.
 
 <ul class="publications">
-{% assign counter=0 %}
 {% assign papers = (site.data.papers | where: "topic", "parsing") %}
 {% for paper in papers %}
  {% include paper.html paper=paper i=counter %}
