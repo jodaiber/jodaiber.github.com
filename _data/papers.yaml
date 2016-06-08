@@ -18,6 +18,8 @@
   booktitle: Proceedings of LREC
   venue: conference
   poster: /doc/lrec2016_poster.pdf
+  data: /DenoisedWebTreebank
+  code: https://github.com/jodaiber/ithaka
   abstract: >
     We introduce the Denoised Web Treebank: a treebank including a normalization layer and a corresponding evaluation metric for
     dependency parsing of noisy text, such as Tweets. This benchmark enables the evaluation of parser robustness as well as text
@@ -99,6 +101,7 @@
     effective, particularly for ambiguous compounds. German to English machine translation experiments
     show that this semantic analogy-based compound splitter leads to better translations than
     a commonly used frequency-based method.
+  code: https://github.com/jodaiber/semantic_compound_splitting
   bibtex: >
     @inproceedings{daiber2015splitting,
       title={Splitting Compounds by Semantic Analogy},
@@ -185,3 +188,6 @@
      keywords = {entity linking, information extraction, named entity recognition},
     }
   doc: /doc/entity.pdf
+  data: /entity-linking
+  code: http://spotlight.dbpedia.org
+  demo: http://dbpedia-spotlight.github.io/demo/
