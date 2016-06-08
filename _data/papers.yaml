@@ -69,7 +69,14 @@
     on a projected morphologically enriched parallel corpus. Finally we exhibit final translation
     results showing promising improvement over the baseline phrase-based system.
   bibtex: >
-    
+    @inproceedings{daiber2015machine,
+      title={Machine Translation with Source-Predicted Target Morphology},
+      author={Daiber, Joachim and Sima’an, Khalil},
+      booktitle={Proceedings of the 15th Machine Translation Summit ($\{$MT Summit$\}$ 2015)},
+      pages={283--296},
+      address={Miami, USA},
+      year={2015}
+    }
   doc: /doc/mtsummit2015.pdf
 - layout: paper
   paper-type: inproceedings
@@ -93,7 +100,14 @@
     show that this semantic analogy-based compound splitter leads to better translations than
     a commonly used frequency-based method.
   bibtex: >
-    
+    @inproceedings{daiber2015splitting,
+      title={Splitting Compounds by Semantic Analogy},
+      author={Daiber, Joachim and Quiroz, Lautaro and Wechsler, Roger and Frank, Stella},
+      booktitle={1st Deep Machine Translation Workshop},
+      pages={20--28},
+      year={2015},
+      organization={Charles University in Prague, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics}
+    }
   doc: /doc/compound_analogy.pdf
 - layout: paper
   paper-type: inproceedings
@@ -117,7 +131,13 @@
     show that this semantic analogy-based compound splitter leads to better translations than
     a commonly used frequency-based method.
   bibtex: >
-    
+    @inproceedings{daiber2015delimiting,
+      title={Delimiting Morphosyntactic Search Space with Source-Side Reordering Models},
+      author={Daiber, Joachim and Sima’an, Khalil},
+      booktitle={1st Deep Machine Translation Workshop},
+      pages={29--38},
+      year={2015}
+    }
   doc: /doc/preordering_spaces.pdf
 
 - layout: paper
@@ -147,5 +167,21 @@
     with other developers interested in recognition and
     disambiguation of entities in natural language text.
   bibtex: >
-    
+    @inproceedings{Daiber:2013:IEA:2506182.2506198,
+     author = {Daiber, Joachim and Jakob, Max and Hokamp, Chris and Mendes, Pablo N.},
+     title = {Improving Efficiency and Accuracy in Multilingual Entity Extraction},
+     booktitle = {Proceedings of the 9th International Conference on Semantic Systems},
+     series = {I-SEMANTICS '13},
+     year = {2013},
+     isbn = {978-1-4503-1972-0},
+     location = {Graz, Austria},
+     pages = {121--124},
+     numpages = {4},
+     url = {http://doi.acm.org/10.1145/2506182.2506198},
+     doi = {10.1145/2506182.2506198},
+     acmid = {2506198},
+     publisher = {ACM},
+     address = {New York, NY, USA},
+     keywords = {entity linking, information extraction, named entity recognition},
+    }
   doc: /doc/entity.pdf

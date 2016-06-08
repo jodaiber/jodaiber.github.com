@@ -331,3 +331,4 @@ ul.publications li {
 .pub_actions {
 	padding-top: 0.2em;
 }
+.reveal { outline: none; }

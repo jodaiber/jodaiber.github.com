@@ -33,7 +33,7 @@ I have worked on fast and accurate multilingual models for entity linking.
 
 ## Dependency Parsing
 
-I am also interested in robust models of parsing, with a focus on dependency parsing.
+I am also interested in robust models of dependency parsing.
 
 <ul class="publications">
 {% assign papers = (site.data.papers | where: "topic", "parsing") %}
