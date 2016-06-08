@@ -19,7 +19,7 @@ My current work focuses on linguistically-informed statistical models for MT.
 </ul>
 
 
-## Entity Linking
+## Entity Extraction
 
 I have worked on fast and accurate multilingual models for entity linking.
 

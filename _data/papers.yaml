@@ -39,7 +39,7 @@
       isbn = {978-2-9517408-9-1},
       language = {english}
     }
-  doc: /doc/mtsummit2015.pdf
+  doc: /doc/denoised_web_treebank.pdf
 - layout: paper
   paper-type: inproceedings
   selected: y
@@ -70,7 +70,7 @@
     results showing promising improvement over the baseline phrase-based system.
   bibtex: >
     
-  doc: /doc/compound_analogy.pdf
+  doc: /doc/mtsummit2015.pdf
 - layout: paper
   paper-type: inproceedings
   selected: y
