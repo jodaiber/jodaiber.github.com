@@ -3,7 +3,7 @@ layout: default
 title: Publications
 ---
 
-For a full list of publications, please see [Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ)
+For a full list of publications, please see [Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ).
 
 ## Machine Translation
 
