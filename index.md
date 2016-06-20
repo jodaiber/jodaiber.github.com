@@ -85,7 +85,7 @@ Personal
 		userId: 601088313,
     accessToken: '601088313.871dc07.bb1a384477cf419b96948c783fdb5239',
 		link: 'true',
-		limit: '10'
+		limit: '16'
     });
     feed.run();
 </script>
