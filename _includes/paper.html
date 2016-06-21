@@ -65,19 +65,29 @@
     {% endif %}
 
     {% if include.paper.poster %}
-      <div id="poster-{{ include.i }}" class="reveal xlarge" data-reveal>
-        <object id="pdf" height="100%" width="100%" type="application/pdf" data="{{ include.paper.poster }}" style="text-align: center;">
+      <div id="poster-{{ include.i }}" class="reveal large" data-reveal>
+        <p><strong>{{ include.paper.title }}</strong></p>
+        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.poster }}" style="text-align: center;">
            <a href="{{ include.paper.poster }}">Download poster.</a>
         </object>
         <button class="close-button" data-close aria-label="Close" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <a data-open="poster-{{ include.i }}" class="secondary label">BibTeX</a>
+      <a data-open="poster-{{ include.i }}" class="secondary label">Poster</a>
     {% endif %}
 
     {% if include.paper.talk %}
-    <a href="{{ include.paper.talk }}" class="secondary label">Talk</a>
+      <div id="talk-{{ include.i }}" class="reveal large" data-reveal>
+        <p><strong>{{ include.paper.title }}</strong></p>
+        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.poster }}" style="text-align: center;">
+           <a href="{{ include.paper.talk }}">Download slides.</a>
+        </object>
+        <button class="close-button" data-close aria-label="Close" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <a data-open="talk-{{ include.i }}" class="secondary label">Talk</a>
     {% endif %}
 
     <!-- code and data -->
