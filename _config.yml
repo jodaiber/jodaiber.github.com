@@ -3,5 +3,4 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
-pygments: true
 exclude: ['Rakefile.rb', 'CNAME', 'README.markdown']
