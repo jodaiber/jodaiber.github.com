@@ -75,7 +75,7 @@
     @inproceedings{daiber2015machine,
       title={Machine Translation with Source-Predicted Target Morphology},
       author={Daiber, Joachim and Sima’an, Khalil},
-      booktitle={Proceedings of the 15th Machine Translation Summit ($\{$MT Summit$\}$ 2015)},
+      booktitle={Proceedings of the 15th Machine Translation Summit (MT Summit 2015)},
       pages={283--296},
       address={Miami, USA},
       year={2015}
