@@ -5,10 +5,22 @@
   year: 2016
   title: Examining the Relationship between Preordering and Word Order Freedom in Machine Translation
   authors: Daiber, J., Stanojević, M., Aziz, W. and Sima'an, K.
-  booktitle: ACL 2016 First Conference on Machine Translation (WMT16)
+  booktitle: Proceedings of the First Conference on Machine Translation, Volume 1: Research Papers
   doc: /doc/wmt2016.pdf
   venue: conference
   abstract: We study the relationship between word order freedom and preordering in statistical machine translation. To assess word order freedom, we first introduce a novel entropy measure which quantifies how difficult it is to predict word order given a source sentence and its syntactic analysis. We then address preordering for two target languages at the far ends of the word order freedom spectrum, German and Japanese, and argue that for languages with more word order freedom, attempting to predict a unique word order given source clues only is less justified. Subsequently, we examine lattices of n-best word order predictions as a unified representation for languages from across this broad spectrum and present an effective solution to a resulting technical issue, namely how to select a suitable source word order from the lattice during training. Our experiments show that lattices are crucial for enabling empirical performance improvements for languages with freer word order (English–German) and can provide additional improvements for fixed word order languages (English–Japanese). 
+  bibtex: >
+    @InProceedings{daiber-EtAl:2016:WMT,
+      author    = {Daiber, Joachim  and  Stanojevi\'{c}, Milo\v{s}  and  Aziz, Wilker  and  Sima'an, Khalil},
+      title     = {Examining the Relationship between Preordering and Word Order Freedom in Machine Translation},
+      booktitle = {Proceedings of the First Conference on Machine Translation, Volume 1: Research Papers},
+      month     = {August},
+      year      = {2016},
+      address   = {Berlin, Germany},
+      publisher = {Association for Computational Linguistics},
+      pages     = {118--130},
+      url       = {http://www.aclweb.org/anthology/W/W16/W16-2213}
+    }
 - layout: paper
   paper-type: inproceedings
   selected: y
