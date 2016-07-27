@@ -21,7 +21,7 @@
       url       = {http://www.aclweb.org/anthology/W/W16/W16-2213}
     }
   doc: /doc/wmt2016.pdf
-  note: "Acceptance rate: 31%"
+  note: "**Acceptance rate: 31%.**"
 - layout: paper
   paper-type: inproceedings
   selected: y
