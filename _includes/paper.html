@@ -26,7 +26,7 @@
         Dissertation, {{ include.paper.institution }}.
     {% endcase %}
     {{ include.paper.year }}.
-    {% if include.paper.note %}<i>{{ include.paper.note | markdownify }}</i>{% endif %}
+    {% if include.paper.note %}<i>{{ include.paper.note | markdownify | remove: '<p>' | remove: '</p>' }}</i>{% endif %}
     
     <div class="pub_actions">
     <!-- abstract -->
