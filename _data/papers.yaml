@@ -8,6 +8,7 @@
   booktitle: Proceedings of the 26th International Conference on Computational Linguistics
   venue: conference
   doc: /doc/coling2016.pdf
+  abstract: In this paper we explore the novel idea of building a single universal reordering model from English to a large number of target languages. To build this model we exploit typological features of word order for a large number of target languages together with source (English) syntactic features and we train this model on a single combined parallel corpus representing all (22) involved language pairs. We contribute experimental evidence for the usefulness of linguistically defined typological features for building such a model. When the universal reordering model is used for preordering followed by monotone translation (no reordering inside the decoder), our experiments show that this pipeline gives comparable or improved translation performance with a phrase-based baseline for a large number of language pairs (12 out of 22) from diverse language families.
 - layout: paper
   paper-type: inproceedings
   selected: y
