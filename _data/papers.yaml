@@ -129,13 +129,15 @@
     a commonly used frequency-based method.
   code: https://github.com/jodaiber/semantic_compound_splitting
   bibtex: >
-    @inproceedings{daiber2015splitting,
-      title={Splitting Compounds by Semantic Analogy},
-      author={Daiber, Joachim and Quiroz, Lautaro and Wechsler, Roger and Frank, Stella},
-      booktitle={1st Deep Machine Translation Workshop},
-      pages={20--28},
-      year={2015},
-      organization={Charles University in Prague, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics}
+    @Inbook{W15-5703,
+      author = 	"Daiber, Joachim and Quiroz, Lautaro and Wechsler, Roger and Frank, Stella",
+      chapter = 	"Splitting Compounds by Semantic Analogy",
+      title = 	"Proceedings of the 1st Deep Machine Translation Workshop",
+      year = 	"2015",
+      publisher = 	"{\'U}FAL MFF UK",
+      pages = 	"20--28",
+      location = 	"Praha, Czechia",
+      url = 	"http://aclweb.org/anthology/W15-5703"
     }
   doc: /doc/compound_analogy.pdf
 - layout: paper
@@ -160,12 +162,15 @@
     show that this semantic analogy-based compound splitter leads to better translations than
     a commonly used frequency-based method.
   bibtex: >
-    @inproceedings{daiber2015delimiting,
-      title={Delimiting Morphosyntactic Search Space with Source-Side Reordering Models},
-      author={Daiber, Joachim and Sima’an, Khalil},
-      booktitle={1st Deep Machine Translation Workshop},
-      pages={29--38},
-      year={2015}
+    @Inbook{W15-5704,
+      author = 	"Daiber, Joachim and Sima'an, Khalil",
+      chapter = 	"Delimiting Morphosyntactic Search Space with Source-Side Reordering Models",
+      title = 	"Proceedings of the 1st Deep Machine Translation Workshop",
+      year = 	"2015",
+      publisher = 	"{\'U}FAL MFF UK",
+      pages = 	"29--38",
+      location = 	"Praha, Czechia",
+      url = 	"http://aclweb.org/anthology/W15-5704"
     }
   doc: /doc/preordering_spaces.pdf
 
