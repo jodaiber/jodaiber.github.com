@@ -12,7 +12,7 @@ Previously, I was a Master's student in the [EM LCT](http://lct-master.org) prog
 
 During my undergraduate studies at Freie Universität Berlin, I worked in the [META-NET](http://www.meta-net.eu) project at the German Research Center for Artifical Intelligence.
 
-Connect at [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a),  [Facebook](https://facebook.com/jodaiber) or write an email to daiber.joachim [at] gmail.com.
+See full CV [here](/doc/cv.pdf) or connect at [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a),  [Facebook](https://facebook.com/jodaiber) or write an email to daiber.joachim [at] gmail.com.
 
 
 
@@ -33,19 +33,22 @@ in Machine Translation, Entity Linking and Dependency Parsing.
 - [Raw Spotlight data](entity-linking): Raw counts for entity linking in many languages.
 
 
-## Professional activities
+<!--## Professional activities
 
 ### Teaching:
 - Natural Language Processing 1  
   Prof Ivan Titov. Fall 2015, Fall 2014.
 - Natural Language Processing 2  
   Prof Khalil Sima'an. Spring 2016, Spring 2015, Spring 2014.
+  
 - Summer 2015: Profile Project AI-NLP  
   with Dr. Stella Frank
 
 ### Reviewing:
 - International Journal of Cooperative Information Systems (IJCIS)
 - NAACL 2016 Workshop on Discontinuous Structures in NLP
+
+-->
 
 {% for post in site.posts %}
 
