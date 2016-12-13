@@ -5,7 +5,7 @@
   year: 2016
   title: Universal Reordering via Linguistic Typology
   authors: Daiber, J., Stanojević, M., and Sima'an, K.
-  booktitle: Proceedings of the 26th International Conference on Computational Linguistics
+  booktitle: COLING
   venue: conference
   doc: /doc/coling2016.pdf
   poster: /doc/coling2016_poster.pdf
@@ -18,7 +18,7 @@
   year: 2016
   title: Examining the Relationship between Preordering and Word Order Freedom in Machine Translation
   authors: Daiber, J., Stanojević, M., Aziz, W. and Sima'an, K.
-  booktitle: Proceedings of the First Conference on Machine Translation
+  booktitle: Conference on Machine Translation (WMT)
   venue: conference
   abstract: We study the relationship between word order freedom and preordering in statistical machine translation. To assess word order freedom, we first introduce a novel entropy measure which quantifies how difficult it is to predict word order given a source sentence and its syntactic analysis. We then address preordering for two target languages at the far ends of the word order freedom spectrum, German and Japanese, and argue that for languages with more word order freedom, attempting to predict a unique word order given source clues only is less justified. Subsequently, we examine lattices of n-best word order predictions as a unified representation for languages from across this broad spectrum and present an effective solution to a resulting technical issue, namely how to select a suitable source word order from the lattice during training. Our experiments show that lattices are crucial for enabling empirical performance improvements for languages with freer word order (English–German) and can provide additional improvements for fixed word order languages (English–Japanese). 
   bibtex: >
@@ -43,7 +43,7 @@
   year: 2016
   title: "The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions"
   authors: Daiber, J. and van der Goot, R.
-  booktitle: Proceedings of LREC
+  booktitle: LREC
   venue: conference
   poster: /doc/lrec2016_poster.pdf
   data: /DenoisedWebTreebank
@@ -77,7 +77,7 @@
   year: 2015
   title: "Machine Translation with Source-Predicted Target Morphology"
   authors: Daiber, J. and Sima'an, K.
-  booktitle: Proceedings of MT Summit XV
+  booktitle: MT Summit
   venue: conference
   poster: /doc/mtsummit2015_poster.pdf
   talk: /doc/clin2015_slides.pdf
@@ -115,7 +115,7 @@
   year: 2015
   title: "Splitting Compounds by Semantic Analogy"
   authors: Daiber, J., Quiroz, L., Wechsler, R. and Frank, S.
-  booktitle: Proceedings of the first Deep Machine Translation Workshop
+  booktitle: Deep Machine Translation Workshop
   venue: conference
   talk: /doc/compound_analogy_slides.pdf
   abstract: >
@@ -149,7 +149,7 @@
   year: 2015
   title: "Delimiting Morphosyntactic Search Space with Source-Side Reordering Models"
   authors: Daiber, J. and Sima'an, K.
-  booktitle: Proceedings of the first Deep Machine Translation Workshop
+  booktitle: Deep Machine Translation Workshop
   venue: conference
   talk: /doc/preordering_spaces_slides.pdf
   abstract: >
@@ -183,7 +183,7 @@
   year: 2013
   title: "Improving Efficiency and Accuracy in Multilingual Entity Extraction"
   authors: Daiber, J. and Jakob, M. and Hokamp, C. and Mendes, P.N.
-  booktitle: Proceedings of the 9th International Conference on Semantic Systems
+  booktitle: International Conference on Semantic Systems
   venue: conference
   abstract: >
     There has recently been an increased interest in named entity
