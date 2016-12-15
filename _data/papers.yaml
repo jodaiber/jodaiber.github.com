@@ -7,7 +7,7 @@
   authors: Daiber, J., Stanojević, M., and Sima'an, K.
   booktitle: COLING
   venue: conference
-  doc: /doc/coling2016.pdf
+  doc: http://aclweb.org/anthology/C16-1298
   poster: /doc/coling2016_poster.pdf
   bibtex: >
     @InProceedings{daiber-stanojevic-simaan:2016:COLING,
@@ -57,7 +57,7 @@
       pages     = {118--130},
       url       = {http://www.aclweb.org/anthology/W/W16/W16-2213}
     }
-  doc: /doc/wmt2016.pdf
+  doc: http://www.aclweb.org/anthology/W/W16/W16-2213
   talk: /doc/wmt2016_slides.pdf
 #  note: "**Acceptance rate: 31%.**"
 - layout: paper
@@ -165,7 +165,7 @@
       location = 	"Praha, Czechia",
       url = 	"http://aclweb.org/anthology/W15-5703"
     }
-  doc: /doc/compound_analogy.pdf
+  doc: http://aclweb.org/anthology/W15-5703
 - layout: paper
   paper-type: inproceedings
   selected: y
@@ -198,7 +198,7 @@
       location = 	"Praha, Czechia",
       url = 	"http://aclweb.org/anthology/W15-5704"
     }
-  doc: /doc/preordering_spaces.pdf
+  doc: http://aclweb.org/anthology/W15-5704
 
 - layout: paper
   paper-type: inproceedings
