@@ -86,7 +86,7 @@ Personal
     var feed = new Instafeed({
 		get: 'user',
 		userId: 601088313,
-    accessToken: '601088313.871dc07.bb1a384477cf419b96948c783fdb5239',
+    accessToken: '601088313.1677ed0.df46ed351a5f44bab606823c253be9ff',
 		link: 'true',
 		limit: '16'
     });
