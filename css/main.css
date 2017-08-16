@@ -203,16 +203,16 @@ html,body {
 		a {
 		}
 
-	#instafeed {
+	#frontpage #instafeed {
 		line-height: 0px;
 	}
 
-		#instafeed img {
+		#frontpage #instafeed img {
 			display: block;
 			width: 75px;
 			height: 75px;
 		}
-		#instafeed a {
+		#frontpage #instafeed a {
 			display: inline-block;
 			border: 0px solid #999;
 			opacity:0.3;
@@ -220,7 +220,7 @@ html,body {
 
 		}
 
-		#instafeed a:hover {
+		#frontpage #instafeed a:hover {
 			opacity:1.0;
 		}
 
@@ -331,3 +331,84 @@ ul.publications li {
 	padding-top: 0.2em;
 }
 .reveal { outline: none; }
+
+
+
+.headerphoto {
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    padding: 0.5em 1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Minion Web", "Georgia", serif;
+    color: #fff;
+}
+.photography {
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 1px solid #eee;
+    text-transform: none;
+
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
+}
+.outer {
+    background-color: #fff;
+    position: relative;
+    height: 150px;
+    border-bottom: 1px solid #eee;
+}
+.outer .headerphoto {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    top: auto;
+    background: rgba(230, 230, 230, 0.6);
+}
+.photos {
+    background-color: #fff;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.photo .image {
+    display: block;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #ddd;
+}
+.photo {
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.caption {
+    padding: 0.3em 15px 0.3em 0;
+    text-align: right;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.outer .banner {
+    height: 150px;
+    min-height: 150px;
+    max-width: 100%;
+    width: 100%;
+
+    position: relative;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    border: 0;
+    background: black url(../images/prague3.jpg) bottom center no-repeat;
+    background-size: 100% auto;
+
+}

@@ -78,8 +78,11 @@ Blog Posts
 
 Personal
 --------
+<div id="frontpage">
+  <div id="instafeed"></div>
+</div>
 
-<div id="instafeed"></div>
+[More photos...](photography)
 
 <script src="/js/instafeed.min.js"></script>
 <script type="text/javascript">
