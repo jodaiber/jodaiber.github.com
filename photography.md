@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Photos
+title: Photography
 ---
 
 <div id="instafeed"></div>
