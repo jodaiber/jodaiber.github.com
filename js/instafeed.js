@@ -143,7 +143,7 @@
 
             if(this.options.resolution == 'standard_resolution'){
               // imageFull = imageObj.url.replace("s640x640","s1080x1080");
-              imageFull = imageObj.url.replace(/\/.640x640\/sh0.08\//,"/");
+              imageFull = imageObj.url.replace(/\/.640x640\//,"/");
               imageFull = imageFull.replace(/\/c[^\/]*/,"/");
               imageUrl = imageFull;
             } else{
