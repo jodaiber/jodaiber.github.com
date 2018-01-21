@@ -146,6 +146,7 @@
               imageFull = imageObj.url.replace(/\/.640x640\//,"/");
               imageFull = imageFull.replace(/\/c[^\/]*/,"/");
               imageFull = imageFull.replace("/sh0.08/","/");
+              imageFull = imageFull.replace(/vp.*\/.{32}\/.{8}\//, '');
               imageUrl = imageFull;
             } else{
               imageUrl = imageObj.url;
