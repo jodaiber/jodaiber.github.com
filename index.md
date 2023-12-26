@@ -21,6 +21,7 @@ Within the area of Natural Language Processing, my research interests are
 in applications and evaluation of large language and vision models, machine translation, entity linking and dependency parsing.
 
 - [See my publications on Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ)
+- [Code and data for my publications](publications)
 
 
 ## Software and data
