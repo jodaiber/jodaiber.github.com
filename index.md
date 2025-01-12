@@ -74,24 +74,3 @@ Blog Posts
 {% endif %}
 
 {% endfor %}
-
-
-Personal
---------
-<div id="frontpage">
-  <div id="instafeed"></div>
-</div>
-
-[More photos...](photography)
-
-<script src="/js/instafeed.min.js"></script>
-<script type="text/javascript">
-    var feed = new Instafeed({
-		get: 'user',
-		userId: 601088313,
-    accessToken: '601088313.1677ed0.df46ed351a5f44bab606823c253be9ff',
-		link: 'true',
-		limit: '16'
-    });
-    feed.run();
-</script>
