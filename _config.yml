@@ -3,4 +3,9 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
-exclude: ['Rakefile.rb', 'CNAME', 'README.markdown']
+
+exclude:
+  - vendor
+  - Rakefile.rb
+  - CNAME
+  - README.markdown
