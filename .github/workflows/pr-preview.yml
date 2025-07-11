@@ -1,0 +1,42 @@
+name: PR Preview
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+
+permissions:
+  contents: write         # checkout
+  pages: write            # push to gh-pages/pr-preview
+  id-token: write         # OIDC for Pages
+  issues: write
+  pull-requests: write
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    if: github.event.action != 'closed'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1     # Build Jekyll
+        with:
+          ruby-version: 3.3
+          bundler-cache: true
+
+      - name: Build site for this PR
+        run: |
+          bundle exec jekyll build \
+            --baseurl "/pr-preview/pr-${{ github.event.number }}"
+
+      # 🚀 Ship it
+      - uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: _site           # folder Jekyll just built
+
+  # Garbage-collect the preview when the PR is closed
+  cleanup:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed'
+    steps:
+      - uses: rossjrw/pr-preview-action@v1
+        with:
+          deploy-preview: delete
