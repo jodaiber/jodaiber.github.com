@@ -7,6 +7,7 @@ permissions:
   contents: write         # checkout
   pages: write            # push to gh-pages/pr-preview
   id-token: write         # OIDC for Pages
+  issues:   write
 
 jobs:
   preview:
