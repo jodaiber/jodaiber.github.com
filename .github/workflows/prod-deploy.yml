@@ -1,0 +1,31 @@
+# .github/workflows/prod-deploy.yml
+name: Deploy production site
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+
+      - run: bundle exec jekyll build --destination _site
+
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages         # <- root of Pages
+          folder: _site            # <- what we just built
+          clean: true              # wipe old files but KEEP pr-preview sub-dir
+          clean-exclude: |
+            pr-preview/**
