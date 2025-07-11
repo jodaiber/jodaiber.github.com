@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Joachim Daiber
+title: Joachim Daiber 2
 ---
 
 About me
