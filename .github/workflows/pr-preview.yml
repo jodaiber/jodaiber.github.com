@@ -2,7 +2,6 @@ name: Preview Jekyll site
 
 on:
   pull_request:
-    branches: ["work"]
 
 permissions:
   contents: read
