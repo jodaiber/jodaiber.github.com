@@ -6,150 +6,150 @@ category: Travel
 
 ## First stop: Prague, Czech Republic
 
-<img src="/images/vietnam/1_ndqLCt08Y31ejli4u4sCoA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ndqLCt08Y31ejli4u4sCoA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_U5XZUlrH9DnUmnRtVY3cxQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_U5XZUlrH9DnUmnRtVY3cxQ.jpg' | relative_url }}" width="800" />
 
 ## Second stop: Incheon, Korea
 
-<img src="/images/vietnam/1_x00VtRXgWggSe04mVf4hQw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_x00VtRXgWggSe04mVf4hQw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_wisoiaNhXvF2DWA9g16Ziw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_wisoiaNhXvF2DWA9g16Ziw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_bUraXYz_izxFrePHnZ1xbQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_bUraXYz_izxFrePHnZ1xbQ.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_noK_211nuaJmoAspKqS00A.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_noK_211nuaJmoAspKqS00A.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_f1KBuVI0LeNdklCB49CC4A.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_f1KBuVI0LeNdklCB49CC4A.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_yER9moZPLibOLGtoaSmjZw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_yER9moZPLibOLGtoaSmjZw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_uNMsox9XpXcHSs0SS0G6ZA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_uNMsox9XpXcHSs0SS0G6ZA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_s9Aw-7gsNFRNfYeW7asTeg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_s9Aw-7gsNFRNfYeW7asTeg.jpg' | relative_url }}" width="800" />
 
 ## Finally there: Hanoi, Vietnam
 
-<img src="/images/vietnam/1_WKjO1ziXib89mtJbUnV_sA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_WKjO1ziXib89mtJbUnV_sA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_uUNEqezjNkhVduQcu6Vplw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_uUNEqezjNkhVduQcu6Vplw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_pLV_YP886Q1d4q7TxeOeDA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_pLV_YP886Q1d4q7TxeOeDA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_2E-QdThzeCPUAHjYsEn94A.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_2E-QdThzeCPUAHjYsEn94A.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_I4MhiS9JEKowry1tVOBoGA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_I4MhiS9JEKowry1tVOBoGA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_KHKGt96gYt3okQSbWpD6Dw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_KHKGt96gYt3okQSbWpD6Dw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_opUSbj2rjtFvE-6dB9f-IQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_opUSbj2rjtFvE-6dB9f-IQ.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_UN4C6QCvZXPT-3qJZYzs0w.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_UN4C6QCvZXPT-3qJZYzs0w.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_rY5WkSKAcmjMS11ptSqF8Q.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_rY5WkSKAcmjMS11ptSqF8Q.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_ZWxMtzbHKNmCz5jqiU3cNw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ZWxMtzbHKNmCz5jqiU3cNw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_DAmAFDJydPIr5Zvu1bqx9A.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_DAmAFDJydPIr5Zvu1bqx9A.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_kd3U561H8aUjSxmatCWrSA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_kd3U561H8aUjSxmatCWrSA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_dHM56W7Hg5dmK_JVkvJbIA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_dHM56W7Hg5dmK_JVkvJbIA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_SadbxPqVRKRbMUn6_Oe_kg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_SadbxPqVRKRbMUn6_Oe_kg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_MhhUSMJ7Iuo7ggek9WRnlQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_MhhUSMJ7Iuo7ggek9WRnlQ.jpg' | relative_url }}" width="800" />
 
 ## Hué, Vietnam
 
-<img src="/images/vietnam/1_oZOkGiL9Ppj4rZgFpENSzw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_oZOkGiL9Ppj4rZgFpENSzw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_0yRCL97bguJXVW_xQh2X9g.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_0yRCL97bguJXVW_xQh2X9g.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_ATyZHp7WMC9pEMip18W5iA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ATyZHp7WMC9pEMip18W5iA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_dVwaGHqsb0I96B6EPJhbvw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_dVwaGHqsb0I96B6EPJhbvw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_QrFzbIhgLi_kB0mROoR03g.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_QrFzbIhgLi_kB0mROoR03g.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_kTeHibVIbr_NtcD7TQZg3w.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_kTeHibVIbr_NtcD7TQZg3w.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_r8njdjsBVCUd7NeraLueeg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_r8njdjsBVCUd7NeraLueeg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_4Vhkto1nq2FvJjqcNfXEtg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_4Vhkto1nq2FvJjqcNfXEtg.jpg' | relative_url }}" width="800" />
 
 ## Hoi An, Vietnam
 
-<img src="/images/vietnam/1_zOyPCv981awCyH7irKIgKA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_zOyPCv981awCyH7irKIgKA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_3Jot_x702INKihUs50IuiA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_3Jot_x702INKihUs50IuiA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_IZcLn1aj24r0cr0uXrofbw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_IZcLn1aj24r0cr0uXrofbw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_ZDtp6tk6sd8_WK8hXpUsLA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ZDtp6tk6sd8_WK8hXpUsLA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_2el8y3pl4RmLozwgUTevZQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_2el8y3pl4RmLozwgUTevZQ.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_PLUecLpbGUmNt5W5RSOnbg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_PLUecLpbGUmNt5W5RSOnbg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_jkxyIMvWWjTl2Q2KhT2Mmg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_jkxyIMvWWjTl2Q2KhT2Mmg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_3vgBgRS3QnzYTmrmoKMOdg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_3vgBgRS3QnzYTmrmoKMOdg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_AnKYEs6ywBfYV591AKAX-Q.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_AnKYEs6ywBfYV591AKAX-Q.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_ti8oOLF_1xJSr3BQE2cjRA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ti8oOLF_1xJSr3BQE2cjRA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_zTfnZkmwPxvQVMqC4m62Fg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_zTfnZkmwPxvQVMqC4m62Fg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_A0r82KRXAEgHXA4OW-b1ZQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_A0r82KRXAEgHXA4OW-b1ZQ.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_eBKibC-qdourmG0g9gTt3Q.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_eBKibC-qdourmG0g9gTt3Q.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_QnHX5boEw5rKIOw_v2qQ3A.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_QnHX5boEw5rKIOw_v2qQ3A.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_tmVz-i40H6r-z5loOcbu0w.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_tmVz-i40H6r-z5loOcbu0w.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_QlE3ozwii0JCCDGGw70Y4Q.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_QlE3ozwii0JCCDGGw70Y4Q.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_C1_cTA0rnQManAWgIU73jg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_C1_cTA0rnQManAWgIU73jg.jpg' | relative_url }}" width="800" />
 
 ## Saigon, Vietnam
 
-<img src="/images/vietnam/1_vC5ZUPMSbSPC5BGVBMhWKw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_vC5ZUPMSbSPC5BGVBMhWKw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_ZXDr62hJ8DRKpm2mqlOkdA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ZXDr62hJ8DRKpm2mqlOkdA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_wqybazlNkSmZgKw9zUFKfg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_wqybazlNkSmZgKw9zUFKfg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_CMYJBl8S9Mz2h89y1LXTKg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_CMYJBl8S9Mz2h89y1LXTKg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_iBOgdI4TtpY3LnpoXEqc9Q.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_iBOgdI4TtpY3LnpoXEqc9Q.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_LHc2m05iCNWxdv-YsTZ7MA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_LHc2m05iCNWxdv-YsTZ7MA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_JY0sQkrwR9JfbupN42tirg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_JY0sQkrwR9JfbupN42tirg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_ecVu8cslCu_OcPujXLpJkQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_ecVu8cslCu_OcPujXLpJkQ.jpg' | relative_url }}" width="800" />
 
 ## Da Lat, Vietnam
 
-<img src="/images/vietnam/1_MkdAzUq6jXy_S6gussh_HQ.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_MkdAzUq6jXy_S6gussh_HQ.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_DYIPM_Euykxzcw8DCB5I9g.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_DYIPM_Euykxzcw8DCB5I9g.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_TA7VMdvwC5QUEY_XKUNCow.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_TA7VMdvwC5QUEY_XKUNCow.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_7KXv0MoYS9-RZkYRHdBIgg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_7KXv0MoYS9-RZkYRHdBIgg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_fNhiDsl6Jb7LshhWCpTRbA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_fNhiDsl6Jb7LshhWCpTRbA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_rRKz5xPgNiD9pQecOuypcw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_rRKz5xPgNiD9pQecOuypcw.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_JATh-mxLoQx12b50ICUuQg.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_JATh-mxLoQx12b50ICUuQg.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_QZz3lnRnLU00MRkWNIiztA.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_QZz3lnRnLU00MRkWNIiztA.jpg' | relative_url }}" width="800" />
 
-<img src="/images/vietnam/1_iTH4UBCuT7TSDLPtX8Q-Hw.jpg" width="800" />
+<img src="{{ '/images/vietnam/1_iTH4UBCuT7TSDLPtX8Q-Hw.jpg' | relative_url }}" width="800" />
 
 <p>&nbsp;</p>
