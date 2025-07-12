@@ -28,7 +28,7 @@ in applications and evaluation of large language and vision models, machine tran
 
 - <span class="date-align">Nov 2024</span> <span class="seperator">~</span> Objective, Inc. was acquired by Upwork.
 - <span class="date-align">Sep 2021</span> <span class="seperator">~</span> I started [Objective, Inc.](https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/) with Pablo and Lance.
-- <span class="date-align">Dec 2021</span> <span class="seperator">~</span> MKQA paper published in TACL, first machine learning dataset by Apple.
+- <span class="date-align">Jul 2020</span> <span class="seperator">~</span> MKQA paper published in TACL, first machine learning dataset by Apple.
 
 {% for post in site.posts %}
 
