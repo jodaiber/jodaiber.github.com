@@ -55,6 +55,3 @@ I am the dream and the hope of the slave.
 I rise
 I rise
 I rise.
-
-
-<iframe width="420" height="315" src="//www.youtube.com/embed/xFFpwhTMr6A" frameborder="0" allowfullscreen></iframe>
