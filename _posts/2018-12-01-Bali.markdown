@@ -1,0 +1,37 @@
+---
+layout: photos
+title: Bali 2018
+category: Travel
+---
+
+## Ubud, Indonesia
+
+<img src="/images/bali/ubud_1.jpg" width="800" />
+
+<img src="/images/bali/ubud_4.jpg" width="800" />
+
+<img src="/images/bali/ubud_5.jpg" width="800" />
+
+<img src="/images/bali/ubud_7.jpg" width="800" />
+
+<img src="/images/bali/ubud_9.jpg" width="800" />
+
+## Batur, Indonesia
+
+<img src="/images/bali/batur_1.jpg" width="800" />
+
+<img src="/images/bali/batur_2.jpg" width="800" />
+
+<img src="/images/bali/batur_3.jpg" width="800" />
+
+<img src="/images/bali/batur_4.jpg" width="800" />
+
+## Nusa Penida, Indonesia
+
+<img src="/images/bali/nusa_1.jpg" width="800" />
+
+<img src="/images/bali/nusa_4.jpg" width="800" />
+
+## Kuta, Indonesia
+
+<img src="/images/bali/kuta_2.jpg" width="800" /> 
