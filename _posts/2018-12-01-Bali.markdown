@@ -32,6 +32,4 @@ category: Travel
 
 <img src="/images/bali/nusa_4.jpg" width="800" />
 
-## Kuta, Indonesia
-
 <img src="/images/bali/kuta_2.jpg" width="800" /> 

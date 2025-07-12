@@ -31,26 +31,26 @@
     <div class="pub_actions">
     <!-- abstract -->
     {% if include.paper.abstract %}
-      <div id="abstract-{{ include.i }}" class="reveal" data-reveal>
+      <div id="abstract-{{ include.paper.title | slugify }}" class="reveal" data-reveal>
         <p><strong>{{ include.paper.title }}</strong></p>
         <p>{{ include.paper.abstract }}</p>
         <button class="close-button" data-close aria-label="Close" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <a data-open="abstract-{{ include.i }}" class="secondary label">Abstract</a>
+      <a data-open="abstract-{{ include.paper.title | slugify }}" class="secondary label">Abstract</a>
     {% endif %}
 
     <!-- bibtex -->
     {% if include.paper.bibtex %}
-      <div id="bibtex-{{ include.i }}" class="reveal" data-reveal>
+      <div id="bibtex-{{ include.paper.title | slugify }}" class="reveal" data-reveal>
         <p><strong>{{ include.paper.title }}</strong></p>
         <pre>{{ include.paper.bibtex }}</pre>
         <button class="close-button" data-close aria-label="Close" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <a data-open="bibtex-{{ include.i }}" class="secondary label">BibTeX</a>
+      <a data-open="bibtex-{{ include.paper.title | slugify }}" class="secondary label">BibTeX</a>
     {% endif %}
 
     <!-- resources -->
@@ -65,7 +65,7 @@
     {% endif %}
 
     {% if include.paper.poster %}
-      <div id="poster-{{ include.i }}" class="reveal large" data-reveal>
+      <div id="poster-{{ include.paper.title | slugify }}" class="reveal large" data-reveal>
         <p><strong>{{ include.paper.title }}</strong></p>
         <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.poster }}" style="text-align: center;">
            <a href="{{ include.paper.poster }}">Download poster.</a>
@@ -74,11 +74,11 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <a data-open="poster-{{ include.i }}" class="secondary label">Poster</a>
+      <a data-open="poster-{{ include.paper.title | slugify }}" class="secondary label">Poster</a>
     {% endif %}
 
     {% if include.paper.talk %}
-      <div id="talk-{{ include.i }}" class="reveal large" data-reveal>
+      <div id="talk-{{ include.paper.title | slugify }}" class="reveal large" data-reveal>
         <p><strong>{{ include.paper.title }}</strong></p>
         <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.talk }}" style="text-align: center;">
            <a href="{{ include.paper.talk }}">Download slides.</a>
@@ -87,7 +87,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <a data-open="talk-{{ include.i }}" class="secondary label">Talk</a>
+      <a data-open="talk-{{ include.paper.title | slugify }}" class="secondary label">Talk</a>
     {% endif %}
 
     <!-- code and data -->

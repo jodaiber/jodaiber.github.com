@@ -248,3 +248,31 @@
   data: /entity-linking
   code: http://spotlight.dbpedia.org
   demo: http://dbpedia-spotlight.github.io/demo/
+- layout: paper
+  paper-type: inproceedings
+  selected: y
+  topic: llmeval
+  year: 2021
+  title: "MKQA: A Linguistically Diverse Benchmark for Multilingual Open Domain Question Answering"
+  authors: Longpre, S. and Lu, Y. and Daiber, J.
+  booktitle: Transactions of the Association for Computational Linguistics
+  venue: conference
+  abstract: >
+    Progress in cross-lingual modeling depends on challenging, realistic, and diverse evaluation sets. We introduce Multilingual Knowledge Questions and Answers (MKQA), an open- domain question answering evaluation set comprising 10k question-answer pairs aligned across 26 typologically diverse languages (260k question-answer pairs in total). Answers are based on heavily curated, language- independent data representation, making results comparable across languages and independent of language-specific passages. With 26 languages, this dataset supplies the widest range of languages to-date for evaluating question answering. We benchmark a variety of state- of-the-art methods and baselines for generative and extractive question answering, trained on Natural Questions, in zero shot and translation settings. Results indicate this dataset is challenging even in English, but especially in low-resource languages.
+  bibtex: >
+    @article{10.1162/tacl_a_00433,
+      author = {Longpre, Shayne and Lu, Yi and Daiber, Joachim},
+      title = {MKQA: A Linguistically Diverse Benchmark for Multilingual Open Domain Question Answering},
+      journal = {Transactions of the Association for Computational Linguistics},
+      volume = {9},
+      pages = {1389-1406},
+      year = {2021},
+      month = {12},
+      abstract = {Progress in cross-lingual modeling depends on challenging, realistic, and diverse evaluation sets. We introduce Multilingual Knowledge Questions and Answers (MKQA), an open- domain question answering evaluation set comprising 10k question-answer pairs aligned across 26 typologically diverse languages (260k question-answer pairs in total). Answers are based on heavily curated, language- independent data representation, making results comparable across languages and independent of language-specific passages. With 26 languages, this dataset supplies the widest range of languages to-date for evaluating question answering. We benchmark a variety of state- of-the-art methods and baselines for generative and extractive question answering, trained on Natural Questions, in zero shot and translation settings. Results indicate this dataset is challenging even in English, but especially in low-resource languages.1},
+      issn = {2307-387X},
+      doi = {10.1162/tacl_a_00433},
+      url = {https://doi.org/10.1162/tacl\_a\_00433},
+      eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00433/1976187/tacl\_a\_00433.pdf},
+    }
+  doc: https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00433/108607/MKQA-A-Linguistically-Diverse-Benchmark-for
+  data: https://github.com/apple/ml-mkqa
