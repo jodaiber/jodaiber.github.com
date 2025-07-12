@@ -356,6 +356,12 @@ ul.publications li {
     font-family: "Minion Web", "Georgia", serif;
     color: #fff;
 }
+.headerphoto > a {
+  border-bottom: none !important;
+}
+.headerphoto > a:hover, .headerphoto > a:focus {
+  border-bottom: none !important;
+}
 .photography {
     margin-left: 1em;
     padding-left: 1em;
