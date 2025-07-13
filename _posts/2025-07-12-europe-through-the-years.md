@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Europe Through The Years
+title: Europe Through the Years
 category: Travel
 ---
 
