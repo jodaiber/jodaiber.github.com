@@ -31,12 +31,14 @@ jobs:
       - uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: _site           # folder Jekyll just built
+          single-commit: true
 
   # Garbage-collect the preview when the PR is closed
   cleanup:
     runs-on: ubuntu-latest
     if: github.event.action == 'closed'
     steps:
+      - uses: actions/checkout@v4
       - uses: rossjrw/pr-preview-action@v1
         with:
           deploy-preview: delete
