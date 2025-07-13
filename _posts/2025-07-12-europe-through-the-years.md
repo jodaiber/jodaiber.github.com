@@ -42,10 +42,6 @@ category: Travel
 
 <img src="{{ '/images/europe/scotland-isle-of-skye-1.jpg' | relative_url }}" width="800" />
 
-## Barcelona, Spain
-
-<img src="{{ '/images/europe/bcn-4.jpg' | relative_url }}" width="800" />
-
 ## Brussels, Belgium
 
 <img src="{{ '/images/europe/brussles-1.jpg' | relative_url }}" width="800" />
