@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Vietnam 2014
+title: Vietnam
 category: Travel
 ---
 
