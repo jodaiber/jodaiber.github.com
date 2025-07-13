@@ -1,13 +1,15 @@
-	html {
-			height: 100%;
+        html {
+                        height: 100%;
 
 		}
-		body {
-			
-			margin: 0 0 0 0;
-			padding: 0;
-			
-		}
+                body {
+                        font-family: 'Inter', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+                        margin: 0 0 0 0;
+                        padding: 0;
+                        font-size: 18px;
+                        line-height: 1.5;
+
+                }
 	
 html,body {
     height:100%;
@@ -71,7 +73,7 @@ html,body {
 			text-transform: uppercase;
 
 			padding: 14px;
-			font-family: "Minion Web", "Georgia", serif;
+                        font-family: 'Merriweather', 'Minion Web', 'Georgia', serif;
 
 			font-size: 150%;
 			vertical-align: bottom;
@@ -137,7 +139,7 @@ html,body {
 
 			color: #30261d;
 			color: #3d3935;
-			font-family: "Minion Web", "Georgia", serif;
+                        font-family: 'Merriweather', 'Minion Web', 'Georgia', serif;
 
 			width: 100%;
 			
@@ -145,6 +147,8 @@ html,body {
 		p {
 		/*	padding-left: 20px;
 		*/	padding-right: 20px;
+                        margin-block: 0.8em 1.2em;
+                        hyphens: auto;
 		}		
 		li { list-style-type: square; padding-bottom: 5px; }		
 		pre {
@@ -165,7 +169,7 @@ html,body {
 		#dict-def {
 			margin-top: 10px;
 			display: inline-block;
-			font-family: Georgia;
+                        font-family: 'Merriweather', Georgia, serif;
 		}
 		strong {
 		}
@@ -202,6 +206,7 @@ html,body {
 		
 		a:not(.label) {
 			color: #222;
+                        text-underline-offset: 0.15em;
 			text-decoration: none;
 			border-bottom: 1px solid #e8e8e8;
 			transition: border-bottom 0.2s;
@@ -356,7 +361,7 @@ ul.publications li {
 
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Minion Web", "Georgia", serif;
+    font-family: 'Merriweather', 'Minion Web', 'Georgia', serif;
     color: #fff;
 }
 .headerphoto > a {
@@ -371,7 +376,7 @@ ul.publications li {
     border-left: 1px solid #eee;
     text-transform: none;
 
-    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
 }
 .outer {
@@ -456,3 +461,8 @@ ul.publications li {
 .post-desc {
   flex: 1 1 auto;
 }
+
+@media (min-width: 48rem) {
+  body { line-height: 1.45; }
+}
+
