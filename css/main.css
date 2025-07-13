@@ -128,9 +128,16 @@ html,body {
 		}
 
 			
-		.content ul {
-			padding-left: 20px;
-		}
+				.content ul{
+				    list-style-type: square;      
+				    list-style-position: outside; 
+				    margin: 0 0 1.25rem;          
+				    padding-left: 1.85rem;         
+				}
+
+				li{
+				    padding: 0 0 5px;             /* restore spacing under each item */
+				}
 
                 h1 {
                         clear: none;
@@ -154,7 +161,6 @@ html,body {
                         margin-block: 0.8em 1.2em;
                         hyphens: auto;
 		}		
-		li { list-style-type: square; padding-bottom: 5px; }		
 		pre {
 			overflow-x: auto;
 		}
