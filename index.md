@@ -40,9 +40,9 @@ in applications and evaluation of large language and vision models, machine tran
 {% endif %}
 
     {% if post.external_url %}
-    	<li><span class="date-align">{{ post.date | date_to_string }}</span> <span class="seperator">~</span> {{ post.category }}: <a href="{{ post.external_url }}">{{ post.title }}</a></li>
+        <li><span class="date-align">{{ post.date | date_to_string }}</span> <span class="seperator">~</span> <span class="post-desc">{{ post.category }}: <a href="{{ post.external_url }}">{{ post.title }}</a></span></li>
     {% else %}
-    	<li><span class="date-align">{{ post.date | date_to_string }}</span> <span class="seperator">~</span> {{ post.category }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><span class="date-align">{{ post.date | date_to_string }}</span> <span class="seperator">~</span> <span class="post-desc">{{ post.category }}: <a href="{{ post.url }}">{{ post.title }}</a></span></li>
     {% endif %}
 
  
