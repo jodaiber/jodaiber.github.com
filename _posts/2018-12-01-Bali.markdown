@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Bali 2018
+title: Bali
 category: Travel
 ---
 
