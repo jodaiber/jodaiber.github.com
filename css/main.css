@@ -443,7 +443,7 @@ ul.publications li {
 }
 .date-align {
   display: inline-block;
-  width: 12ch;
+  width: 8ch;
   margin-right: 0.25em;
   text-align: right;
   font-variant-numeric: tabular-nums;
