@@ -109,13 +109,13 @@ html,body {
 		h1, h2 {
 
 		}
-		h2 {
-			text-transform: uppercase;
-			margin: 2em 0 0 0;
-			color: #333;
-			font-size: 120%;
-			font-weight: normal;
-			border-bottom: 1px solid #ddd;	
+               h2 {
+                        text-transform: uppercase;
+                        margin: 2.5rem 0 0 0;
+                        color: #333;
+                        font-size: 120%;
+                        font-weight: normal;
+                        border-bottom: 1px solid #ddd;
 			
 			line-height: 130%;
 			vertical-align: baseline;
@@ -128,9 +128,9 @@ html,body {
 			padding-left: 20px;
 		}
 
-		h1 {
-			clear: none;
-			display: inline-block;
+                h1 {
+                        clear: none;
+                        display: inline-block;
 			
 			/*color: white;
 			
@@ -138,8 +138,9 @@ html,body {
 			margin-top: 40px;
 
 			color: #30261d;
-			color: #3d3935;
+                        color: #3d3935;
                         font-family: 'Merriweather', 'Minion Web', 'Georgia', serif;
+                        font-weight: 600;
 
 			width: 100%;
 			
@@ -336,6 +337,7 @@ html,body {
     }
     h1 {
         font-size: 2.25rem;
+        font-weight: 600;
     }
 }
 
@@ -464,5 +466,9 @@ ul.publications li {
 
 @media (min-width: 48rem) {
   body { line-height: 1.45; }
+}
+
+@media (max-width: 23rem) {
+  body { line-height: 1.55; }
 }
 
