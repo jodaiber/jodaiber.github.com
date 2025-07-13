@@ -1,0 +1,16 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+    - id: trailing-whitespace
+      files: ^css/.*\.css$
+      exclude: css/foundation\.min\.css
+    - id: end-of-file-fixer
+      files: ^css/.*\.css$
+      exclude: css/foundation\.min\.css
+- repo: https://github.com/pre-commit/mirrors-prettier
+  rev: v3.0.3
+  hooks:
+    - id: prettier
+      files: ^css/.*\.css$
+      exclude: css/foundation\.min\.css
