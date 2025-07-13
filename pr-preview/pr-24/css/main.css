@@ -144,7 +144,6 @@ html,body {
 			color: #30261d;
                         color: #3d3935;
                         font-family: 'Merriweather', 'Minion Web', 'Georgia', serif;
-                        font-weight: 600;
 
 			width: 100%;
 			
@@ -409,10 +408,11 @@ ul.publications li {
     text-align: center;
 }
 .photos h2 {
-	font-weight: bold;
 	border-bottom: none;
 	font-size: 170%;
 	color: #555;
+	
+    font-weight: 500; /* or 300 for lighter, or 500 for medium */
 }
 
 .photo .image {
