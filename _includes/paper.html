@@ -1,5 +1,5 @@
 <li>
-    <a href="{{include.paper.doc}}"><strong>{{ include.paper.title }}</strong></a><br/>
+    <a href="{{ include.paper.doc | relative_url }}"><strong>{{ include.paper.title }}</strong></a><br/>
     {% if include.paper.authors %}{{ include.paper.authors }}{% endif %}
     {% case include.paper.paper-type %}
       {% when "inproceedings" %}
@@ -57,18 +57,18 @@
     <!-- draft/slides/poster/talk -->
 
     {% if include.paper.draft %}
-    <a href="{{ include.paper.draft }}" class="secondary label">Draft</a>
+    <a href="{{ include.paper.draft | relative_url }}" class="secondary label">Draft</a>
     {% endif %}
 
     {% if include.paper.slides %}
-      <a href="{{ include.paper.slides }}" class="secondary label">Slides</a>
+      <a href="{{ include.paper.slides | relative_url }}" class="secondary label">Slides</a>
     {% endif %}
 
     {% if include.paper.poster %}
       <div id="poster-{{ include.paper.title | slugify }}" class="reveal large" data-reveal>
         <p><strong>{{ include.paper.title }}</strong></p>
-        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.poster }}" style="text-align: center;">
-           <a href="{{ include.paper.poster }}">Download poster.</a>
+        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.poster | relative_url }}" style="text-align: center;">
+           <a href="{{ include.paper.poster | relative_url }}">Download poster.</a>
         </object>
         <button class="close-button" data-close aria-label="Close" type="button">
           <span aria-hidden="true">&times;</span>
@@ -80,8 +80,8 @@
     {% if include.paper.talk %}
       <div id="talk-{{ include.paper.title | slugify }}" class="reveal large" data-reveal>
         <p><strong>{{ include.paper.title }}</strong></p>
-        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.talk }}" style="text-align: center;">
-           <a href="{{ include.paper.talk }}">Download slides.</a>
+        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.talk | relative_url }}" style="text-align: center;">
+           <a href="{{ include.paper.talk | relative_url }}">Download slides.</a>
         </object>
         <button class="close-button" data-close aria-label="Close" type="button">
           <span aria-hidden="true">&times;</span>
@@ -92,15 +92,15 @@
 
     <!-- code and data -->
     {% if include.paper.code %}
-      <a href="{{ include.paper.code }}" class="secondary label">Code</a>
+      <a href="{{ include.paper.code | relative_url }}" class="secondary label">Code</a>
     {% endif %}
 
     {% if include.paper.data %}
-    <a href="{{ include.paper.data }}" class="secondary label">Data</a>
+    <a href="{{ include.paper.data | relative_url }}" class="secondary label">Data</a>
     {% endif %}
 
     {% if include.paper.demo %}
-      <a href="{{ include.paper.demo }}" class="secondary label">Demo</a>
+      <a href="{{ include.paper.demo | relative_url }}" class="secondary label">Demo</a>
     {% endif %}
 
   </div>
