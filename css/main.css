@@ -438,13 +438,21 @@ ul.publications li {
 }
 
 .posts li {
-  display: list-item;
-  align-items: initial;
-  gap: initial;
+  display: flex;
+  align-items: flex-start;
 }
 .date-align {
   display: inline-block;
-  margin-right: 0em;
+  width: 12ch;
+  margin-right: 0.25em;
   text-align: right;
   font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.seperator {
+  flex-shrink: 0;
+  margin-right: 0.25em;
+}
+.post-desc {
+  flex: 1 1 auto;
 }
