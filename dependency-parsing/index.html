@@ -1,38 +1,48 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
-        <link rel="stylesheet" type="text/css" href="/css/foundation.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/foundation.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/main.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
+    <script
+      type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
 
+    <title>Dependency parsing</title>
+  </head>
 
-	<title>Dependency parsing</title>
-	
-</head>
+  <body>
+    <div id="layout">
+      <div class="sidebar">
+        <a href="/" id="prague"
+          ><span>JoDaiber.de</span></a
+        >
+      </div>
 
-<body>
+      <div id="spacer"></div>
+      <div class="content">
+        <div class="inner">
+          <h1>Dependency parsing</h1>
 
-<div id="layout">
-
-    <div class="sidebar"><a href="/" id="prague"><span>JoDaiber.de</span></a></div>
-
-<div id="spacer" ></div><div class="content">
-<div class="inner">
-
-<h1>Dependency parsing</h1>
-
-<h1 id="dependency-parsing">Dependency parsing</h1>
+          <h1 id="dependency-parsing">Dependency parsing</h1>
 
 <p>Dependency parsing is a method for the syntactic analysis of natural
 language text, based on the theory of dependency grammar. Rather than
@@ -337,7 +347,7 @@ understood sentence \(\textbf{w}\), we have:</p>
 \[\mathrm{P}_G(\textbf{w}|I) \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T)\]
 
 <p>In the controlled experiment of Levy (2008), the relevant probability
-distribution is \(p(\textbf{w}|\textbf{w}^*)\), which is given as</p>
+distribution is \(p(\textbf{w}|\textbf{w}^\*)\), which is given as</p>
 
 \[\begin{aligned}
   p(\textbf{w}|\textbf{w}^*) &amp;= \int_{ I } \mathrm{P}_C(\textbf{w}|I,\textbf{w}^*) \mathrm{P}_T(I|\textbf{w}^*)  df I\end{aligned}\]
@@ -431,10 +441,7 @@ Parsing</em>.volume 2. Morgan &amp; Claypool Publishers, editions.</p>
 
 <p>Matthew Lease, Eugene Charniak, Mark Johnson, and David McClosky. 2006.
 A Look at Parsing and Its Applications. In <em>Proceedings of the National
-Conference on Artificial Intelligence</em>, volume 21, pages 1642–1645, No.</p>
-<ol>
-  <li>Menlo Park, CA; Cambridge, MA. MIT Press.</li>
-</ol>
+Conference on Artificial Intelligence</em>, volume 21, pages 1642–1645, No. 2. Menlo Park, CA; Cambridge, MA. MIT Press.</p>
 
 <p>Roger Levy. 2008. A noisy-channel model of rational human sentence
 comprehension under uncertain input. In <em>Proceedings of the 2008
@@ -462,13 +469,12 @@ dependency language model. In <em>Proceedings of the 46th Annual Meeting of
 the Association for Computational Linguistics: Human Language
 Technologies</em>, pages 577–585. Association for Computational Linguistics.</p>
 
+        </div>
+      </div>
 
-</div>
-</div>
-
-<script src="/js/jquery.js"></script>
-<script src="/js/foundation.min.js"></script>
-<script src="/js/app.js"></script>
-
-</body>
+      <script src="/js/jquery.js"></script>
+      <script src="/js/foundation.min.js"></script>
+      <script src="/js/app.js"></script>
+    </div>
+  </body>
 </html>
