@@ -1,107 +1,152 @@
 <li>
-    <a href="{{ include.paper.doc | relative_url }}"><strong>{{ include.paper.title }}</strong></a><br/>
-    {% if include.paper.authors %}{{ include.paper.authors }}{% endif %}
-    {% case include.paper.paper-type %}
-      {% when "inproceedings" %}
-        In
-        {% if include.paper.booktitle-url %}
-          <a href="{{ include.paper.booktitle-url}}">
-            <span class="glyphicon glyphicon-globe"></span>
-          </a>
-        {% endif %}
-          <i>{{ include.paper.booktitle }}</i>,
-        {% if include.paper.pages %}pages {{ include.paper.pages }},{% endif %}
-      {% when "article" %}
-        In
-        {% if include.paper.journal-url %}
-          <a href="{{ include.paper.journal-url }}">
-            <span class="glyphicon glyphicon-globe"></span>
-          </a>
-        {% endif %}
-          <i>{{ include.paper.journal }}</i>,
-            {% if include.paper.volume %}{{ include.paper.volume }}{% endif %}{% if include.paper.number %}({{ include.paper.number }}){% endif %}
-            {% if include.paper.article%}: Article {{ include.paper.article}},{% endif %}
-            {% if include.paper.pages %}: pages {{ include.paper.pages }},{% endif %}
-      {% when "dissertation" %}
-        Dissertation, {{ include.paper.institution }}.
-    {% endcase %}
-    {{ include.paper.year }}.
-    {% if include.paper.note %}<i>{{ include.paper.note | markdownify | remove: '<p>' | remove: '</p>' }}</i>{% endif %}
-    
-    <div class="pub_actions">
+  <a href="{{ include.paper.doc | relative_url }}"
+    ><strong>{{ include.paper.title }}</strong></a
+  ><br />
+  {% if include.paper.authors %}{{ include.paper.authors }}{% endif %} {% case
+  include.paper.paper-type %} {% when "inproceedings" %} In {% if
+  include.paper.booktitle-url %}
+  <a href="{{ include.paper.booktitle-url}}">
+    <span class="glyphicon glyphicon-globe"></span>
+  </a>
+  {% endif %}
+  <i>{{ include.paper.booktitle }}</i>, {% if include.paper.pages %}pages {{
+  include.paper.pages }},{% endif %} {% when "article" %} In {% if
+  include.paper.journal-url %}
+  <a href="{{ include.paper.journal-url }}">
+    <span class="glyphicon glyphicon-globe"></span>
+  </a>
+  {% endif %}
+  <i>{{ include.paper.journal }}</i>, {% if include.paper.volume %}{{
+  include.paper.volume }}{% endif %}{% if include.paper.number %}({{
+  include.paper.number }}){% endif %} {% if include.paper.article%}: Article {{
+  include.paper.article}},{% endif %} {% if include.paper.pages %}: pages {{
+  include.paper.pages }},{% endif %} {% when "dissertation" %} Dissertation, {{
+  include.paper.institution }}. {% endcase %} {{ include.paper.year }}. {% if
+  include.paper.note %}<i
+    >{{ include.paper.note | markdownify | remove: '
+    <p>' | remove: '</p>
+    ' }}</i
+  >{% endif %}
+
+  <div class="pub_actions">
     <!-- abstract -->
     {% if include.paper.abstract %}
-      <div id="abstract-{{ include.paper.title | slugify }}" class="reveal" data-reveal>
-        <p><strong>{{ include.paper.title }}</strong></p>
-        <p>{{ include.paper.abstract }}</p>
-        <button class="close-button" data-close aria-label="Close" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <a data-open="abstract-{{ include.paper.title | slugify }}" class="secondary label">Abstract</a>
+    <div
+      id="abstract-{{ include.paper.title | slugify }}"
+      class="reveal"
+      data-reveal
+    >
+      <p><strong>{{ include.paper.title }}</strong></p>
+      <p>{{ include.paper.abstract }}</p>
+      <button class="close-button" data-close aria-label="Close" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <a
+      data-open="abstract-{{ include.paper.title | slugify }}"
+      class="secondary label"
+      >Abstract</a
+    >
     {% endif %}
 
     <!-- bibtex -->
     {% if include.paper.bibtex %}
-      <div id="bibtex-{{ include.paper.title | slugify }}" class="reveal" data-reveal>
-        <p><strong>{{ include.paper.title }}</strong></p>
-        <pre>{{ include.paper.bibtex }}</pre>
-        <button class="close-button" data-close aria-label="Close" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <a data-open="bibtex-{{ include.paper.title | slugify }}" class="secondary label">BibTeX</a>
+    <div
+      id="bibtex-{{ include.paper.title | slugify }}"
+      class="reveal"
+      data-reveal
+    >
+      <p><strong>{{ include.paper.title }}</strong></p>
+      <pre>{{ include.paper.bibtex }}</pre>
+      <button class="close-button" data-close aria-label="Close" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <a
+      data-open="bibtex-{{ include.paper.title | slugify }}"
+      class="secondary label"
+      >BibTeX</a
+    >
     {% endif %}
 
     <!-- resources -->
     <!-- draft/slides/poster/talk -->
 
     {% if include.paper.draft %}
-    <a href="{{ include.paper.draft | relative_url }}" class="secondary label">Draft</a>
-    {% endif %}
-
-    {% if include.paper.slides %}
-      <a href="{{ include.paper.slides | relative_url }}" class="secondary label">Slides</a>
-    {% endif %}
-
-    {% if include.paper.poster %}
-      <div id="poster-{{ include.paper.title | slugify }}" class="reveal large" data-reveal>
-        <p><strong>{{ include.paper.title }}</strong></p>
-        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.poster | relative_url }}" style="text-align: center;">
-           <a href="{{ include.paper.poster | relative_url }}">Download poster.</a>
-        </object>
-        <button class="close-button" data-close aria-label="Close" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <a data-open="poster-{{ include.paper.title | slugify }}" class="secondary label">Poster</a>
-    {% endif %}
-
-    {% if include.paper.talk %}
-      <div id="talk-{{ include.paper.title | slugify }}" class="reveal large" data-reveal>
-        <p><strong>{{ include.paper.title }}</strong></p>
-        <object id="pdf" height="600px" width="100%" type="application/pdf" data="{{ include.paper.talk | relative_url }}" style="text-align: center;">
-           <a href="{{ include.paper.talk | relative_url }}">Download slides.</a>
-        </object>
-        <button class="close-button" data-close aria-label="Close" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <a data-open="talk-{{ include.paper.title | slugify }}" class="secondary label">Talk</a>
+    <a href="{{ include.paper.draft | relative_url }}" class="secondary label"
+      >Draft</a
+    >
+    {% endif %} {% if include.paper.slides %}
+    <a href="{{ include.paper.slides | relative_url }}" class="secondary label"
+      >Slides</a
+    >
+    {% endif %} {% if include.paper.poster %}
+    <div
+      id="poster-{{ include.paper.title | slugify }}"
+      class="reveal large"
+      data-reveal
+    >
+      <p><strong>{{ include.paper.title }}</strong></p>
+      <object
+        id="pdf"
+        height="600px"
+        width="100%"
+        type="application/pdf"
+        data="{{ include.paper.poster | relative_url }}"
+        style="text-align: center"
+      >
+        <a href="{{ include.paper.poster | relative_url }}">Download poster.</a>
+      </object>
+      <button class="close-button" data-close aria-label="Close" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <a
+      data-open="poster-{{ include.paper.title | slugify }}"
+      class="secondary label"
+      >Poster</a
+    >
+    {% endif %} {% if include.paper.talk %}
+    <div
+      id="talk-{{ include.paper.title | slugify }}"
+      class="reveal large"
+      data-reveal
+    >
+      <p><strong>{{ include.paper.title }}</strong></p>
+      <object
+        id="pdf"
+        height="600px"
+        width="100%"
+        type="application/pdf"
+        data="{{ include.paper.talk | relative_url }}"
+        style="text-align: center"
+      >
+        <a href="{{ include.paper.talk | relative_url }}">Download slides.</a>
+      </object>
+      <button class="close-button" data-close aria-label="Close" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <a
+      data-open="talk-{{ include.paper.title | slugify }}"
+      class="secondary label"
+      >Talk</a
+    >
     {% endif %}
 
     <!-- code and data -->
     {% if include.paper.code %}
-      <a href="{{ include.paper.code | relative_url }}" class="secondary label">Code</a>
+    <a href="{{ include.paper.code | relative_url }}" class="secondary label"
+      >Code</a
+    >
+    {% endif %} {% if include.paper.data %}
+    <a href="{{ include.paper.data | relative_url }}" class="secondary label"
+      >Data</a
+    >
+    {% endif %} {% if include.paper.demo %}
+    <a href="{{ include.paper.demo | relative_url }}" class="secondary label"
+      >Demo</a
+    >
     {% endif %}
-
-    {% if include.paper.data %}
-    <a href="{{ include.paper.data | relative_url }}" class="secondary label">Data</a>
-    {% endif %}
-
-    {% if include.paper.demo %}
-      <a href="{{ include.paper.demo | relative_url }}" class="secondary label">Demo</a>
-    {% endif %}
-
   </div>
 </li>

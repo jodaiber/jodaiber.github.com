@@ -1,39 +1,49 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
-        <link rel="stylesheet" type="text/css" href="{{ '/css/foundation.min.css' | relative_url }}">
-        <link rel="stylesheet" type="text/css" href="{{ '/css/main.css' | relative_url }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/css/foundation.min.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/css/main.css' | relative_url }}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
+    <script
+      type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
 
+    <title>{{ page.title }}</title>
+  </head>
 
-	<title>{{ page.title }}</title>
-</head>
-
-<body>
-
-    <div class="headerphoto"><a href="{{ '/' | relative_url }}"><span>Joachim Daiber</span> <span class="photography">{{ page.title }}</span></a></div>
-<!--<div class="outer">
+  <body>
+    <div class="headerphoto">
+      <a href="{{ '/' | relative_url }}"
+        ><span>Joachim Daiber</span>
+        <span class="photography">{{ page.title }}</span></a
+      >
+    </div>
+    <!--<div class="outer">
     <div class="banner"><div class="inner"></div></div>
     <div class="headerphoto"><a href="{{ '/' | relative_url }}"><span>JoDaiber.de</span></a></div>
 </div>-->
-<div class="photos">
-{{ content }}
-</div>
+    <div class="photos">{{ content }}</div>
 
-<script src="{{ '/js/jquery.js' | relative_url }}"></script>
-<script src="{{ '/js/foundation.min.js' | relative_url }}"></script>
-<script src="{{ '/js/app.js' | relative_url }}"></script>
-
-</body>
+    <script src="{{ '/js/jquery.js' | relative_url }}"></script>
+    <script src="{{ '/js/foundation.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/app.js' | relative_url }}"></script>
+  </body>
 </html>

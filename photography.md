@@ -6,7 +6,9 @@ title: Photography
 <div id="instafeed"></div>
 
 <script src="{{ '/js/instafeed.js' | relative_url }}"></script>
+
 {% raw %}
+
 <script type="text/javascript">
     var feed = new Instafeed({
 		get: 'user',
@@ -19,4 +21,5 @@ title: Photography
     });
     feed.run();
 </script>
+
 {% endraw %}

@@ -9,7 +9,6 @@ We introduce the Denoised Web Treebank: a treebank including a normalization lay
 
 For more information and documentation, please see [my 2013 Master thesis](http://jodaiber.github.io/doc/msc_thesis.pdf).
 
-
 ## Data
 
 Download the treebank [here](http://jodaiber.github.io/data/denoised_web_treebank.tar.gz).
@@ -30,4 +29,3 @@ The treebank cosists of the following files:
 - `dev/test.tokens`: The original noisy tokens.
 - `dev/test.normalized`: The manually normalized tokens including the alignments.
 - `dev/test.conll`: Manually annotated dependency trees for each sentence (CONLL X format).
-

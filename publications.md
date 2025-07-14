@@ -18,7 +18,7 @@ For a full list of publications, please see [Google Scholar](http://scholar.goog
 
 ## Machine Translation
 
-My current work focuses on linguistically-informed statistical models for MT. 
+My current work focuses on linguistically-informed statistical models for MT.
 
 <ul class="publications">
 {% assign counter=0 %}
@@ -28,7 +28,6 @@ My current work focuses on linguistically-informed statistical models for MT.
   {% assign counter=counter | plus:1 %}
 {% endfor %}
 </ul>
-
 
 ## Entity Extraction
 
