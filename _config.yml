@@ -5,6 +5,7 @@ kramdown:
 permalink: pretty
 
 exclude:
+  - cv/
   - vendor
   - Rakefile.rb
   - CNAME

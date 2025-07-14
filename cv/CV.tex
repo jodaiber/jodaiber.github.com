@@ -1,0 +1,407 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}          % use sans-serif as default to match website
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage{fontspec}                             % for XeLaTeX font handling
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[round]{natbib}
+\usepackage{comment}
+
+\usepackage{bibentry}
+\nobibliography*
+
+\usepackage{eurosym}
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\renewcommand*{\addresssymbol}       {}
+\renewcommand*{\mobilephonesymbol}   {}
+\renewcommand*{\fixedphonesymbol}    {}
+\renewcommand*{\faxphonesymbol}      {}
+%\renewcommand*{\emailsymbol}         {}
+\renewcommand*{\homepagesymbol}      {}
+
+\usepackage{tikz}
+\RequirePackage{fontawesome}
+
+% Font configuration to match website
+\setsansfont{Helvetica Neue}
+
+% Override moderncv font styles to match website
+% Name in Merriweather bold, no line break
+\renewcommand{\namestyle}[1]{{\namefont\Huge \mbox{#1}}}
+
+% Section headings (Employment, Education, etc.) in Helvetica Neue light (not bold)
+\renewcommand{\sectionstyle}[1]{{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]\mdseries\Large #1}}
+
+% Make cventry headings (like Upwork...) use Helvetica Neue Light
+\let\oldcventry\cventry
+\renewcommand*{\cventry}[6]{%
+  \oldcventry{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]#1}{\sffamily\fontspec{Helvetica Neue}\mdseries{}#2}{#3}{#4}{#5}{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]#6}%
+}
+
+\renewcommand*{\cventryflat}[6]{%
+  \oldcventry{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]#1}{\sffamily\fontspec{Helvetica Neue}\mdseries{}#2}{#3}{#4}{#5}{#6}%
+}
+% --- tighten vertical rhythm ---------------------------------
+\makeatletter
+% 1 ▸ cventry padding  (was \vspace{0.5\baselineskip})
+\renewcommand*{\@cventry@padding}{\vspace{0pt}}
+
+% 2 ▸ section spacing (classic style: 1.5 em before & after)
+\providecommand*{\sectionvspace}{\vspace{0.75\baselineskip}} % 0.75 ≈ half
+\makeatother
+
+% Override moderncv font styles to match website
+\renewcommand{\titlestyle}[1]{{\headingfont\large\bfseries #1}}
+\renewcommand{\subsectionstyle}[1]{{\headingfont\large #1}}
+
+% Fix font fallbacks for missing bold variants
+%\renewcommand{\bfseries}{\fontseries{b}\selectfont}
+
+\DeclareRobustCommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+    
+    
+
+    
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% Set line spacing to match website
+\linespread{1.15}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+
+\name{\fontspec{Merriweather36pt-Medium} Joachim Daiber}{}
+%\title{\small Applied Scientist in Machine Learning \& Natural Language Processing}                               % optional, remove / comment the line if not wanted
+\address{San Francisco Bay Area}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{650-334-7478}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\email{}                               % optional, remove / comment the line if not wanted
+%\homepage{jodaiber.de}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+%\quote{Machine Learning Engineer}
+
+% --- header tune-up (put in pre-amble) --------------------------
+\setlength{\makecvtitlenamewidth}{6.2cm} % fixes baseline alignment
+
+% one-liner contact block
+\address{San Francisco Bay Area · \href{mailto:daiber.joachim@gmail.com}{daiber.joachim@gmail.com}}{}{}
+
+% make the contact text visible but still subtle
+\renewcommand*{\addressfont}{\footnotesize\fontspec{Helvetica Neue}[UprightFont=* Light]}
+
+% optional: nudge the white space below the header if it now feels tight
+\renewcommand*{\sectionvspace}{\vspace{1.0\baselineskip}}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{0.25\baselineskip}
+
+\hypersetup{
+  pdftitle   = {Joachim Daiber — Curriculum Vitae},
+  pdfauthor  = {Joachim Daiber},
+  pdfsubject = {Joachim Daiber — Curriculum Vitae},
+  pdfkeywords= {},
+  pdfproducer= {},   % optional: hide the engine string
+}
+
+%\section{Personal Details}
+%\cvitem{}{
+%Born in Bad Waldsee, Germany. US permanent resident.}
+
+
+%\cvitem{}{}
+
+%\cvitem{}{
+%Nationality: German. Marital Status: Single.
+%}
+
+
+
+\section{Employment}
+\cventry{since 11/2024}{Upwork}{}{}{}{Principal ML Engineer · San Francisco, California\vspace{1em}}
+\cventry{09/2021\,\textendash\,11/2024}{Objective, Inc.\ (acq.\ by Upwork)}{}{}{}{Co-Founder \& CTO · San Francisco, California\\[0.4em] Objective provides AI-native search for every website and application, delivered via a simple, scalable API platform. In November 2024, Upwork announced the acquisition of Objective, Inc.
+%\ to further enhance its core search and match performance, strengthen its AI and machine learning team, and uplevel multi-modal capabilities to assist customers with images, videos and audio content.
+News coverage: \href{https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/}{\underline{TechCrunch}}.
+\vspace{1em}
+}
+\cventry{01/2018\,\textendash\,08/2021}{Apple (Lattice Data acquisition)}{}{}{}{
+Staff ML Engineer · Cupertino, California\\[0.4em]
+%(06/2019\,\textendash\,present)\\
+%Machine Learning Engineer, Query Understanding (01/2018\,\textendash\,06/2019)\\[1em]
+%1 Apple Park Way, Cupertino.\\[0.4em]
+%I was part of the Lattice Data team when the company was acquired by Apple and the major focus of the team since has been to 
+Tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure.
+% Long: I have served as tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure. \\[0.2em] 
+News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14-preview-new-features-iphone-ipad/5793806002/}{\underline{USA Toda}y}, \underline{\href{https://techcrunch.com/2020/02/11/siri-will-now-answer-your-election-questions/}{TechCrunch}}, \href{https://machinelearning.apple.com/research/mkqa}{\underline{A}pp\underline{le ML research}}.
+\vspace{1em}
+}
+%\cventry{03/2017\,\textendash\,05/2017}{Lattice Data (acquired by %Apple Inc.)}{}{PhD intern, NLP \& lang.\ expansion.}{}{
+%\vspace{-1em}
+%}
+%\vspace{-1em}
+
+%\cventry{since 01/2018}{Machine Learning Engineer at Siri %Knowledge}{}{}{}{
+%Machine Learning and Natural Language Processing\\
+%Apple, Inc.\\1 Apple Park Way, Cupertino.
+%%\vspace{0.5em}~
+%}
+%\cvitem{}{See \underline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar}} for publications.
+%}
+
+%\section{Selected Publications %(\underline{\href{https://scholar.google.nl/citations?user=%sApPUZUAAAAJ}{Google Scholar {\small\faExternalLink}}})}
+%
+%\cventry{2020}{MKQA: A linguistically diverse benchmark for %multilingual open domain question answering}{Transactions %of ACL (accepted)}{A benchmark dataset for }{}{}
+%\cventry{2016}{Compounds}{}{USA}{}{}
+%\cventry{2013}{DBpedia Spotlight}{}{500+ citations, I-Semantics}{}{}
+
+
+
+\section{Education}
+
+\cventry{10/2017}{PhD in Natural Language Processing}{}{}{}{
+\vspace{-0.66em}
+      ILLC, University of Amsterdam, The Netherlands%\\[0.33em]
+\vspace{0.75em}
+}
+
+\cventry{09/2013}{MSc \& MA in Natural Language Processing}{}{}{}{
+\vspace{-0.66em}
+Charles University in Prague, University of Groningen (summa cum laude)
+\vspace{0.75em}
+}
+\cventry{09/2011}{BSc in Computer Science, English Philology}{}{}{}{
+\vspace{-0.66em}
+Free University of Berlin, Germany
+\vspace{0.75em}
+}
+
+
+\section{Awards and Scholarships}
+
+%\cventry{2019}{EB-1 Outstanding Researcher Visa}{}{}{}{United States of America}
+
+\cventryflat{since 2017}{O-1 Extraordinary Ability and EB-1 Outstanding Researcher}{}{}{}{}
+\cventryflat{2013\,\textendash\,2015}{Marie Skłodowska-Curie Fellowship}{}{}{}{}
+\cventryflat{2011\,\textendash\,2013}{Erasmus Mundus Scholarship}{}{}{}{}
+\cventryflat{2011\,\textendash\,2012}{Charles University Merit Scholarship}{}{}{}{}
+\vspace{0.4em}
+%\section{Languages and Programming}
+%\cvitem{Languages}{German (native), English (fluent), Spanish (conversational), Dutch (basic).}
+%\subsection{Programming}
+%\cvitem{Advanced}{Python/NumPy, Bash, Scala, Java, \LaTeX, JavaScript, CSS.}
+%\cvitem{Intermediate to Basic}{Golang, Perl, Haskell, PHP, C, C++, Objective-C.}
+
+\section{Publications}
+\cvitem{}{
+    See \underline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar\,\ExternalLink\hspace{-0.2em}}}
+}
+
+
+\begin{comment}
+
+\section{Selected Publications (see also \underline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar}})}
+%\cvitem{}{
+%    See also \underline{\href{https://scholar.google.nl/ci%tations?user=sApPUZUAAAAJ}{Google %Scholar\,\ExternalLink\hspace{-0.2em}}}
+%    \vspace{0.8em}~
+%}
+
+
+\vspace{0.5em}
+
+\subsection{Multilingual Question Answering}
+\cventry{2020}{\href{https://arxiv.org/pdf/2007.15207.pdf}{MKQA: A Linguistically Diverse Benchmark for Multilingual Open Domain Question Answering}}{}{}{}{
+Shayne Longpre, Yi Lu, and Joachim Daiber\\
+To appear in Transactions of the Association for Computational Linguistics.
+}
+
+\vspace{1em}
+
+\subsection{Machine Translation}
+\cventry{2016}{\href{https://www.aclweb.org/anthology/C16-1298.pdf}{Universal Reordering via Linguistic Typology}}{}{}{}{
+Joachim Daiber, Miloš Stanojević, and Khalil Sima’an.\\
+In COLING 2016, the 26th InternationalConference on Computational Linguistics. 
+\vspace{0.2em}
+}
+\cventry{2016}{\href{https://www.aclweb.org/anthology/W16-2213.pdf}{Examining the Relationship between Preordering and Word Order Freedom in Machine Translation}}{}{}{}{
+Joachim Daiber, Miloš Stanojevic, Wilker Aziz, Khalil Sima’an.\\
+In Proceedings of the First Conference on Machine Translation (Research Papers).
+}
+
+\vspace{1em}
+
+\subsection{Entity Linking}
+
+\cventry{2016}{\href{http://jodaiber.github.io/doc/entity.pdf}{Improving Efficiency and Accuracy in Multilingual Entity Extraction}}{}{}{}{
+500+ citations, see also  \href{https://www.dbpedia-spotlight.org}{\underline{dbpedia-spotlight.org}}.\\
+Joachim Daiber, Max Jakob, Chris Hokamp, and Pablo N. Mendes\\
+In Proceedings of the 9th International Conference on Semantic Systems.
+%\vspace{0.2em}
+}
+
+\vspace{1em}
+
+\subsection{Morphology in Word Representations}
+\cventry{2016}{\href{https://www.aclweb.org/anthology/W15-5703.pdf}{Splitting Compounds by Semantic Analogy}}{}{}{}{
+Joachim Daiber, Lautaro Quiroz, Roger Wechsler, and Stella Frank. \\
+In Proceedings of the Tenth International Conference on Language Resources and Evaluation.
+}
+\vspace{1em}
+
+
+
+\subsection{Dependency Parsing}
+\cventry{2016}{\href{https://www.aclweb.org/anthology/L16-1102.pdf}{The Denoised Web Treebank: Evaluating Dependency Parsing under Noisy Input Conditions}}{}{}{}{
+Joachim Daiber and Rob van der Goot. \\
+In Proceedings of the Tenth International Conference on Language Resources and Evaluation.
+}
+
+
+\nocite{*}
+\bibliographystyle{plainnat}
+\nobibliography{publications}
+
+
+\subsection{Books}
+\cvitem{}{\vspace{-0.5em}\begin{list}{}{\setlength\partopsep{0pt}\setlength\parsep{0pt}\setlength\topsep{0pt}\setlength\leftmargin{1em}\setlength\itemindent{-\leftmargin}}
+  \item \bibentry{daiber2018typologically}
+\end{list}
+\vspace{-0.2em}
+}
+
+%\newpage
+\section{Professional Experience (R\&D)}
+\cventry{03\,\textendash\,05/2017}{PhD Intern, Lattice Data/Apple}{}{}{}{
+    Menlo Park, USA. 3 months, full time.
+}
+
+\cventry{08/2016}{PhD Intern, Unbabel}{}{}{}{
+Lisbon, Portugal. 1 month, full time.
+}
+
+\cventry{2010\,\textendash\,2011}{Research Assistant in the Language Technology Lab}{}{}{}{
+    German Research Center for AI. Berlin, Germany. 16 months, part time.
+}
+
+\cventry{10\,\textendash\,12/2010}{Intern, Natural Language Processing}{}{}{}{
+vionto GmbH, Berlin. 3 months, full time.
+}
+
+\cventry{2012}{Participant, Google Summer of Code 2012}{}{}{}{
+Organization: DBpedia Spotlight.\\
+Project: \emph{Implementation of an efficient probabilistic model for entity linking.}
+}
+
+
+\section{Teaching and Mentorship}
+\cventry{2014\,\textendash\,2015}{Teaching Assistant, Natural Language Processing 1}{}{}{}{
+    Prof.\ Ivan Titov, two iterations of the course.
+}
+
+\cventry{2014\,\textendash\,2016}{Teaching Assistant, Natural Language Processing 2}{}{}{}{
+    Prof.\ Khalil Sima'an and Dr.\ Wilker Aziz, three iterations of the course.
+}
+
+\cventry{2016}{Co-supervision of Master thesis (Master of AI)}{}{}{}{
+  Title: \emph{Syntax-Based Markov Models for Word Alignment}; with Prof.\ Khalil Sima'an.
+}
+
+\cventry{2015}{Supervision of student project (Master of AI)}{}{}{}{
+  Title: \emph{Splitting German Compounds with Word Embeddings}; with Dr.\ Stella Frank.
+}
+
+\cventry{2014\,\textendash\,2015}{Mentor, Google Summer of Code}{}{}{}{
+    Various information extraction and NLP projects for DBpedia Spotlight.
+}
+
+
+
+\section{Summer Schools and Research Visits}
+
+\cventry{09/2015}{Machine Translation Marathon 2015}{}{}{}{
+    Proposed and lead project: \emph{Better unsupervised processing of compound words.}\\
+    Prague, Czech Republic.
+}
+
+
+\cventry{08/2014}{European Summer School in Logic, Language and Information}{}{}{}{
+Tübingen, Germany.
+}
+
+\cventry{07/2012}{Lisbon Machine Learning Summer School (LxMLS)}{}{}{}{
+Lisbon, Portugal.
+}
+
+\cventry{05\,\textendash\,07/2016}{Visiting Researcher, Dublin City University}{}{}{}{
+Dublin, Ireland. 3 month, full time.
+}
+
+\cventry{08/2015\,\textendash\,09/2015}{Visiting Researcher, University of Saarbrücken}{}{}{}{
+Saarbrücken, Germany. 2 month, full time.
+}
+
+\cventry{2012}{Visiting Researcher, DBpedia}{}{}{}{
+Web-based Systems Group (DBpedia project), Free University of Berlin.
+}
+
+
+\end{comment}
+\end{document}
+
+% After \begin{document}, set the main font for the document
+\AtBeginDocument{\mainfont}
