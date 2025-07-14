@@ -3,9 +3,7 @@ layout: default
 title: Dependency parsing
 ---
 
-
-Dependency parsing
-==================
+# Dependency parsing
 
 Dependency parsing is a method for the syntactic analysis of natural
 language text, based on the theory of dependency grammar. Rather than
@@ -21,8 +19,7 @@ Therefore, in the following section, we will briefly introduce
 dependency grammar, and give an overview of the differences among its
 various representations.
 
-Dependency grammar
-------------------
+## Dependency grammar
 
 While dependency grammar has a rich history reaching back as far as the
 descriptions of the Sanskrit language, its modern tradition is believed
@@ -30,18 +27,18 @@ to have begun with the French linguist Lucien Tesnière. In contrast to
 phrase structure grammars, in dependency grammars, the central means of
 describing linguistic structure is through words or tokens that are
 linked by directed dependency relations. The elements of a dependency
-relation are two words: the syntactically subordinate *dependent* and
-the word on which it depends, called the *head* (or *governor*).
-Furthermore, each dependency between two words is labeled by the *type*
-of their relation, such as *subject*, *direct object* or *attribute*.
+relation are two words: the syntactically subordinate _dependent_ and
+the word on which it depends, called the _head_ (or _governor_).
+Furthermore, each dependency between two words is labeled by the _type_
+of their relation, such as _subject_, _direct object_ or _attribute_.
 Consider, for example, the simple dependency tree in
 Figure 1.
 
 --PARSETREE--
 
-In this example, *likes* is the head of both *Peter* and *Mary* and
-their dependency relations indicate that *Peter* is the subject () and
-*Mary* is the object dependent on the verb *likes*, while the verb
+In this example, _likes_ is the head of both _Peter_ and _Mary_ and
+their dependency relations indicate that _Peter_ is the subject () and
+_Mary_ is the object dependent on the verb _likes_, while the verb
 itself is a dependent of the artificial node. The node is inserted into
 the tree as a technical simplification to ensure that every word has a
 syntactic head.
@@ -90,9 +87,9 @@ head. Most dependency grammar theories are based on dependency trees,
 which are a further restriction of dependency graphs that we will define
 now.
 
-A *dependency tree* is defined as a *well-formed* dependency graph. A
+A _dependency tree_ is defined as a _well-formed_ dependency graph. A
 dependency graph $$G$$ for a sentence $$S$$, and a dependency relation set
-$$R$$ is called *well-formed* if it is a directed tree originating in the
+$$R$$ is called _well-formed_ if it is a directed tree originating in the
 root node and if it has a spanning node set (i.e. a set of nodes
 containing all words of the sentence). A tree is an undirected graph in
 which any two nodes are connected by one and only one path. This means
@@ -113,25 +110,25 @@ projective and non-projective dependency trees. The following notations
 are required for the definition of projective and non-projective
 dependency trees:
 
--   $$w_i \to w_j$$ indicates an unlabeled dependency relation between
-    $$w_i$$ and $$w_j$$ in a tree $$G = (V, A)$$. Hence, $$w_i \to w_j$$ means
-    that there is some dependency relation type $$r \in R$$ such that
-    $$(w_i, r, w_j) \in A$$.
+- $$w_i \to w_j$$ indicates an unlabeled dependency relation between
+  $$w_i$$ and $$w_j$$ in a tree $$G = (V, A)$$. Hence, $$w_i \to w_j$$ means
+  that there is some dependency relation type $$r \in R$$ such that
+  $$(w_i, r, w_j) \in A$$.
 
--   $$w_i \to^* w_j$$ indicates a *reflexive transitive closure* of the
-    dependency relation in a tree $$G = (V, A)$$. This is defined as
-    $$w_i \to^* w_j$$ if and only if $$i = j$$ (*reflexive*) or both
-    $$w_i \to^* w_{i'}$$ and $$w_{i'} \to w_j$$ hold for some
-    $$w_{i'} \in V$$.
+- $$w_i \to^* w_j$$ indicates a _reflexive transitive closure_ of the
+  dependency relation in a tree $$G = (V, A)$$. This is defined as
+  $$w_i \to^* w_j$$ if and only if $$i = j$$ (_reflexive_) or both
+  $$w_i \to^* w_{i'}$$ and $$w_{i'} \to w_j$$ hold for some
+  $$w_{i'} \in V$$.
 
 An edge in a dependency tree is projective if and only if
 $$w_i \to^* w_k$$ for all $$i < k < j$$ when $$i < j$$, or $$j < k < i$$ when
 $$j < i$$. Following this definition, an edge $$(w_i, r, w_j)$$ is
 projective if there is a path from the head $$w_i$$ to all the words
 between the two endpoints of the edge ($$i$$ and $$j$$). Accordingly, a
-dependency tree $$G = (V, A)$$ is *projective* if all
+dependency tree $$G = (V, A)$$ is _projective_ if all
 $$(w_i, r, w_j) \in A$$ are projective. A dependency tree that is not
-projective is *non-projective*.
+projective is _non-projective_.
 
 As examples of projective and non-projective dependency trees, consider
 the two dependency trees in Figure [fig:projectivedeptree] and
@@ -146,16 +143,14 @@ level, the dependency tree in Figure [fig:projectivedeptree] can be
 drawn without crossing edges as all edges in this tree are projective.
 For the dependency tree in Figure [fig:nonprojectivedeptree], however,
 it is not possible to draw the tree without crossing edges. For the
-dependency relation between *hearing* and *on*, there is no path from
-the head of the relation *hearing* to the words in between the two
-end-points of the edge, namely the words *is* and *scheduled*. Hence,
-the edge between *hearing* and *on* is not projective.
+dependency relation between _hearing_ and _on_, there is no path from
+the head of the relation _hearing_ to the words in between the two
+end-points of the edge, namely the words _is_ and _scheduled_. Hence,
+the edge between _hearing_ and _on_ is not projective.
 
 --PARSE-TREE--
 
-
-Data-driven dependency parsing
-------------------------------
+## Data-driven dependency parsing
 
 The task of a dependency parsing algorithm is to find the dependency
 structure for the words in a sentence. In this dependency structure,
@@ -180,23 +175,21 @@ techniques, most notably supervised methods. In supervised learning, a
 model is trained on a set of manually annotated instances. Using this
 trained model, the structure of new instances can be inferred. Hence, a
 data-driven parsing method must address two problems: First, in the
-*Learning* task, a parsing model $$M$$ is learned from a set of annotated
-training instances (dependency trees). Then, in the *Parsing* or
-*Decoding* task, the parsing model $$M$$ is used to produce the optimal
+_Learning_ task, a parsing model $$M$$ is learned from a set of annotated
+training instances (dependency trees). Then, in the _Parsing_ or
+_Decoding_ task, the parsing model $$M$$ is used to produce the optimal
 dependency graph $$G$$ for a sentence $$S$$.
 
+## Maximum-spanning tree parsing
 
-Maximum-spanning tree parsing
------------------------------
-
-The *learning* and *parsing* tasks are implemented in various ways by
+The _learning_ and _parsing_ tasks are implemented in various ways by
 different parsers. A well-known algorithm is the Maximum Spanning Tree
 parser (MST, McDonald et al. (2005)). In the following section, we will
 briefly summarize how these two tasks are approached in the MST parser.
 
 #### Learning: Online Large Margin Learning
 
-The *learning* task in this parser is approached as a supervised
+The _learning_ task in this parser is approached as a supervised
 learning problem for structured output. The score of a dependency tree
 is factored as the sum of the scores of all edges in the tree. The score
 for each edge is calculated as the dot product of a feature vector for
@@ -246,11 +239,9 @@ using the Chu-Liu-Edmonds algorithm (Chu and Liu, 1965; Edmonds, 1967).
 Specifically, an implementation of the algorithm for dense graphs which
 has complexity $$O(n^2)$$ is used.
 
-Parsing and the noisy-channel model
-===================================
+# Parsing and the noisy-channel model
 
-The noisy-channel model
------------------------
+## The noisy-channel model
 
 The noisy-channel model (Shannon, 1948) is a mathematical model for
 communication that has been successfully applied to a wide variety of
@@ -265,16 +256,17 @@ such as machine translation and automatic spelling correction.
 In the noisy-channel model, a message is generated by the information
 source and passed trough a noisy channel. The receiver is given the
 resulting noisy data; and the receiver’s goal is to recover, or in other
-words to *decode*, this noisy data in order to determine the original
+words to _decode_, this noisy data in order to determine the original
 message. Given observed data $$O$$ with the original source form $$S$$ for
 which there exists some prior knowledge, this process is typically
 modeled by using Bayes’ rule (Lease et al., 2006):
 
-$$\begin{aligned}
-  \hat{s} = \text{argmax}_{S} p(S|O) = \text{argmax}_{S} p(O|S) p(S)\end{aligned}$$
+$$
+\begin{aligned}
+  \hat{s} = \text{argmax}_{S} p(S|O) = \text{argmax}_{S} p(O|S) p(S)\end{aligned}
+$$
 
-Sentence comprehension under noisy input
-----------------------------------------
+## Sentence comprehension under noisy input
 
 In the psycholinguistics literature, a problem that is closely related
 to parsing is the problem of human sentence comprehension. While most
@@ -285,16 +277,20 @@ processing. The model uses a generative probabilistic grammar. In the
 standard case that the input string $$\textbf{w}$$ is fully known, the
 grammar $$G$$ can be used to find the best parse $$T$$ for $$\textbf{w}$$ using
 
-$$\begin{aligned}
-  \text{argmax}_T \mathrm{P}_G(T|\textbf{w})\end{aligned}$$
+$$
+\begin{aligned}
+  \text{argmax}_T \mathrm{P}_G(T|\textbf{w})\end{aligned}
+$$
 
 However, in the case that the input string is not known, the formulation
 changes to the following: Given some noisy evidence $$I$$ and using the
 Bayes’ rule to find the posterior for $$\mathrm{P}_G(T|\textbf{w})$$ and
 $$\mathrm{P}_G(T|I)$$:
 
-$$  \mathrm{P}_G(T|I) = \frac{ p(T,I) }{ p(I) } \\
-  \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T) $$
+$$
+\mathrm{P}_G(T|I) = \frac{ p(T,I) }{ p(I) } \\
+  \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T)
+$$
 
 While not directly applying this model to parsing, Levy (2008) performs
 a psycholinguistics experiment in which he assumes a noisy environment
@@ -307,20 +303,24 @@ understood sentence $$\textbf{w}$$, we have:
 $$ \mathrm{P}_G(\textbf{w}|I) \propto \sum_{ \textbf{w} } p(I|T,\textbf{w}) p(\textbf{w}|T) p(T)$$
 
 In the controlled experiment of Levy (2008), the relevant probability
-distribution is $$ p(\textbf{w}|\textbf{w}^*)$$, which is given as
+distribution is $$ p(\textbf{w}|\textbf{w}^\*)$$, which is given as
 
-$$\begin{aligned}
-  p(\textbf{w}|\textbf{w}^*) &= \int_{ I } \mathrm{P}_C(\textbf{w}|I,\textbf{w}^*) \mathrm{P}_T(I|\textbf{w}^*)  df I\end{aligned}$$
+$$
+\begin{aligned}
+  p(\textbf{w}|\textbf{w}^*) &= \int_{ I } \mathrm{P}_C(\textbf{w}|I,\textbf{w}^*) \mathrm{P}_T(I|\textbf{w}^*)  df I\end{aligned}
+$$
 
 Then, since the comprehender does not know $$\textbf{w}^*$$, it is assumed
 that $$\textbf{w}^*$$ and $$\textbf{w}$$ are conditionally independent. Applying
 Bayes’ rule to (2), the following formulation is proposed
 ($$\mathrm{P}_C$$ is the probability distribution of the comprehender):
 
-$$\begin{aligned}
+$$
+\begin{aligned}
   p(\textbf{w}|\textbf{w}^*) &= \int_{ I } \frac{ \mathrm{P}_C(I|\textbf{w}) \mathrm{P}_C(\textbf{w}) }{ \mathrm{P}_C(I) }  \mathrm{P}_T(I|\textbf{w}^*) df I \\
    &= \mathrm{P}_C(\textbf{w}) \int_{ I } \frac{ \mathrm{P}_C(I|\textbf{w}) \mathrm{P}_T(I|\textbf{w}^*) }{ \mathrm{P}_C(I) } df I \\
-   &\propto \mathrm{P}_C(\textbf{w}) Q(\textbf{w}, \textbf{w}^*)\end{aligned}$$
+   &\propto \mathrm{P}_C(\textbf{w}) Q(\textbf{w}, \textbf{w}^*)\end{aligned}
+$$
 
 $$Q(\textbf{w}, \textbf{w}^*)$$ in ([levyIV]) is proportional to the integral
 in (3) and given some of the experiment’s assumptions; it is a
@@ -347,16 +347,16 @@ a. While the man hunted the deer ran into the woods.
 b. While the man hunted it the deer ran into the woods.
 
 In this case, both sentences are grammatical sentences. For the sentence
-in *a.*, there is a grammatical reading; however, it is
-ambiguous whether *the deer* is the object of the verb *hunted*, or the
-subject of the verb *ran*. In the case that it is read as the object of
-*hunted*, the *ran* will miss a subject, and the comprehender would
+in _a._, there is a grammatical reading; however, it is
+ambiguous whether _the deer_ is the object of the verb _hunted_, or the
+subject of the verb _ran_. In the case that it is read as the object of
+_hunted_, the _ran_ will miss a subject, and the comprehender would
 re-read the sentence as it “leads nowhere”. However, experiments in
 which participants are given this sentence have shown that a large
-number of participants initially perceive *the deer* as the object of
-*hunted*. Non-noisy models of sentence processing would not predict
+number of participants initially perceive _the deer_ as the object of
+_hunted_. Non-noisy models of sentence processing would not predict
 this; however, it can be explained by the noisy model that can assume an
-underlying sentence such as the sentence in *b.*.
+underlying sentence such as the sentence in _b._.
 
 Note the similarity of the final model in () to well-established
 noisy-channel methods for spelling correction, such as Kernighan et al.
@@ -366,66 +366,65 @@ $$p(c) p(t|c)$$.
 ## References
 
 Yoeng-Jin Chu and Tseng-Hong Liu. 1965. On the shortest arborescence of
-a directed graph. *Science Sinica*, 14(1396-1400):270.
+a directed graph. _Science Sinica_, 14(1396-1400):270.
 
 Michael Collins. 2002. Discriminative training methods for hidden markov
 models: Theory and experiments with perceptron algorithms. In
-*Proceedings of the ACL-02 Conference on Empirical Methods in Natural
-Language Processing*, volume 10, pages 1–8, Philadelphia, PA.
+_Proceedings of the ACL-02 Conference on Empirical Methods in Natural
+Language Processing_, volume 10, pages 1–8, Philadelphia, PA.
 Association for Computational Linguistics.
 
 Koby Crammer and Yoram Singer. 2003. Ultraconservative online algorithms
-for multiclass problems. *The Journal of Machine Learning Research*,
+for multiclass problems. _The Journal of Machine Learning Research_,
 3:951–991.
 
 Aron Culotta and Jeffrey Sorensen. 2004. Dependency tree kernels for
-relation extraction. In *Proceedings of the 42nd Annual Meeting on
-Association for Computational Linguistics*, page 423. Association for
+relation extraction. In _Proceedings of the 42nd Annual Meeting on
+Association for Computational Linguistics_, page 423. Association for
 Computational Linguistics.
 
-Jack Edmonds. 1967. Optimum branchings. *Journal of Research of the
-National Bureau of Standards B*, 71:233–240.
+Jack Edmonds. 1967. Optimum branchings. _Journal of Research of the
+National Bureau of Standards B_, 71:233–240.
 
 Jason M. Eisner. 1996. Three new probabilistic models for dependency
-parsing: An exploration. In *Proceedings of the 16th Conference on
-Computational Linguistics*, volume 1, pages 340–345. Association for
+parsing: An exploration. In _Proceedings of the 16th Conference on
+Computational Linguistics_, volume 1, pages 340–345. Association for
 Computational Linguistics.
 
 Mark D. Kernighan, Kenneth W. Church, and William A. Gale. 1990. A
 spelling correction program based on a noisy channel model. In
-*Proceedings of the 13th Conference on Computational Linguistics*,
+_Proceedings of the 13th Conference on Computational Linguistics_,
 volume 2, pages 205–210. Association for Computational Linguistics.
 
-Sandra Kübler, Ryan McDonald, and Joakim Nivre. 2009. *Dependency
-Parsing*.volume 2. Morgan & Claypool Publishers, editions.
+Sandra Kübler, Ryan McDonald, and Joakim Nivre. 2009. _Dependency
+Parsing_.volume 2. Morgan & Claypool Publishers, editions.
 
 Matthew Lease, Eugene Charniak, Mark Johnson, and David McClosky. 2006.
-A Look at Parsing and Its Applications. In *Proceedings of the National
-Conference on Artificial Intelligence*, volume 21, pages 1642–1645, No.
-2. Menlo Park, CA; Cambridge, MA. MIT Press.
+A Look at Parsing and Its Applications. In _Proceedings of the National
+Conference on Artificial Intelligence_, volume 21, pages 1642–1645, No. 2. Menlo Park, CA; Cambridge, MA. MIT Press.
 
 Roger Levy. 2008. A noisy-channel model of rational human sentence
-comprehension under uncertain input. In *Proceedings of the 2008
-Conference on Empirical Methods in Natural Language Processing*, pages
+comprehension under uncertain input. In _Proceedings of the 2008
+Conference on Empirical Methods in Natural Language Processing_, pages
 234–243. Association for Computational Linguistics.
 
-Christopher D. Manning and Hinrich Schütze. 1999. *Foundations of
-Statistical Natural Language Processing*. MIT press, editions.
+Christopher D. Manning and Hinrich Schütze. 1999. _Foundations of
+Statistical Natural Language Processing_. MIT press, editions.
 
 Ryan T. McDonald, Fernando Pereira, Kiril Ribarov, and Jan Hajic. 2005.
 Non-Projective Dependency Parsing using Spanning Tree Algorithms. In
-*Proceedings of the conference on Human Language Technology and
-Empirical Methods in Natural Language Processing.* Association for
+_Proceedings of the conference on Human Language Technology and
+Empirical Methods in Natural Language Processing._ Association for
 Computational Linguistics.
 
-Frank Rosenblatt. 1958. The perceptron. *Psychological Review*,
+Frank Rosenblatt. 1958. The perceptron. _Psychological Review_,
 65(6):386–408.
 
-Claude E. Shannon. 1948. A Mathematical Theory of Communication. *The
-Bell System Technical Journal*, 27:379–423, 623–656, July, October.
+Claude E. Shannon. 1948. A Mathematical Theory of Communication. _The
+Bell System Technical Journal_, 27:379–423, 623–656, July, October.
 
 Libin Shen, Jinxi Xu, and Ralph Weischedel. 2008. A new
 string-to-dependency machine translation algorithm with a target
-dependency language model. In *Proceedings of the 46th Annual Meeting of
+dependency language model. In _Proceedings of the 46th Annual Meeting of
 the Association for Computational Linguistics: Human Language
-Technologies*, pages 577–585. Association for Computational Linguistics.
+Technologies_, pages 577–585. Association for Computational Linguistics.
