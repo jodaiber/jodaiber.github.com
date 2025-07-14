@@ -2,8 +2,8 @@ html {
   height: 100%;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica,
-    "Nimbus Sans", "Liberation Sans", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans", "Liberation Sans",
+    Arial, sans-serif;
   margin: 0 0 0 0;
   padding: 0;
   font-size: 18px;
@@ -377,8 +377,8 @@ ul.publications li {
   border-left: 1px solid #eee;
   text-transform: none;
 
-  font-family: "Helvetica Neue", Helvetica,
-    "Nimbus Sans", "Liberation Sans", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans", "Liberation Sans",
+    Arial, sans-serif;
 }
 .outer {
   background-color: #fff;
