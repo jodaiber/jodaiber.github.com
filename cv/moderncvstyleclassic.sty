@@ -71,7 +71,7 @@
 
 % commands
 \renewcommand*{\recomputecvlengths}{%
-  \setlength{\quotewidth}{0.65\textwidth}%
+  \setlength{\quotewidth}{1\textwidth}%
   % main lenghts
   \setlength{\maincolumnwidth}{\textwidth-\separatorcolumnwidth-\hintscolumnwidth}%
   % listitem lengths
@@ -138,7 +138,7 @@
   % optional quote
   \ifthenelse{\isundefined{\@quote}}%
     {}%
-    {{\centering\begin{minipage}{\quotewidth}\centering\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
+    {{\centering\begin{minipage}{\quotewidth}\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \makecvtitle
 
 

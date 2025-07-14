@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -39,25 +39,32 @@
 \RequirePackage{fontawesome}
 
 % Font configuration to match website
-\setmainfont{Helvetica Neue Light}
-
 \setsansfont{Helvetica Neue}
-
-% For headings, use Merriweather SemiBold for the name (variable font)
-\newfontfamily\headingfont{Merriweather}
 
 % Override moderncv font styles to match website
 % Name in Merriweather bold, no line break
-\renewcommand{\namestyle}[1]{{\headingfont\LARGE \mbox{#1}}}
+\renewcommand{\namestyle}[1]{{\namefont\Huge \mbox{#1}}}
 
-% Section headings (Employment, Education, etc.) in Helvetica Neue medium (not bold)
-\renewcommand{\sectionstyle}[1]{{\sffamily\fontspec{Helvetica Neue}\mdseries\Large #1}}
+% Section headings (Employment, Education, etc.) in Helvetica Neue light (not bold)
+\renewcommand{\sectionstyle}[1]{{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]\mdseries\Large #1}}
 
-% Make cventry headings (like Upwork...) use Helvetica Neue Regular
+% Make cventry headings (like Upwork...) use Helvetica Neue Light
 \let\oldcventry\cventry
 \renewcommand*{\cventry}[6]{%
-  \oldcventry{#1}{\sffamily\fontspec{Helvetica Neue Medium}\mdseries #2}{#3}{#4}{#5}{#6}%
+  \oldcventry{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]#1}{\sffamily\fontspec{Helvetica Neue}\mdseries{}#2}{#3}{#4}{#5}{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]#6}%
 }
+
+\renewcommand*{\cventryflat}[6]{%
+  \oldcventry{\sffamily\fontspec{Helvetica Neue}[UprightFont = * Light, ItalicFont = * Light Italic]#1}{\sffamily\fontspec{Helvetica Neue}\mdseries{}#2}{#3}{#4}{#5}{#6}%
+}
+% --- tighten vertical rhythm ---------------------------------
+\makeatletter
+% 1 ▸ cventry padding  (was \vspace{0.5\baselineskip})
+\renewcommand*{\@cventry@padding}{\vspace{0pt}}
+
+% 2 ▸ section spacing (classic style: 1.5 em before & after)
+\providecommand*{\sectionvspace}{\vspace{0.75\baselineskip}} % 0.75 ≈ half
+\makeatother
 
 % Override moderncv font styles to match website
 \renewcommand{\titlestyle}[1]{{\headingfont\large\bfseries #1}}
@@ -94,23 +101,36 @@
 \usepackage[scale=0.75]{geometry}
 
 % Set line spacing to match website
-\linespread{1.5}
+\linespread{1.15}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Joachim}{Daiber}
+
+\name{\fontspec{Merriweather36pt-Medium} Joachim Daiber}{}
 %\title{\small Applied Scientist in Machine Learning \& Natural Language Processing}                               % optional, remove / comment the line if not wanted
 \address{San Francisco Bay Area}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{650-334-7478}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{daiber.joachim@gmail.com}                               % optional, remove / comment the line if not wanted
+%\email{}                               % optional, remove / comment the line if not wanted
 %\homepage{jodaiber.de}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
-\quote{Machine Learning Engineer}
+%\quote{Machine Learning Engineer}
+
+% --- header tune-up (put in pre-amble) --------------------------
+\setlength{\makecvtitlenamewidth}{6.2cm} % fixes baseline alignment
+
+% one-liner contact block
+\address{San Francisco Bay Area · \href{mailto:daiber.joachim@gmail.com}{daiber.joachim@gmail.com}}{}{}
+
+% make the contact text visible but still subtle
+\renewcommand*{\addressfont}{\footnotesize\fontspec{Helvetica Neue}[UprightFont=* Light]}
+
+% optional: nudge the white space below the header if it now feels tight
+\renewcommand*{\sectionvspace}{\vspace{1.0\baselineskip}}
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -124,10 +144,21 @@
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
+
+
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+\vspace{0.25\baselineskip}
+
+\hypersetup{
+  pdftitle   = {Joachim Daiber — Curriculum Vitae},
+  pdfauthor  = {Joachim Daiber},
+  pdfsubject = {Joachim Daiber — Curriculum Vitae},
+  pdfkeywords= {},
+  pdfproducer= {},   % optional: hide the engine string
+}
 
 %\section{Personal Details}
 %\cvitem{}{
@@ -143,26 +174,24 @@
 
 
 \section{Employment}
-\cventry{since 11/2024}{Upwork (San Francisco, California)}{}{}{}{Principal ML Engineer\vspace{0.5em}}
-\cventry{09/2021\,--\,11/2024}{Objective, Inc.\ (acq.\ by Upwork in San Francisco, California)}{}{}{}{Co-Founder \& CTO\\[0.4em] Objective provides AI-native search for every website and application, delivered via a simple, scalable API platform. In November 2024, Upwork announced the acquisition of Objective, Inc.
+\cventry{since 11/2024}{Upwork}{}{}{}{Principal ML Engineer · San Francisco, California\vspace{1em}}
+\cventry{09/2021\,\textendash\,11/2024}{Objective, Inc.\ (acq.\ by Upwork)}{}{}{}{Co-Founder \& CTO · San Francisco, California\\[0.4em] Objective provides AI-native search for every website and application, delivered via a simple, scalable API platform. In November 2024, Upwork announced the acquisition of Objective, Inc.
 %\ to further enhance its core search and match performance, strengthen its AI and machine learning team, and uplevel multi-modal capabilities to assist customers with images, videos and audio content.
 News coverage: \href{https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/}{\underline{TechCrunch}}.
-\vspace{0.5em}
+\vspace{1em}
 }
-\cventry{01/2018\,--\,08/2021}{Apple (via Lattice Data in Cupertino, California)}{}{}{}{
-Staff ML Engineer\\[0.4em]
-%(06/2019\,--\,present)\\
-%Machine Learning Engineer, Query Understanding (01/2018\,--\,06/2019)\\[1em]
+\cventry{01/2018\,\textendash\,08/2021}{Apple (Lattice Data acquisition)}{}{}{}{
+Staff ML Engineer · Cupertino, California\\[0.4em]
+%(06/2019\,\textendash\,present)\\
+%Machine Learning Engineer, Query Understanding (01/2018\,\textendash\,06/2019)\\[1em]
 %1 Apple Park Way, Cupertino.\\[0.4em]
 %I was part of the Lattice Data team when the company was acquired by Apple and the major focus of the team since has been to 
 Tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure.
 % Long: I have served as tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure. \\[0.2em] 
-News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14-preview-new-features-iphone-ipad/5793806002/}{\underline{USA Toda}y}, \underline{\href{https://techcrunch.com/2020/02/11/siri-will-now-answer-your-election-questions/}{TechCrunch}}, \href{https://machinelearning.apple.com/research/mkqa}{\underline{A}pp\underline{le ML research}}.\vspace{0.2em}
-% 
-% 
-% 
+News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14-preview-new-features-iphone-ipad/5793806002/}{\underline{USA Toda}y}, \underline{\href{https://techcrunch.com/2020/02/11/siri-will-now-answer-your-election-questions/}{TechCrunch}}, \href{https://machinelearning.apple.com/research/mkqa}{\underline{A}pp\underline{le ML research}}.
+\vspace{1em}
 }
-%\cventry{03/2017\,--\,05/2017}{Lattice Data (acquired by %Apple Inc.)}{}{PhD intern, NLP \& lang.\ expansion.}{}{
+%\cventry{03/2017\,\textendash\,05/2017}{Lattice Data (acquired by %Apple Inc.)}{}{PhD intern, NLP \& lang.\ expansion.}{}{
 %\vspace{-1em}
 %}
 %\vspace{-1em}
@@ -185,26 +214,21 @@ News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14
 
 \section{Education}
 
-\cventry{10/2017}{PhD in Machine Translation and Natural Language Processing}{}{}{}{
+\cventry{10/2017}{PhD in Natural Language Processing}{}{}{}{
 \vspace{-0.66em}
-      PhD thesis: \href{https://pure.uva.nl/ws/files/22104792/Thesis.pdf}{Typologically Robust Statistical Machine Translation}\\
-      ILLC, University of Amsterdam, The Netherlands.%\\[0.33em]
-      %Graduation (PhD defense): March 20, 2018.
-%\vspace{0.5em}~
+      ILLC, University of Amsterdam, The Netherlands%\\[0.33em]
+\vspace{0.75em}
 }
 
-\cventry{09/2013}{MSc and MA in Natural Language Processing}{}{}{}{
+\cventry{09/2013}{MSc \& MA in Natural Language Processing}{}{}{}{
 \vspace{-0.66em}
-Grade: \textit{Summa cum laude}, Erasmus Mundus LCT double degree\\
-Charles University in Prague (MSc) and University of Groningen (MA)%\\[0.33em]
-%Thesis: Robust parsing of noisy content.\\
-%\vspace{0.5em}~
-}  % arguments 3 to 6 can be left empty
+Charles University in Prague, University of Groningen (summa cum laude)
+\vspace{0.75em}
+}
 \cventry{09/2011}{BSc in Computer Science, English Philology}{}{}{}{
 \vspace{-0.66em}
 Free University of Berlin, Germany
-%Thesis: Candidate selection and evaluation in DBpedia Spotlight.
-%\vspace{0.5em}~
+\vspace{0.75em}
 }
 
 
@@ -212,12 +236,11 @@ Free University of Berlin, Germany
 
 %\cventry{2019}{EB-1 Outstanding Researcher Visa}{}{}{}{United States of America}
 
-\cventry{since 2017}{O-1 Extraordinary Ability and EB-1 Outstanding Researcher}{}{}{}{}
-
-\cventry{2013\,--\,2015}{Marie Skłodowska-Curie Fellowship}{}{}{}{}
-\cventry{2011\,--\,2013}{Erasmus Mundus Scholarship}{}{}{}{}
-\cventry{2011\,--\,2012}{Charles University Merit Scholarship}{}{}{}{}
-
+\cventryflat{since 2017}{O-1 Extraordinary Ability and EB-1 Outstanding Researcher}{}{}{}{}
+\cventryflat{2013\,\textendash\,2015}{Marie Skłodowska-Curie Fellowship}{}{}{}{}
+\cventryflat{2011\,\textendash\,2013}{Erasmus Mundus Scholarship}{}{}{}{}
+\cventryflat{2011\,\textendash\,2012}{Charles University Merit Scholarship}{}{}{}{}
+\vspace{0.4em}
 %\section{Languages and Programming}
 %\cvitem{Languages}{German (native), English (fluent), Spanish (conversational), Dutch (basic).}
 %\subsection{Programming}
@@ -303,7 +326,7 @@ In Proceedings of the Tenth International Conference on Language Resources and E
 
 %\newpage
 \section{Professional Experience (R\&D)}
-\cventry{03\,--\,05/2017}{PhD Intern, Lattice Data/Apple}{}{}{}{
+\cventry{03\,\textendash\,05/2017}{PhD Intern, Lattice Data/Apple}{}{}{}{
     Menlo Park, USA. 3 months, full time.
 }
 
@@ -311,11 +334,11 @@ In Proceedings of the Tenth International Conference on Language Resources and E
 Lisbon, Portugal. 1 month, full time.
 }
 
-\cventry{2010\,--\,2011}{Research Assistant in the Language Technology Lab}{}{}{}{
+\cventry{2010\,\textendash\,2011}{Research Assistant in the Language Technology Lab}{}{}{}{
     German Research Center for AI. Berlin, Germany. 16 months, part time.
 }
 
-\cventry{10\,--\,12/2010}{Intern, Natural Language Processing}{}{}{}{
+\cventry{10\,\textendash\,12/2010}{Intern, Natural Language Processing}{}{}{}{
 vionto GmbH, Berlin. 3 months, full time.
 }
 
@@ -326,11 +349,11 @@ Project: \emph{Implementation of an efficient probabilistic model for entity lin
 
 
 \section{Teaching and Mentorship}
-\cventry{2014\,--\,2015}{Teaching Assistant, Natural Language Processing 1}{}{}{}{
+\cventry{2014\,\textendash\,2015}{Teaching Assistant, Natural Language Processing 1}{}{}{}{
     Prof.\ Ivan Titov, two iterations of the course.
 }
 
-\cventry{2014\,--\,2016}{Teaching Assistant, Natural Language Processing 2}{}{}{}{
+\cventry{2014\,\textendash\,2016}{Teaching Assistant, Natural Language Processing 2}{}{}{}{
     Prof.\ Khalil Sima'an and Dr.\ Wilker Aziz, three iterations of the course.
 }
 
@@ -342,7 +365,7 @@ Project: \emph{Implementation of an efficient probabilistic model for entity lin
   Title: \emph{Splitting German Compounds with Word Embeddings}; with Dr.\ Stella Frank.
 }
 
-\cventry{2014\,--\,2015}{Mentor, Google Summer of Code}{}{}{}{
+\cventry{2014\,\textendash\,2015}{Mentor, Google Summer of Code}{}{}{}{
     Various information extraction and NLP projects for DBpedia Spotlight.
 }
 
@@ -364,11 +387,11 @@ Tübingen, Germany.
 Lisbon, Portugal.
 }
 
-\cventry{05\,--\,07/2016}{Visiting Researcher, Dublin City University}{}{}{}{
+\cventry{05\,\textendash\,07/2016}{Visiting Researcher, Dublin City University}{}{}{}{
 Dublin, Ireland. 3 month, full time.
 }
 
-\cventry{08/2015\,--\,09/2015}{Visiting Researcher, University of Saarbrücken}{}{}{}{
+\cventry{08/2015\,\textendash\,09/2015}{Visiting Researcher, University of Saarbrücken}{}{}{}{
 Saarbrücken, Germany. 2 month, full time.
 }
 
@@ -379,3 +402,6 @@ Web-based Systems Group (DBpedia project), Free University of Berlin.
 
 \end{comment}
 \end{document}
+
+% After \begin{document}, set the main font for the document
+\AtBeginDocument{\mainfont}
