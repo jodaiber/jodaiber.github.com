@@ -10,3 +10,26 @@ _site
 images/prague_huge.jpg
 
 *.psd
+
+*.aux
+*.log
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.pdfsync
+*.dvi
+*.thm
+*.upa
+*.upb
+
+cv/CV.pdf
