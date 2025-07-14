@@ -10,3 +10,5 @@ _site
 images/prague_huge.jpg
 
 *.psd
+
+node_modules/
