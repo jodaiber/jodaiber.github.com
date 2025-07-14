@@ -3,8 +3,7 @@ layout: default
 title: Joachim Daiber
 ---
 
-About me
---------
+## About me
 
 I am an applied scientist focused on machine learning and practical engineering. I was a co-founder and CTO of Objective, Inc. ([TechCrunch](https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/)), which was acquired by Upwork in November 2024.
 Previously, I was a Staff Machine Learning Engineer at Apple in California.
@@ -13,19 +12,17 @@ I received my PhD at the [University of Amsterdam](https://www.illc.uva.nl/), wh
 
 See my full CV [here]({{ '/doc/CV.pdf' | relative_url }}) or connect at [GitHub](http://github.com/jodaiber), [LinkedIn](https://www.linkedin.com/pub/joachim-daiber/84/279/93a) or write an email to daiber.joachim [at] gmail.com.
 
-
-
 ## Research
 
-My research interests are 
+My research interests are
 in applications and evaluation of large language and vision models, machine translation, natural language processing.
 
 - [See my publications on Google Scholar](http://scholar.google.nl/citations?user=sApPUZUAAAAJ)
 - [Code and data for my publications](publications)
 
-
 ## News
 
+<!-- prettier-ignore -->
 - <span class="date-align">Nov 2024</span> <span class="seperator">~</span> <span class="post-desc">Objective, Inc. was acquired by Upwork.</span>
 - <span class="date-align">Sep 2021</span> <span class="seperator">~</span> <span class="post-desc">I started [Objective, Inc.](https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/) with Pablo and Lance.</span>
 - <span class="date-align">Jul 2020</span> <span class="seperator">~</span> <span class="post-desc">MKQA paper published in TACL, first machine learning dataset by Apple.</span>
@@ -34,6 +31,7 @@ in applications and evaluation of large language and vision models, machine tran
 {% for post in site.posts %}
 
 {% if forloop.first %}
+
 ## Posts
 
 <ul class="posts">
@@ -46,7 +44,6 @@ in applications and evaluation of large language and vision models, machine tran
         <li><span class="date-align">{{ post.date | date: "%b %Y" }}</span> <span class="seperator">~</span> <span class="post-desc">{{ post.category }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></span></li>
     {% endif %}
 
- 
 {% if forloop.last %}
 
 </ul>

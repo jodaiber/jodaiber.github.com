@@ -3,14 +3,12 @@ layout: default
 title: Multilingual entity linking
 ---
 
-
 ## Code
 
 I created an efficient and more accurate version of the multilingual entity linking system [DBpedia Spotlight](https://github.com/dbpedia-spotlight/dbpedia-spotlight).
 
 - [Github repo](https://github.com/dbpedia-spotlight/dbpedia-spotlight)
 - [Models in various languages](http://spotlight.sztaki.hu/downloads/)
-
 
 ## Raw data
 
@@ -44,6 +42,7 @@ If you use this data in your research, please cite the following paper:
 ```
 
 ### UriCounts
+
 ```
 DBpedia URI                             Count
 --------------------------------------------------------------
@@ -53,6 +52,7 @@ http://en.dbpedia.org/resource/C        20
 ```
 
 ### SfAndTotalCounts
+
 ```
 Surface form         Count annotated    Count total
 --------------------------------------------------------------
@@ -64,8 +64,8 @@ Berloz               2                  6
 - if no total string occurrence count is available, the 3rd column may be empty or -1
 - if the annotated count is `-1`, then this is not a surface form that has been observed with any DBpedia resource. Lines with an annotated count of -1 are there to output the total count of the lowercase representations of surface forms.
 
-
 ### PairCounts
+
 ```
 Surface form     DBpedia URI                                         Count
 ----------------------------------------------------------------------------
@@ -83,8 +83,3 @@ http://en.wikipedia.org/wiki/!  {(renam,76),(intel,14),...,(plai,2),(auf,2)}
 ```
 
 - All tokens are stemmed
-
-
-
-
-

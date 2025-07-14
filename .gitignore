@@ -32,4 +32,4 @@ images/prague_huge.jpg
 *.upa
 *.upb
 
-cv/CV.pdf
+node_modules/
