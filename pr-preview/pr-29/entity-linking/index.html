@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/pr-preview/pr-29/css/foundation.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/pr-preview/pr-29/css/main.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
+
+    <title>Multilingual entity linking</title>
+  </head>
+
+  <body>
+    <div id="layout">
+      <div class="sidebar">
+        <a href="/pr-preview/pr-29/" id="prague"
+          ><span>JoDaiber.de</span></a
+        >
+      </div>
+
+      <div id="spacer"></div>
+      <div class="content">
+        <div class="inner">
+          <h1>Multilingual entity linking</h1>
+
+          <h2 id="code">Code</h2>
+
+<p>I created an efficient and more accurate version of the multilingual entity linking system <a href="https://github.com/dbpedia-spotlight/dbpedia-spotlight">DBpedia Spotlight</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/dbpedia-spotlight/dbpedia-spotlight">Github repo</a></li>
+  <li><a href="http://spotlight.sztaki.hu/downloads/">Models in various languages</a></li>
+</ul>
+
+<h2 id="raw-data">Raw data</h2>
+
+<p><strong><a href="http://spotlight.sztaki.hu/downloads/latest_data/">Download the raw data here</a></strong></p>
+
+<p>We provide the raw data that is used to create entity extraction models in various languages. This data is the result of running pignlproc on the latest Wikipedia dumps.</p>
+
+<p>If you use this data in your research, please cite the following paper:</p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">isem2013daiber</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Improving Efficiency and Accuracy in Multilingual Entity Extraction}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Joachim Daiber and Max Jakob and Chris Hokamp and Pablo N. Mendes}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2013}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 9th International Conference on Semantic Systems (I-Semantics)}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="http://spotlight.sztaki.hu/downloads/latest_data/">Download here</a></p>
+
+<h2 id="data-format">Data format</h2>
+
+<ul>
+  <li>URIs are encoded in DBpedia format <strong>but</strong> redirects are not yet resolved. To do this, you can use the class <a href="https://github.com/dbpedia-spotlight/dbpedia-spotlight/blob/master/index/src/main/scala/org/dbpedia/spotlight/db/WikipediaToDBpediaClosure.scala">WikipediaToDBpediaClosure</a>, as used in <code class="language-plaintext highlighter-rouge">CreateSpotlightModel.scala</code>:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  val wikipediaToDBpediaClosure = new WikipediaToDBpediaClosure(
+    namespace,
+    new FileInputStream(new File(rawDataFolder, "redirects.nt")),
+    new FileInputStream(new File(rawDataFolder, "disambiguations.nt"))
+  )
+</code></pre></div></div>
+
+<h3 id="uricounts">UriCounts</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DBpedia URI                             Count
+--------------------------------------------------------------
+http://en.dbpedia.org/resource/1        21
+http://en.dbpedia.org/resource/7        7
+http://en.dbpedia.org/resource/C        20
+</code></pre></div></div>
+
+<h3 id="sfandtotalcounts">SfAndTotalCounts</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Surface form         Count annotated    Count total
+--------------------------------------------------------------
+Berlin               49068              105915
+Berloz               2                  6
+9z                   -1                 1
+</code></pre></div></div>
+
+<ul>
+  <li>if no total string occurrence count is available, the 3rd column may be empty or -1</li>
+  <li>if the annotated count is <code class="language-plaintext highlighter-rouge">-1</code>, then this is not a surface form that has been observed with any DBpedia resource. Lines with an annotated count of -1 are there to output the total count of the lowercase representations of surface forms.</li>
+</ul>
+
+<h3 id="paircounts">PairCounts</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Surface form     DBpedia URI                                         Count
+----------------------------------------------------------------------------
+Berlin           http://en.dbpedia.org/resource/Brent_Berlin         2
+Berlin           http://en.dbpedia.org/resource/Trams_in_Berlin      9
+Berlin           http://en.dbpedia.org/resource/Berlin_(Seedorf)     1
+</code></pre></div></div>
+
+<h3 id="tokencounts">TokenCounts</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Wikipedia URI                   Stemmed token counts
+----------------------------------------------------------------------------
+http://en.wikipedia.org/wiki/!  {(renam,76),(intel,14),...,(plai,2),(auf,2)}
+</code></pre></div></div>
+
+<ul>
+  <li>All tokens are stemmed</li>
+</ul>
+
+        </div>
+      </div>
+
+      <script src="/pr-preview/pr-29/js/jquery.js"></script>
+      <script src="/pr-preview/pr-29/js/foundation.min.js"></script>
+      <script src="/pr-preview/pr-29/js/app.js"></script>
+    </div>
+  </body>
+</html>

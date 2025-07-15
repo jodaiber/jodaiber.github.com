@@ -1,0 +1,3 @@
+Sitemap: http://jodaiber.de/sitemap.xml
+User-agent: *
+Allow: /
