@@ -14,15 +14,13 @@ category: Travel
 
 <img src="{{ '/images/bali/ubud_7.jpg' | relative_url }}" width="800" />
 
-<img src="{{ '/images/bali/ubud_9.jpg' | relative_url }}" width="800" />
-
 ## Batur, Indonesia
 
 <img src="{{ '/images/bali/batur_1.jpg' | relative_url }}" width="800" />
 
-<img src="{{ '/images/bali/batur_2.jpg' | relative_url }}" width="800" />
-
 <img src="{{ '/images/bali/batur_3.jpg' | relative_url }}" width="800" />
+
+<img src="{{ '/images/bali/batur_2.jpg' | relative_url }}" width="800" />
 
 <img src="{{ '/images/bali/batur_4.jpg' | relative_url }}" width="800" />
 
