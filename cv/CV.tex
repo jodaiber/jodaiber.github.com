@@ -100,6 +100,18 @@
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
 % Set line spacing to match website
 \linespread{1.15}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -175,20 +187,20 @@
 
 \section{Employment}
 \cventry{since 11/2024}{Upwork}{}{}{}{Principal ML Engineer · San Francisco, California\vspace{1em}}
-\cventry{09/2021\,\textendash\,11/2024}{Objective, Inc.\ (acq.\ by Upwork)}{}{}{}{Co-Founder \& CTO · San Francisco, California\\[0.4em] Objective provides AI-native search for every website and application, delivered via a simple, scalable API platform. In November 2024, Upwork announced the acquisition of Objective, Inc.
+\cventry{09/2021\,\textendash\,11/2024}{Objective, Inc.\ (acq.\ by Upwork)}{}{}{}{Co-Founder \& CTO · San Francisco, California\\[0.4em] Objective provides AI-native search for every website and application, delivered via a simple, scalable API platform. In November 2024, Upwork announced the acquisition of Objective.\\
 %\ to further enhance its core search and match performance, strengthen its AI and machine learning team, and uplevel multi-modal capabilities to assist customers with images, videos and audio content.
-News coverage: \href{https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/}{\underline{TechCrunch}}.
+News coverage: \href{https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/}{\myuline{TechCrunch}}.
 \vspace{1em}
 }
-\cventry{01/2018\,\textendash\,08/2021}{Apple (Lattice Data acquisition)}{}{}{}{
+\cventry{01/2018\,\textendash\,08/2021}{Apple (via Lattice Data acquisition)}{}{}{}{
 Staff ML Engineer · Cupertino, California\\[0.4em]
 %(06/2019\,\textendash\,present)\\
 %Machine Learning Engineer, Query Understanding (01/2018\,\textendash\,06/2019)\\[1em]
 %1 Apple Park Way, Cupertino.\\[0.4em]
 %I was part of the Lattice Data team when the company was acquired by Apple and the major focus of the team since has been to 
-Tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure.
+Tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure.\\
 % Long: I have served as tech lead for query understanding for the Knowledge domain in Siri, Safari and Spotlight. I established datasets, metrics, rigorous experiment management, as well as machine learning and language expansion strategies, leading the successful expansion of the domain from one to 24 languages and establishing the domain as the best-performing information-seeking domain in Siri by share of correct answers, agility and infrastructure. \\[0.2em] 
-News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14-preview-new-features-iphone-ipad/5793806002/}{\underline{USA Toda}y}, \underline{\href{https://techcrunch.com/2020/02/11/siri-will-now-answer-your-election-questions/}{TechCrunch}}, \href{https://machinelearning.apple.com/research/mkqa}{\underline{A}pp\underline{le ML research}}.
+News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14-preview-new-features-iphone-ipad/5793806002/}{\myuline{USA Today}}, \myuline{\href{https://techcrunch.com/2020/02/11/siri-will-now-answer-your-election-questions/}{TechCrunch}}, \href{https://machinelearning.apple.com/research/mkqa}{\myuline{Apple ML research}}.
 \vspace{1em}
 }
 %\cventry{03/2017\,\textendash\,05/2017}{Lattice Data (acquired by %Apple Inc.)}{}{PhD intern, NLP \& lang.\ expansion.}{}{
@@ -201,10 +213,10 @@ News coverage: \href{https://www.usatoday.com/story/tech/2020/09/15/apple-ios-14
 %Apple, Inc.\\1 Apple Park Way, Cupertino.
 %%\vspace{0.5em}~
 %}
-%\cvitem{}{See \underline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar}} for publications.
+%\cvitem{}{See \myuline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar}} for publications.
 %}
 
-%\section{Selected Publications %(\underline{\href{https://scholar.google.nl/citations?user=%sApPUZUAAAAJ}{Google Scholar {\small\faExternalLink}}})}
+%\section{Selected Publications %(\myuline{\href{https://scholar.google.nl/citations?user=%sApPUZUAAAAJ}{Google Scholar {\small\faExternalLink}}})}
 %
 %\cventry{2020}{MKQA: A linguistically diverse benchmark for %multilingual open domain question answering}{Transactions %of ACL (accepted)}{A benchmark dataset for }{}{}
 %\cventry{2016}{Compounds}{}{USA}{}{}
@@ -249,15 +261,15 @@ Free University of Berlin
 
 \section{Publications}
 \cvitem{}{
-    See \underline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar\,\ExternalLink\hspace{-0.2em}}}
+    See \myuline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar\,\ExternalLink\hspace{-0.2em}}}
 }
 
 
 \begin{comment}
 
-\section{Selected Publications (see also \underline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar}})}
+\section{Selected Publications (see also \myuline{\href{https://scholar.google.nl/citations?user=sApPUZUAAAAJ}{Google Scholar}})}
 %\cvitem{}{
-%    See also \underline{\href{https://scholar.google.nl/ci%tations?user=sApPUZUAAAAJ}{Google %Scholar\,\ExternalLink\hspace{-0.2em}}}
+%    See also \myuline{\href{https://scholar.google.nl/ci%tations?user=sApPUZUAAAAJ}{Google %Scholar\,\ExternalLink\hspace{-0.2em}}}
 %    \vspace{0.8em}~
 %}
 
@@ -288,7 +300,7 @@ In Proceedings of the First Conference on Machine Translation (Research Papers).
 \subsection{Entity Linking}
 
 \cventry{2016}{\href{http://jodaiber.github.io/doc/entity.pdf}{Improving Efficiency and Accuracy in Multilingual Entity Extraction}}{}{}{}{
-500+ citations, see also  \href{https://www.dbpedia-spotlight.org}{\underline{dbpedia-spotlight.org}}.\\
+500+ citations, see also  \href{https://www.dbpedia-spotlight.org}{\myuline{dbpedia-spotlight.org}}.\\
 Joachim Daiber, Max Jakob, Chris Hokamp, and Pablo N. Mendes\\
 In Proceedings of the 9th International Conference on Semantic Systems.
 %\vspace{0.2em}
