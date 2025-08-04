@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src="/pr-preview/pr-32/js/modernizr.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/pr-preview/pr-32/css/foundation.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/pr-preview/pr-32/css/main.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Photography</title>
+  </head>
+
+  <body>
+    <div class="headerphoto">
+      <a href="/pr-preview/pr-32/"
+        ><span>Joachim Daiber</span>
+        <span class="photography">Photography</span></a
+      >
+    </div>
+    <!--<div class="outer">
+    <div class="banner"><div class="inner"></div></div>
+    <div class="headerphoto"><a href="/pr-preview/pr-32/"><span>JoDaiber.de</span></a></div>
+</div>-->
+    <div class="photos"><div id="instafeed"></div>
+
+<script src="/pr-preview/pr-32/js/instafeed.js"></script>
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+		get: 'user',
+		userId: 601088313,
+        accessToken: '601088313.1677ed0.df46ed351a5f44bab606823c253be9ff',
+		link: 'true',
+		limit: '64',
+        resolution: 'standard_resolution',
+        template: '<div class="photo"><a class="image" href="{{link}}"><img src="{{image}}" /></a><div class="caption">{{caption}}</div></div>'
+    });
+    feed.run();
+</script>
+
+</div>
+
+    <script src="/pr-preview/pr-32/js/jquery.js"></script>
+    <script src="/pr-preview/pr-32/js/foundation.min.js"></script>
+    <script src="/pr-preview/pr-32/js/app.js"></script>
+  </body>
+</html>
