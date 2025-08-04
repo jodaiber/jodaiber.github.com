@@ -1,0 +1,20 @@
+<div id="instafeed"></div>
+<script src="{{ '/js/instafeed.js' | relative_url }}"></script>
+{% raw %}
+<script type="text/javascript">
+  const accessToken = '601088313.1677ed0.df46ed351a5f44bab606823c253be9ff';
+  // Refresh the long-lived Instagram access token on each page load
+  // https://github.com/stevenschobert/instafeed.js/issues/747
+  fetch(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${accessToken}`);
+  var feed = new Instafeed({
+    get: 'user',
+    userId: 601088313,
+    accessToken: accessToken,
+    links: true,
+    limit: 6,
+    resolution: 'thumbnail',
+    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+  });
+  feed.run();
+</script>
+{% endraw %}
