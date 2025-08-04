@@ -3,6 +3,8 @@ layout: default
 title: Joachim Daiber
 ---
 
+<div id="frontpage" markdown="1">
+
 ## About me
 
 I am an applied scientist focused on machine learning and practical engineering. I was a co-founder and CTO of Objective, Inc. ([TechCrunch](https://techcrunch.com/2023/10/18/objective-emerges-from-stealth-to-deliver-multimodal-search-to-developers-as-an-api-platform/)), which was acquired by Upwork in November 2024.
@@ -51,3 +53,7 @@ in applications and evaluation of large language and vision models, machine tran
 {% endif %}
 
 {% endfor %}
+
+{% include instafeed.html %}
+
+</div>
