@@ -28,6 +28,19 @@ in applications and evaluation of large language and vision models, machine tran
 - <span class="date-align">Jul 2020</span> <span class="seperator">~</span> <span class="post-desc">MKQA paper published in TACL, first machine learning dataset by Apple.</span>
 {: .posts}
 
+## Photos
+
+<div id="instafeed" class="ig-grid" data-limit="9"></div>
+<script>
+  window.IG_ACCESS_TOKEN = '{{ site.instagram_access_token | default: "" }}';
+  window.IG_LIMIT = (function() {
+    var el = document.getElementById('instafeed');
+    return el && el.getAttribute('data-limit') ? parseInt(el.getAttribute('data-limit'), 10) : 9;
+  })();
+  // If you prefer to hide the token in build-time, set `instagram_access_token` in _config.yml
+</script>
+<script src="{{ '/js/instagram-feed.js' | relative_url }}"></script>
+
 {% for post in site.posts %}
 
 {% if forloop.first %}

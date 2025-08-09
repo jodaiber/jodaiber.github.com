@@ -239,6 +239,17 @@ a:not(.label):focus {
   line-height: 0px;
 }
 
+/* Instagram grid */
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 6px;
+  line-height: 0;
+}
+.ig-grid a { border: 0; }
+.ig-grid img { width: 100%; height: auto; display: block; }
+.ig-error, .ig-empty { color: #666; font-size: 90%; }
+
 #frontpage #instafeed img {
   display: block;
   width: 75px;
